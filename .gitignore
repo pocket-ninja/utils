@@ -4,6 +4,9 @@ Packages
 xcuserdata
 DerivedData/
 *.xcodeproj
+.previous-build
+.swiftpm/
+Package.resolved
 
 #####
 # OS X temporary files that should never be committed
