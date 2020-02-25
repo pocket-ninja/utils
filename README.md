@@ -1,3 +1,3 @@
 # Utils
 
-## The Appsurd Company internal utilities
+The Appsurd Company internal iOS utilities
