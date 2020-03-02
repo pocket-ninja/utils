@@ -1,0 +1,8 @@
+default_platform :ios
+skip_docs
+opt_out_usage
+
+lane :test do
+    spm(command: "generate-xcodeproj")
+    scan
+end
