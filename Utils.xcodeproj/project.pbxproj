@@ -29,6 +29,17 @@
 		AC9DA5252412CE5800F034EE /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; };
 		AC9DA5262412CE5800F034EE /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9DA52B2412CE5B00F034EE /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = AC9DA52A2412CE5B00F034EE /* FacebookCore */; };
+		AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */; };
+		AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */; };
+		AC9DA53C2412CF1000F034EE /* FacebookAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4972412CB5700F034EE /* FacebookAnalytics.swift */; };
+		AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48D2412CB5700F034EE /* Analytics.swift */; };
+		AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */; };
+		AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */; };
+		AC9DA5402412CF1700F034EE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4902412CB5700F034EE /* Event.swift */; };
+		AC9DA5412412CF1700F034EE /* OneShotable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4912412CB5700F034EE /* OneShotable.swift */; };
+		AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */; };
+		AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */; };
+		AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -634,6 +645,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9DA5402412CF1700F034EE /* Event.swift in Sources */,
+				AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */,
+				AC9DA5412412CF1700F034EE /* OneShotable.swift in Sources */,
+				AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */,
+				AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */,
+				AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */,
+				AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */,
+				AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +660,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9DA53C2412CF1000F034EE /* FacebookAnalytics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +668,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
+				AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
