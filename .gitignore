@@ -3,11 +3,11 @@ Packages
 .build/
 xcuserdata
 DerivedData/
-*.xcodeproj
-!Utils.xcodeproj
 .previous-build
 .swiftpm/
 Package.resolved
+# *.xcodeproj
+# !Utils.xcodeproj
 
 #####
 # OS X temporary files that should never be committed
