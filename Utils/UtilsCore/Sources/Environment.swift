@@ -28,18 +28,6 @@ public class Environment {
         #endif
     }
 
-    public static var isAdhoc: Bool {
-        #if ADHOC || POD_CONFIGURATION_ADHOC
-            return true
-        #else
-            return false
-        #endif
-    }
-
-    public static var isRelease: Bool {
-        return !(isDebug || isAdhoc)
-    }
-
     public static var ignoresAssertions: Bool {
         #if IGNORE_ASSERTIONS
             return true
