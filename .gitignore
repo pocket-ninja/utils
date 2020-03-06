@@ -4,7 +4,7 @@ Packages
 xcuserdata
 DerivedData/
 *.xcodeproj
-!Project.xcodeproj
+!Utils.xcodeproj
 .previous-build
 .swiftpm/
 Package.resolved
