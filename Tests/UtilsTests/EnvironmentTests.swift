@@ -1,5 +1,5 @@
 import XCTest
-import Utils
+@testable import UtilsCore
 
 final class TemplateTests: XCTestCase {
     func testEnvironment() {

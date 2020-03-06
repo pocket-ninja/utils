@@ -3,6 +3,22 @@ skip_docs
 opt_out_usage
 
 lane :test do
-    spm(command: "generate-xcodeproj")
-    scan
+spm(command: "generate-xcodeproj")
+scan
+end
+
+lane :test_if_needed do 
+  if test?
+    test
+  end
+end
+
+lane :test? do
+  !stop_keywords.any? do |k| 
+    last_git_commit[:message].to_s.downcase.include?(k) 
+  end
+end
+
+lane :stop_keywords do
+  ["wip", "stop"]
 end

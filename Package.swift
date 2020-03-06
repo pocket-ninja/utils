@@ -9,20 +9,40 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Utils",
-            targets: ["Utils"]
+            name: "UtilsCore",
+            targets: ["UtilsCore"]
         ),
+        .library(
+            name: "Analytics",
+            targets: ["Analytics"]
+        ),
+        .library(
+            name: "AnalyticsFacebookDrain",
+            targets: ["AnalyticsFacebookDrain"]
+        )
     ],
-    dependencies: [],
+    dependencies: [
+         .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "6.0.0")
+    ],
     targets: [
         .target(
-            name: "Utils",
+            name: "UtilsCore",
             dependencies: [],
-            path: "Sources/Utils"
+            path: "Sources/Core"
+        ),
+        .target(
+            name: "Analytics",
+            dependencies: ["UtilsCore"],
+            path: "Sources/Analytics/Core"
+        ),
+        .target(
+            name: "AnalyticsFacebookDrain",
+            dependencies: ["Analytics", "FacebookCore"],
+            path: "Sources/Analytics/Facebook"
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["Utils"]
+            dependencies: ["UtilsCore", "Analytics"]
         ),
     ],
     swiftLanguageVersions: [
