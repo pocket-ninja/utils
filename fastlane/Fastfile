@@ -3,8 +3,7 @@ skip_docs
 opt_out_usage
 
 lane :test do
-spm(command: "generate-xcodeproj")
-scan
+  scan(scheme: "Demo")
 end
 
 lane :test_if_needed do 

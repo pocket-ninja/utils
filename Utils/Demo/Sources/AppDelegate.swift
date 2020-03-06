@@ -9,10 +9,10 @@ import UtilsCore
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     func application(
-        _ application: UIApplication, didFinishLaunchingWithOptions
-        launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         guard Environment.isTests == false else {
             return false
@@ -25,4 +25,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 }
-

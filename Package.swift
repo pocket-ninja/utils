@@ -28,21 +28,22 @@ let package = Package(
         .target(
             name: "UtilsCore",
             dependencies: [],
-            path: "Sources/Core"
+            path: "Utils/UtilsCore/Sources"
         ),
         .target(
             name: "Analytics",
             dependencies: ["UtilsCore"],
-            path: "Sources/Analytics/Core"
+            path: "Utils/Analytics/Core/Sources"
         ),
         .target(
             name: "AnalyticsFacebookDrain",
             dependencies: ["Analytics", "FacebookCore"],
-            path: "Sources/Analytics/Facebook"
+            path: "Utils/Analytics/Facebook/Sources"
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Analytics"]
+            dependencies: ["UtilsCore", "Analytics"],
+            path: "UtilsTests/Sources"
         ),
     ],
     swiftLanguageVersions: [

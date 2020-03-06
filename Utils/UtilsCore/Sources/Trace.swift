@@ -5,7 +5,7 @@
 import Foundation
 
 public func trace(_ message: String = "", file: String = #file, line: Int = #line) {
-    guard !Environment.isRelease else {
+    guard Environment.isDebug else {
         return
     }
     
