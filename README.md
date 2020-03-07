@@ -1,4 +1,4 @@
-# Utils
+# Utils &nbsp; [![Tests Status](https://github.com/pixera-apps/utils/workflows/pull-request/badge.svg)](https://github.com/pixera-apps/utils/actions?query=branch:master)
 
 Internal iOS utilities
 
