@@ -4,7 +4,7 @@
 
 import Foundation
 import XCTest
-@testable import Analytics
+import Analytics
 
 class HistoryAnalyticsTests: XCTestCase {
     func testAnalyticsCollectTrackedEvents() {
@@ -17,8 +17,4 @@ class HistoryAnalyticsTests: XCTestCase {
         let drain: AnalyticsDrain = HistoryAnalytics()
         XCTAssertNotNil(drain.history)
     }
-}
-
-private extension Event {
-    static let shot: Event = .plain(name: "Shot")
 }
