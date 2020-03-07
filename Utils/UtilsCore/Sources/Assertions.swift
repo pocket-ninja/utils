@@ -15,7 +15,7 @@ public func assertWrapper(_ condition: @autoclosure () -> Bool,
 
     trace("assertion failed:" + domain(), file: String(describing: file), line: Int(line))
 
-    if Environment.isDebug, !Environment.ignoresAssertions {
+    if Environment.isDebug && !Environment.isTests {
         assertionFailure(domain(), file: file, line: line)
     }
 

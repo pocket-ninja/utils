@@ -27,12 +27,4 @@ public class Environment {
             return false
         #endif
     }
-
-    public static var ignoresAssertions: Bool {
-        #if IGNORE_ASSERTIONS
-            return true
-        #else
-            return false
-        #endif
-    }
 }
