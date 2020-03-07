@@ -2,9 +2,10 @@ default_platform :ios
 skip_docs
 opt_out_usage
 
-lane :patch_version do 
-  UI.message "going to patch version"
-  cmd = "bundle exec git-version-bump patch"
+lane :bump_version do |options|
+  UI.message "Going to bump project version"
+  raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
+  cmd = "bundle exec git-version-bump " + options[:part]
   raise "Failed to patch version! Error: '#{cmd}'" unless system(cmd)
 end
 
