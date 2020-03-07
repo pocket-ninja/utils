@@ -12,6 +12,7 @@
 		AC2EB10624140C6E0039FA85 /* Event+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10524140C6E0039FA85 /* Event+Stub.swift */; };
 		AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10824140CBB0039FA85 /* StorageMock.swift */; };
 		AC2EB10B24140CBB0039FA85 /* BundleStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10924140CBB0039FA85 /* BundleStub.swift */; };
+		AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10C241410760039FA85 /* StorageTests.swift */; };
 		AC9DA4992412CB5700F034EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */; };
 		AC9DA49A2412CB5700F034EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47D2412CB5700F034EE /* Assets.xcassets */; };
 		AC9DA4B52412CBEC00F034EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA47A2412CB5700F034EE /* AppDelegate.swift */; };
@@ -136,6 +137,7 @@
 		AC2EB10524140C6E0039FA85 /* Event+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+Stub.swift"; sourceTree = "<group>"; };
 		AC2EB10824140CBB0039FA85 /* StorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageMock.swift; sourceTree = "<group>"; };
 		AC2EB10924140CBB0039FA85 /* BundleStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleStub.swift; sourceTree = "<group>"; };
+		AC2EB10C241410760039FA85 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageTests.swift; path = ../../StorageTests.swift; sourceTree = "<group>"; };
 		AC9DA4602412CACC00F034EE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DA47A2412CB5700F034EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB10724140CB10039FA85 /* Stub */,
+				AC2EB10C241410760039FA85 /* StorageTests.swift */,
 				AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */,
 			);
 			path = UtilsCore;
@@ -710,6 +713,7 @@
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
 				AC2EB10624140C6E0039FA85 /* Event+Stub.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
+				AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */,
 				AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */,
 				AC2EB10B24140CBB0039FA85 /* BundleStub.swift in Sources */,
 				AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */,
