@@ -4,10 +4,16 @@
 
 import Foundation
 
-public protocol AnalyticsError {
-    var domain: String { get }
-    var code: Int { get }
-    var parameters: [String: String] { get }
+public struct AnalyticsError: Codable, Hashable {
+    public let domain: String
+    public let code: Int
+    public let parameters: [String: String]
+    
+    public init(domain: String, code: Int = 1, parameters: [String: String] = [:]) {
+        self.domain = domain
+        self.code = code
+        self.parameters = parameters
+    }
 }
 
 public protocol ErrorTracker {

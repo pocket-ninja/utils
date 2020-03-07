@@ -2,7 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import Foundation
+import UtilsCore
 
 public enum Event: Hashable {
     public typealias Params = [String: String]
@@ -24,6 +24,8 @@ public enum Event: Hashable {
         price: Decimal,
         priceLocale: Locale
     )
+    
+    case error(error: AnalyticsError)
 }
 
 extension Event: OneShotable {
@@ -31,7 +33,7 @@ extension Event: OneShotable {
         switch self {
         case let .plain(_, _ , unique):
             return unique
-        case .purchase:
+        case .purchase, .error:
             return false
         }
     }
@@ -42,7 +44,8 @@ extension Event: OneShotable {
             return "disposable_event_\(name)"
         case let .purchase(id, _ , _, _, _):
             return "disposable_event_\(id)"
-
+        case let .error(error):
+            return "disposable_event_\(error.domain)"
         }
     }
 }

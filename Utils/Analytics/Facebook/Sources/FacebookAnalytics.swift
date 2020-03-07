@@ -22,7 +22,8 @@ public final class FacebookAnalytics: AnalyticsDrain {
                 currency: priceLocale.currencyCode ?? "",
                 parameters: params
             )
-            
+        case .error:
+            break
         }
     }
 }

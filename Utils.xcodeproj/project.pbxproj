@@ -308,8 +308,8 @@
 		AC9DA48B2412CB5700F034EE /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DA5042412CE1F00F034EE /* SupportingFiles */,
 				AC9DA48C2412CB5700F034EE /* Sources */,
+				AC9DA5042412CE1F00F034EE /* SupportingFiles */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 		AC9DA4952412CB5700F034EE /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DA51A2412CE5200F034EE /* SupportingFiles */,
 				AC9DA4962412CB5700F034EE /* Sources */,
+				AC9DA51A2412CE5200F034EE /* SupportingFiles */,
 			);
 			path = Facebook;
 			sourceTree = "<group>";

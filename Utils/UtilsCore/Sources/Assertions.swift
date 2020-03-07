@@ -22,7 +22,7 @@ public func assertWrapper(_ condition: @autoclosure () -> Bool,
     if !Environment.isDebug {
         let domain = "[Assertion]: \(domain().capitalized)"
         let parameters = ["message": message() ?? domain, "file": String(describing: file), "line": "\(line)"]
-        let error = AssertAnalyticsError(domain: domain, code: 1, parameters: parameters)
+        let error = AnalyticsError(domain: domain, parameters: parameters)
         errorTracker?.track(error)
     }
 }
@@ -44,10 +44,4 @@ public func assertError(_ domain: @autoclosure () -> String? = nil,
         let message = error.localizedDescription
         assertionWrapperFailure(domain() ?? "error caught", message, file: file, line: line)
     }
-}
-
-internal struct AssertAnalyticsError: AnalyticsError {
-    let domain: String
-    let code: Int
-    let parameters: [String: String]
 }
