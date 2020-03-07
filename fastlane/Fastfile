@@ -7,10 +7,14 @@ lane :bump_version_patch do
 end
 
 lane :bump_version do |options|
+  fastlane_require 'fastlane-ext'
+  
   UI.message "Going to bump project version"
+  sync_git_tags
+
   raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
   cmd = "bundle exec git-version-bump " + options[:part]
-  raise "Failed to patch version! Error: '#{cmd}'" unless system(cmd)
+  raise "Failed to patch version! cmd: '#{cmd}'" unless system(cmd)
 end
 
 lane :test do

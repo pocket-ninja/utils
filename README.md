@@ -11,4 +11,3 @@ If you want to increase the project version and push it, than simply run:
 Also if you need to increase the version patch you can execute:
 
 `bundle exec fastlane bump_version_patch`
-
