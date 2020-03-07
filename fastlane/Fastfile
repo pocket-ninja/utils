@@ -2,6 +2,10 @@ default_platform :ios
 skip_docs
 opt_out_usage
 
+lane :bump_version_patch do
+  bump_version(part: "patch")
+end
+
 lane :bump_version do |options|
   UI.message "Going to bump project version"
   raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
