@@ -13,6 +13,10 @@ let package = Package(
             targets: ["UtilsCore"]
         ),
         .library(
+            name: "Alert",
+            targets: ["Alert"]
+        ),
+        .library(
             name: "Analytics",
             targets: ["Analytics"]
         ),
@@ -34,6 +38,11 @@ let package = Package(
             name: "Analytics",
             dependencies: ["UtilsCore"],
             path: "Utils/Analytics/Core/Sources"
+        ),
+        .target(
+            name: "Alert",
+            dependencies: [],
+            path: "Utils/Alert/Core/Sources"
         ),
         .target(
             name: "AnalyticsFacebookDrain",
