@@ -6,8 +6,10 @@ import Foundation
 import FBSDKCoreKit
 import Analytics
 
-public final class FacebookAnalytics: AnalyticsDrain {
-    public init() {}
+public final class FacebookAnalyticsDrain: AnalyticsDrain {
+    public init(tracksPurchases: Bool = true) {
+        self.tracksPurchases = tracksPurchases
+    }
 
     public func track(_ event: Event) {
         switch event {
@@ -17,14 +19,16 @@ public final class FacebookAnalytics: AnalyticsDrain {
                 parameters: params
             )
             
-        case let .purchase(_, _, params, price, priceLocale):
+        case let .purchase(_, _, params, price, priceLocale) where tracksPurchases:
             AppEvents.logPurchase(
                 NSDecimalNumber(decimal: price).doubleValue,
                 currency: priceLocale.currencyCode ?? "",
                 parameters: params
             )
-        case .error:
+        case .error, .purchase:
             break
         }
     }
+    
+    private let tracksPurchases: Bool
 }

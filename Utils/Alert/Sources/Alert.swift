@@ -8,7 +8,6 @@ public final class Alert: NSObject {
     public typealias Callback = () -> Void
     public typealias OptionCallback = (Bool) -> Void
 
-    #warning("translate")
     public static func ok(
         title: String? = nil,
         message: String? = nil,
@@ -112,7 +111,7 @@ public final class Alert: NSObject {
 }
 
 extension Alert {
-    #warning("fix")
+    #warning("uncomment")
 //    public static func purchaseRetry(callback: @escaping OptionCallback) -> UIAlertController {
 //        return option(
 //            title: R.string.general.oops(),

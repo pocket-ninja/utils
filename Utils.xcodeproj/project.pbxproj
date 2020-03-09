@@ -102,7 +102,7 @@
 		AC9DA52B2412CE5B00F034EE /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = AC9DA52A2412CE5B00F034EE /* FacebookCore */; };
 		AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */; };
 		AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */; };
-		AC9DA53C2412CF1000F034EE /* FacebookAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4972412CB5700F034EE /* FacebookAnalytics.swift */; };
+		AC9DA53C2412CF1000F034EE /* FacebookAnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */; };
 		AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48D2412CB5700F034EE /* Analytics.swift */; };
 		AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */; };
 		AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */; };
@@ -297,7 +297,7 @@
 		AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalytics.swift; sourceTree = "<group>"; };
 		AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsDispatcher.swift; sourceTree = "<group>"; };
 		AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceAnalytics.swift; sourceTree = "<group>"; };
-		AC9DA4972412CB5700F034EE /* FacebookAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAnalytics.swift; sourceTree = "<group>"; };
+		AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAnalyticsDrain.swift; sourceTree = "<group>"; };
 		AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTests.swift; sourceTree = "<group>"; };
 		AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalyticsTests.swift; sourceTree = "<group>"; };
 		AC9DA4B12412CB6000F034EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -722,7 +722,7 @@
 		AC9DA4962412CB5700F034EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DA4972412CB5700F034EE /* FacebookAnalytics.swift */,
+				AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1129,7 +1129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC9DA53C2412CF1000F034EE /* FacebookAnalytics.swift in Sources */,
+				AC9DA53C2412CF1000F034EE /* FacebookAnalyticsDrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

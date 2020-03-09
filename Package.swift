@@ -42,7 +42,7 @@ let package = Package(
         .target(
             name: "Alert",
             dependencies: [],
-            path: "Utils/Alert/Core/Sources"
+            path: "Utils/Alert/Sources"
         ),
         .target(
             name: "AnalyticsFacebookDrain",
