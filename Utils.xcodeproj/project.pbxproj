@@ -17,29 +17,17 @@
 		AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10824140CBB0039FA85 /* StorageMock.swift */; };
 		AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10924140CBB0039FA85 /* TestBundle.swift */; };
 		AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10C241410760039FA85 /* StorageTests.swift */; };
-		AC2EB111241416990039FA85 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10E241416990039FA85 /* Token.swift */; };
-		AC2EB112241416990039FA85 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10F241416990039FA85 /* Channel.swift */; };
-		AC2EB113241416990039FA85 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB110241416990039FA85 /* Property.swift */; };
-		AC2EB117241416E70039FA85 /* PropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB114241416E70039FA85 /* PropertyTests.swift */; };
-		AC2EB118241416E70039FA85 /* ChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB115241416E70039FA85 /* ChannelTests.swift */; };
-		AC2EB119241416E70039FA85 /* TokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB116241416E70039FA85 /* TokenTests.swift */; };
 		AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11B241417820039FA85 /* XCTestCase.swift */; };
 		AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11D241419340039FA85 /* TimerScheduler.swift */; };
 		AC2EB12024141A700039FA85 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11F24141A700039FA85 /* Target.swift */; };
 		AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12124141A7F0039FA85 /* Queue.swift */; };
 		AC2EB12424141A930039FA85 /* PersistentCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12324141A930039FA85 /* PersistentCounter.swift */; };
-		AC2EB12724141ADA0039FA85 /* ApplicationStateChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12524141ADA0039FA85 /* ApplicationStateChannel.swift */; };
 		AC2EB12824141ADA0039FA85 /* AppSessionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */; };
-		AC2EB12B24141B860039FA85 /* GestureTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12924141B860039FA85 /* GestureTarget.swift */; };
-		AC2EB12C24141B860039FA85 /* ActionTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12A24141B860039FA85 /* ActionTarget.swift */; };
 		AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12D24141BC30039FA85 /* Reusable.swift */; };
 		AC2EB13524141E600039FA85 /* Cacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13424141E600039FA85 /* Cacher.swift */; };
 		AC2EB13924141E690039FA85 /* RateReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13724141E680039FA85 /* RateReviewService.swift */; };
-		AC2EB13B24141EBA0039FA85 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13A24141EBA0039FA85 /* SettingsService.swift */; };
 		AC2EB13E24141EF90039FA85 /* ValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */; };
 		AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */; };
-		AC2EB14B241423B20039FA85 /* ActionTargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB142241423B10039FA85 /* ActionTargetTests.swift */; };
-		AC2EB14C241423B20039FA85 /* SettingsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB143241423B10039FA85 /* SettingsServiceTests.swift */; };
 		AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB144241423B20039FA85 /* TargetTests.swift */; };
 		AC2EB14E241423B20039FA85 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB145241423B20039FA85 /* QueueTests.swift */; };
 		AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */; };
@@ -216,29 +204,17 @@
 		AC2EB10824140CBB0039FA85 /* StorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageMock.swift; sourceTree = "<group>"; };
 		AC2EB10924140CBB0039FA85 /* TestBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBundle.swift; sourceTree = "<group>"; };
 		AC2EB10C241410760039FA85 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageTests.swift; path = ../../StorageTests.swift; sourceTree = "<group>"; };
-		AC2EB10E241416990039FA85 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		AC2EB10F241416990039FA85 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		AC2EB110241416990039FA85 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
-		AC2EB114241416E70039FA85 /* PropertyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTests.swift; sourceTree = "<group>"; };
-		AC2EB115241416E70039FA85 /* ChannelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTests.swift; sourceTree = "<group>"; };
-		AC2EB116241416E70039FA85 /* TokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenTests.swift; sourceTree = "<group>"; };
 		AC2EB11B241417820039FA85 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		AC2EB11D241419340039FA85 /* TimerScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerScheduler.swift; sourceTree = "<group>"; };
 		AC2EB11F24141A700039FA85 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		AC2EB12124141A7F0039FA85 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		AC2EB12324141A930039FA85 /* PersistentCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentCounter.swift; sourceTree = "<group>"; };
-		AC2EB12524141ADA0039FA85 /* ApplicationStateChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationStateChannel.swift; sourceTree = "<group>"; };
 		AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounter.swift; sourceTree = "<group>"; };
-		AC2EB12924141B860039FA85 /* GestureTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTarget.swift; sourceTree = "<group>"; };
-		AC2EB12A24141B860039FA85 /* ActionTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTarget.swift; sourceTree = "<group>"; };
 		AC2EB12D24141BC30039FA85 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		AC2EB13424141E600039FA85 /* Cacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cacher.swift; sourceTree = "<group>"; };
 		AC2EB13724141E680039FA85 /* RateReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateReviewService.swift; sourceTree = "<group>"; };
-		AC2EB13A24141EBA0039FA85 /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapper.swift; sourceTree = "<group>"; };
 		AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapperTests.swift; sourceTree = "<group>"; };
-		AC2EB142241423B10039FA85 /* ActionTargetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionTargetTests.swift; sourceTree = "<group>"; };
-		AC2EB143241423B10039FA85 /* SettingsServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsServiceTests.swift; sourceTree = "<group>"; };
 		AC2EB144241423B20039FA85 /* TargetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTests.swift; sourceTree = "<group>"; };
 		AC2EB145241423B20039FA85 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceCounterTests.swift; sourceTree = "<group>"; };
@@ -409,19 +385,14 @@
 				AC2EB20D24142D700039FA85 /* Extensions */,
 				AC2EB1B524142BFB0039FA85 /* Math */,
 				AC2EB10C241410760039FA85 /* StorageTests.swift */,
-				AC2EB115241416E70039FA85 /* ChannelTests.swift */,
-				AC2EB114241416E70039FA85 /* PropertyTests.swift */,
-				AC2EB116241416E70039FA85 /* TokenTests.swift */,
 				AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */,
 				AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */,
-				AC2EB142241423B10039FA85 /* ActionTargetTests.swift */,
 				AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */,
 				AC2EB148241423B20039FA85 /* CacherTests.swift */,
 				AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */,
 				AC2EB145241423B20039FA85 /* QueueTests.swift */,
 				AC2EB149241423B20039FA85 /* RateReviewServiceTests.swift */,
 				AC2EB147241423B20039FA85 /* ReusableTests.swift */,
-				AC2EB143241423B10039FA85 /* SettingsServiceTests.swift */,
 				AC2EB144241423B20039FA85 /* TargetTests.swift */,
 			);
 			path = UtilsCore;
@@ -449,7 +420,6 @@
 			children = (
 				AC2EB155241425780039FA85 /* Application.swift */,
 				AC2EB11F24141A700039FA85 /* Target.swift */,
-				AC2EB12524141ADA0039FA85 /* ApplicationStateChannel.swift */,
 				AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */,
 				AC2EB12324141A930039FA85 /* PersistentCounter.swift */,
 			);
@@ -470,21 +440,9 @@
 		AC2EB13124141D010039FA85 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				AC2EB12A24141B860039FA85 /* ActionTarget.swift */,
-				AC2EB12924141B860039FA85 /* GestureTarget.swift */,
 				AC2EB12D24141BC30039FA85 /* Reusable.swift */,
 			);
 			path = Interface;
-			sourceTree = "<group>";
-		};
-		AC2EB13224141D150039FA85 /* Reactive */ = {
-			isa = PBXGroup;
-			children = (
-				AC2EB10F241416990039FA85 /* Channel.swift */,
-				AC2EB110241416990039FA85 /* Property.swift */,
-				AC2EB10E241416990039FA85 /* Token.swift */,
-			);
-			path = Reactive;
 			sourceTree = "<group>";
 		};
 		AC2EB13324141DCF0039FA85 /* Services */ = {
@@ -492,7 +450,6 @@
 			children = (
 				AC2EB11D241419340039FA85 /* TimerScheduler.swift */,
 				AC2EB13724141E680039FA85 /* RateReviewService.swift */,
-				AC2EB13A24141EBA0039FA85 /* SettingsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -654,7 +611,6 @@
 				AC2EB18C241429A10039FA85 /* Extensions */,
 				AC2EB1B224142B220039FA85 /* Math */,
 				AC2EB13324141DCF0039FA85 /* Services */,
-				AC2EB13224141D150039FA85 /* Reactive */,
 				AC2EB13124141D010039FA85 /* Interface */,
 				AC2EB13024141CD60039FA85 /* DataStructs */,
 				AC2EB12F24141CC80039FA85 /* Application */,
@@ -1066,23 +1022,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2EB12C24141B860039FA85 /* ActionTarget.swift in Sources */,
 				AC2EB1B124142A260039FA85 /* Operators.swift in Sources */,
 				AC2EB1B424142B320039FA85 /* Percent.swift in Sources */,
-				AC2EB12724141ADA0039FA85 /* ApplicationStateChannel.swift in Sources */,
 				AC2EB1A6241429A10039FA85 /* UICollectionView+Extensions.swift in Sources */,
 				AC2EB1AB241429A10039FA85 /* Codable+Extensions.swift in Sources */,
 				AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */,
 				AC2EB1A8241429A10039FA85 /* String+Extensions.swift in Sources */,
 				AC2EB1A1241429A10039FA85 /* Geometry+Extensions.swift in Sources */,
-				AC2EB113241416990039FA85 /* Property.swift in Sources */,
 				AC2EB1AA241429A10039FA85 /* NSAttributedString+Extensions.swift in Sources */,
 				AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */,
 				AC2EB1A7241429A10039FA85 /* Numeric+Extensions.swift in Sources */,
 				AC9DA4C92412CC6F00F034EE /* Synchronize.swift in Sources */,
-				AC2EB12B24141B860039FA85 /* GestureTarget.swift in Sources */,
-				AC2EB112241416990039FA85 /* Channel.swift in Sources */,
-				AC2EB111241416990039FA85 /* Token.swift in Sources */,
 				AC9DA4CA2412CC6F00F034EE /* Environment.swift in Sources */,
 				AC2EB1A4241429A10039FA85 /* UIColor+Extensions.swift in Sources */,
 				AC2EB1AC241429A10039FA85 /* FileManager+Extensions.swift in Sources */,
@@ -1096,7 +1046,6 @@
 				AC2EB1A9241429A10039FA85 /* Bool+Extensions.swift in Sources */,
 				AC2EB1AD241429A10039FA85 /* Optional+Extensions.swift in Sources */,
 				AC2EB1572414257B0039FA85 /* Application.swift in Sources */,
-				AC2EB13B24141EBA0039FA85 /* SettingsService.swift in Sources */,
 				AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */,
 				AC9DA4CC2412CC6F00F034EE /* Assertions.swift in Sources */,
 				AC2EB13524141E600039FA85 /* Cacher.swift in Sources */,
@@ -1143,22 +1092,17 @@
 				AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */,
 				AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */,
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
-				AC2EB118241416E70039FA85 /* ChannelTests.swift in Sources */,
 				AC2EB10624140C6E0039FA85 /* Event+Stub.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
-				AC2EB119241416E70039FA85 /* TokenTests.swift in Sources */,
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
-				AC2EB117241416E70039FA85 /* PropertyTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
-				AC2EB14B241423B20039FA85 /* ActionTargetTests.swift in Sources */,
 				AC2EB152241423B20039FA85 /* RateReviewServiceTests.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
 				AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */,
 				AC2EB21824142D700039FA85 /* UIViewControllerExtensionsTests.swift in Sources */,
-				AC2EB14C241423B20039FA85 /* SettingsServiceTests.swift in Sources */,
 				AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */,
 				AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */,
 				AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */,
