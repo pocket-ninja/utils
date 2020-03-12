@@ -25,7 +25,6 @@
 		AC2EB12824141ADA0039FA85 /* AppSessionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */; };
 		AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12D24141BC30039FA85 /* Reusable.swift */; };
 		AC2EB13524141E600039FA85 /* Cacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13424141E600039FA85 /* Cacher.swift */; };
-		AC2EB13924141E690039FA85 /* RateReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13724141E680039FA85 /* RateReviewService.swift */; };
 		AC2EB13E24141EF90039FA85 /* ValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */; };
 		AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */; };
 		AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB144241423B20039FA85 /* TargetTests.swift */; };
@@ -33,7 +32,6 @@
 		AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */; };
 		AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB147241423B20039FA85 /* ReusableTests.swift */; };
 		AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB148241423B20039FA85 /* CacherTests.swift */; };
-		AC2EB152241423B20039FA85 /* RateReviewServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB149241423B20039FA85 /* RateReviewServiceTests.swift */; };
 		AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */; };
 		AC2EB1572414257B0039FA85 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB155241425780039FA85 /* Application.swift */; };
 		AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */; };
@@ -212,7 +210,6 @@
 		AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounter.swift; sourceTree = "<group>"; };
 		AC2EB12D24141BC30039FA85 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		AC2EB13424141E600039FA85 /* Cacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cacher.swift; sourceTree = "<group>"; };
-		AC2EB13724141E680039FA85 /* RateReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateReviewService.swift; sourceTree = "<group>"; };
 		AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapper.swift; sourceTree = "<group>"; };
 		AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapperTests.swift; sourceTree = "<group>"; };
 		AC2EB144241423B20039FA85 /* TargetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTests.swift; sourceTree = "<group>"; };
@@ -220,7 +217,6 @@
 		AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceCounterTests.swift; sourceTree = "<group>"; };
 		AC2EB147241423B20039FA85 /* ReusableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
 		AC2EB148241423B20039FA85 /* CacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacherTests.swift; sourceTree = "<group>"; };
-		AC2EB149241423B20039FA85 /* RateReviewServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateReviewServiceTests.swift; sourceTree = "<group>"; };
 		AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounterTests.swift; sourceTree = "<group>"; };
 		AC2EB155241425780039FA85 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Extensions.swift"; sourceTree = "<group>"; };
@@ -391,7 +387,6 @@
 				AC2EB148241423B20039FA85 /* CacherTests.swift */,
 				AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */,
 				AC2EB145241423B20039FA85 /* QueueTests.swift */,
-				AC2EB149241423B20039FA85 /* RateReviewServiceTests.swift */,
 				AC2EB147241423B20039FA85 /* ReusableTests.swift */,
 				AC2EB144241423B20039FA85 /* TargetTests.swift */,
 			);
@@ -449,7 +444,6 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB11D241419340039FA85 /* TimerScheduler.swift */,
-				AC2EB13724141E680039FA85 /* RateReviewService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1051,7 +1045,6 @@
 				AC2EB13524141E600039FA85 /* Cacher.swift in Sources */,
 				AC2EB12824141ADA0039FA85 /* AppSessionCounter.swift in Sources */,
 				AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */,
-				AC2EB13924141E690039FA85 /* RateReviewService.swift in Sources */,
 				AC9DA4CB2412CC6F00F034EE /* ErrorTracker.swift in Sources */,
 				AC2EB12424141A930039FA85 /* PersistentCounter.swift in Sources */,
 				AC9DA4CD2412CC6F00F034EE /* Trace.swift in Sources */,
@@ -1098,7 +1091,6 @@
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
-				AC2EB152241423B20039FA85 /* RateReviewServiceTests.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
 				AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */,
