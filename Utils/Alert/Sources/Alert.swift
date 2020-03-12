@@ -11,11 +11,11 @@ public final class Alert: NSObject {
     public static func ok(
         title: String? = nil,
         message: String? = nil,
+        action: String,
         callback: Callback? = nil
     ) -> UIAlertController {
-        #warning("localize")
         let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "ok", style: .default) { _ in callback?() }
+        let okAction = UIAlertAction(title: action, style: .default) { _ in callback?() }
         controller.addAction(okAction)
         return controller
     }
@@ -23,8 +23,8 @@ public final class Alert: NSObject {
     public static func option(
         title: String? = nil,
         message: String? = nil,
-        positive: String? = nil,
-        negative: String? = nil,
+        positive: String,
+        negative: String,
         callback: @escaping OptionCallback
     ) -> UIAlertController {
         let controller = UIAlertController(
@@ -33,13 +33,11 @@ public final class Alert: NSObject {
             preferredStyle: .alert
         )
 
-        #warning("localize")
-        let positiveAction = UIAlertAction(title: positive ?? "yes", style: .default) { _ in
+        let positiveAction = UIAlertAction(title: positive, style: .default) { _ in
             callback(true)
         }
 
-        #warning("localize")
-        let negativeAction = UIAlertAction(title: negative ?? "no", style: .default) { _ in
+        let negativeAction = UIAlertAction(title: negative, style: .default) { _ in
             callback(false)
         }
 
@@ -53,6 +51,7 @@ public final class Alert: NSObject {
         title: String? = nil,
         message: String? = nil,
         action: String,
+        cancel: String,
         callback: @escaping OptionCallback
     ) -> UIAlertController {
         let controller = UIAlertController(
@@ -65,8 +64,7 @@ public final class Alert: NSObject {
             callback(true)
         }
 
-        #warning("localize")
-        let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: cancel, style: .cancel) { _ in
             callback(false)
         }
 
@@ -79,6 +77,8 @@ public final class Alert: NSObject {
     public static func settings(
         title: String? = nil,
         message: String? = nil,
+        positive: String,
+        negative: String,
         callback: OptionCallback? = nil
     ) -> UIAlertController {
         let controllerCallback: OptionCallback = { isPositive in
@@ -99,39 +99,12 @@ public final class Alert: NSObject {
             )
         }
 
-        #warning("localize")
         return option(
             title: title,
             message: message,
-            positive: "settings",
-            negative: "cancel",
+            positive: positive,
+            negative: negative,
             callback: controllerCallback
         )
     }
 }
-
-extension Alert {
-    #warning("uncomment")
-//    public static func purchaseRetry(callback: @escaping OptionCallback) -> UIAlertController {
-//        return option(
-//            title: R.string.general.oops(),
-//            message: R.string.general.somethingWentWrong(),
-//            positive: R.string.general.retry(),
-//            negative: R.string.general.cancel(),
-//            callback: callback
-//        )
-//    }
-//
-//    public static func noRestoredItems() -> UIAlertController {
-//        return ok(message: R.string.general.noItemsToRestore())
-//    }
-//
-//    public static func oopsError() -> UIAlertController {
-//        return ok(title: R.string.general.oops(), message: R.string.general.somethingWentWrong())
-//    }
-//
-//    public static func noInternet() -> UIAlertController {
-//        return ok(message: R.string.general.noInternet())
-//    }
-}
-
