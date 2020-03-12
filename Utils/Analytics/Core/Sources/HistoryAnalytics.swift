@@ -6,13 +6,13 @@ import Foundation
 import UtilsCore
 
 public final class HistoryAnalytics: Analytics {
-    public var events: [Event] = []
+    public var events: [AnalyticsEvent] = []
 
     public init(storage: Storage = UserDefaults.standard) {
         super.init(storage: storage, drains: [])
     }
 
-    public override func track(_ event: Event) {
+    public override func track(_ event: AnalyticsEvent) {
         events.append(event)
     }
 }

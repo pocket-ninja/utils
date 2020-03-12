@@ -5,7 +5,7 @@
 import Foundation
 import UtilsCore
 
-public enum Event: Hashable {
+public enum AnalyticsEvent: Hashable {
     public typealias Params = [String: String]
 
     public enum PurchaseType: String, Codable, Hashable {
@@ -29,7 +29,7 @@ public enum Event: Hashable {
     case error(error: AnalyticsError)
 }
 
-extension Event: OneShotable {
+extension AnalyticsEvent: OneShotable {
     var unique: Bool {
         switch self {
         case let .plain(_, _ , unique):

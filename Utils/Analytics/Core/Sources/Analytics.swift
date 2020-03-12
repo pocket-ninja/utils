@@ -13,7 +13,7 @@ public class Analytics: AnalyticsDrain {
         self.drain = CompositeAnalytics(drains: drains)
     }
 
-    public func track(_ event: Event) {
+    public func track(_ event: AnalyticsEvent) {
         guard isEnabled else {
             return
         }

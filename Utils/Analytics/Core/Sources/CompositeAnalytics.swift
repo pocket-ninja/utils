@@ -9,7 +9,7 @@ public final class CompositeAnalytics: AnalyticsDrain {
         self.drains = drains
     }
 
-    public func track(_ event: Event) {
+    public func track(_ event: AnalyticsEvent) {
         drains.forEach { $0.track(event) }
     }
 

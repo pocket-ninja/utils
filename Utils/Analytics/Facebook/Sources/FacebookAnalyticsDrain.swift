@@ -11,7 +11,7 @@ public final class FacebookAnalyticsDrain: AnalyticsDrain {
         self.tracksPurchases = tracksPurchases
     }
 
-    public func track(_ event: Event) {
+    public func track(_ event: AnalyticsEvent) {
         switch event {
         case let .plain(name, params, _):
             AppEvents.logEvent(

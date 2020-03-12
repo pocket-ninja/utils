@@ -9,8 +9,8 @@ import Analytics
 class HistoryAnalyticsTests: XCTestCase {
     func testAnalyticsCollectTrackedEvents() {
         let analytics = HistoryAnalytics()
-        analytics.track(Event.shot)
-        XCTAssertEqual(analytics.events.first, Event.shot)
+        analytics.track(.shot)
+        XCTAssertEqual(analytics.events.first, .shot)
     }
 
     func testAnalyticsDrainCastsToHistory() {

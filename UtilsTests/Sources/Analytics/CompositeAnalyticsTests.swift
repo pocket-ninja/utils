@@ -13,7 +13,7 @@ class CompositeAnalyticsTests: XCTestCase {
         let secondDrain = HistoryAnalytics()
         let analytics = CompositeAnalytics(drains: [firstDrain, secondDrain])
         
-        analytics.track(Event.shot)
+        analytics.track(.shot)
 
         XCTAssertFalse(firstDrain.events.isEmpty)
         XCTAssertFalse(secondDrain.events.isEmpty)

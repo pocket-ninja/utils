@@ -6,7 +6,7 @@ import Foundation
 import UtilsCore
 
 public protocol AnalyticsDrain {
-    func track(_ event: Event)
+    func track(_ event: AnalyticsEvent)
 }
 
 extension AnalyticsDrain {

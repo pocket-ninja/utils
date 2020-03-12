@@ -8,7 +8,7 @@ import UtilsCore
 public final class TraceAnalytics: AnalyticsDrain {
     public init() {}
 
-    public func track(_ event: Event) {
+    public func track(_ event: AnalyticsEvent) {
         trace("Analytics tracked event: \(event)")
     }
 }
