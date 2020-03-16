@@ -31,6 +31,12 @@ public class Analytics: AnalyticsDrain {
     private let drain: AnalyticsDrain
 }
 
+extension Analytics: ErrorTracker {
+    public func track(_ error: AnalyticsError) {
+        track(.error(error: error))
+    }
+}
+
 public extension AnalyticsDrain {
     var app: Analytics? {
         return self as? Analytics

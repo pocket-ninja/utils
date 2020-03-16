@@ -8,9 +8,3 @@ import UtilsCore
 public protocol AnalyticsDrain {
     func track(_ event: AnalyticsEvent)
 }
-
-public extension AnalyticsDrain {
-    func track(_ error: AnalyticsError) {
-        track(.error(error: error))
-    }
-}
