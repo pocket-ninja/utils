@@ -4,7 +4,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     typealias Job = () throws -> Void
 
     func onTrue(do job: Job) rethrows {
