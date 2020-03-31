@@ -54,7 +54,7 @@ open class Cacher<Item: Cacheable, Value> {
     private let generator: Generator
 }
 
-public protocol Cacheable: Hashable {
+public protocol Cacheable {
     var cacheId: AnyObject { get }
 }
 
