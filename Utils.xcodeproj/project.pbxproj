@@ -80,15 +80,8 @@
 		AC9DA50B2412CE1F00F034EE /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9DA50F2412CE3900F034EE /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 		AC9DA5102412CE3900F034EE /* UtilsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC9DA51D2412CE5200F034EE /* AnalyticsFacebookDrain.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA51B2412CE5200F034EE /* AnalyticsFacebookDrain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC9DA5202412CE5200F034EE /* AnalyticsFacebookDrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5192412CE5200F034EE /* AnalyticsFacebookDrain.framework */; };
-		AC9DA5212412CE5200F034EE /* AnalyticsFacebookDrain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5192412CE5200F034EE /* AnalyticsFacebookDrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC9DA5252412CE5800F034EE /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; };
-		AC9DA5262412CE5800F034EE /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC9DA52B2412CE5B00F034EE /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = AC9DA52A2412CE5B00F034EE /* FacebookCore */; };
 		AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */; };
 		AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */; };
-		AC9DA53C2412CF1000F034EE /* FacebookAnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */; };
 		AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48D2412CB5700F034EE /* Analytics.swift */; };
 		AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */; };
 		AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */; };
@@ -128,20 +121,6 @@
 			remoteGlobalIDString = AC9DA4BA2412CC1E00F034EE;
 			remoteInfo = UtilsCore;
 		};
-		AC9DA51E2412CE5200F034EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC9DA5182412CE5200F034EE;
-			remoteInfo = AnalyticsFacebookDrain;
-		};
-		AC9DA5272412CE5800F034EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC9DA5022412CE1F00F034EE;
-			remoteInfo = Analytics;
-		};
 		AC9DA5352412CECC00F034EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -160,7 +139,6 @@
 			files = (
 				AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */,
 				AC9DA50B2412CE1F00F034EE /* Analytics.framework in Embed Frameworks */,
-				AC9DA5212412CE5200F034EE /* AnalyticsFacebookDrain.framework in Embed Frameworks */,
 				AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -173,17 +151,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AC9DA5102412CE3900F034EE /* UtilsCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5292412CE5800F034EE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AC9DA5262412CE5800F034EE /* Analytics.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +236,6 @@
 		AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalytics.swift; sourceTree = "<group>"; };
 		AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsDispatcher.swift; sourceTree = "<group>"; };
 		AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceAnalytics.swift; sourceTree = "<group>"; };
-		AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAnalyticsDrain.swift; sourceTree = "<group>"; };
 		AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTests.swift; sourceTree = "<group>"; };
 		AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalyticsTests.swift; sourceTree = "<group>"; };
 		AC9DA4B12412CB6000F034EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -277,9 +243,6 @@
 		AC9DA5032412CE1F00F034EE /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DA5052412CE1F00F034EE /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		AC9DA5062412CE1F00F034EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9DA5192412CE5200F034EE /* AnalyticsFacebookDrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalyticsFacebookDrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9DA51B2412CE5200F034EE /* AnalyticsFacebookDrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsFacebookDrain.h; sourceTree = "<group>"; };
-		AC9DA51C2412CE5200F034EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9DA5302412CECC00F034EE /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -297,7 +260,6 @@
 			files = (
 				AC9DA4C22412CC1E00F034EE /* UtilsCore.framework in Frameworks */,
 				AC9DA50A2412CE1F00F034EE /* Analytics.framework in Frameworks */,
-				AC9DA5202412CE5200F034EE /* AnalyticsFacebookDrain.framework in Frameworks */,
 				AC2115872416287E00FCA866 /* Alert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,15 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9DA50F2412CE3900F034EE /* UtilsCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5162412CE5200F034EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA5252412CE5800F034EE /* Analytics.framework in Frameworks */,
-				AC9DA52B2412CE5B00F034EE /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +481,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AC768B8524448D33000772B0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DA48C2412CB5700F034EE /* Sources */,
+				AC9DA5042412CE1F00F034EE /* SupportingFiles */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		AC9DA4572412CACC00F034EE = {
 			isa = PBXGroup;
 			children = (
@@ -545,7 +507,6 @@
 				AC9DA4602412CACC00F034EE /* Demo.app */,
 				AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */,
 				AC9DA5032412CE1F00F034EE /* Analytics.framework */,
-				AC9DA5192412CE5200F034EE /* AnalyticsFacebookDrain.framework */,
 				AC9DA5302412CECC00F034EE /* UtilsTests.xctest */,
 				AC2115802416287E00FCA866 /* Alert.framework */,
 			);
@@ -630,19 +591,9 @@
 		AC9DA48A2412CB5700F034EE /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DA48B2412CB5700F034EE /* Core */,
-				AC9DA4952412CB5700F034EE /* Facebook */,
+				AC768B8524448D33000772B0 /* Core */,
 			);
 			path = Analytics;
-			sourceTree = "<group>";
-		};
-		AC9DA48B2412CB5700F034EE /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA48C2412CB5700F034EE /* Sources */,
-				AC9DA5042412CE1F00F034EE /* SupportingFiles */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		AC9DA48C2412CB5700F034EE /* Sources */ = {
@@ -656,23 +607,6 @@
 				AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */,
 				AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */,
 				AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		AC9DA4952412CB5700F034EE /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA4962412CB5700F034EE /* Sources */,
-				AC9DA51A2412CE5200F034EE /* SupportingFiles */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
-		AC9DA4962412CB5700F034EE /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA4972412CB5700F034EE /* FacebookAnalyticsDrain.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -720,15 +654,6 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		AC9DA51A2412CE5200F034EE /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA51B2412CE5200F034EE /* AnalyticsFacebookDrain.h */,
-				AC9DA51C2412CE5200F034EE /* Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -752,14 +677,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9DA5072412CE1F00F034EE /* Analytics.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5142412CE5200F034EE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA51D2412CE5200F034EE /* AnalyticsFacebookDrain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,7 +715,6 @@
 			dependencies = (
 				AC9DA4C12412CC1E00F034EE /* PBXTargetDependency */,
 				AC9DA5092412CE1F00F034EE /* PBXTargetDependency */,
-				AC9DA51F2412CE5200F034EE /* PBXTargetDependency */,
 				AC2115862416287E00FCA866 /* PBXTargetDependency */,
 			);
 			name = Demo;
@@ -842,29 +758,6 @@
 			name = Analytics;
 			productName = Analytics;
 			productReference = AC9DA5032412CE1F00F034EE /* Analytics.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AC9DA5182412CE5200F034EE /* AnalyticsFacebookDrain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC9DA5222412CE5200F034EE /* Build configuration list for PBXNativeTarget "AnalyticsFacebookDrain" */;
-			buildPhases = (
-				AC9DA5142412CE5200F034EE /* Headers */,
-				AC9DA5152412CE5200F034EE /* Sources */,
-				AC9DA5162412CE5200F034EE /* Frameworks */,
-				AC9DA5172412CE5200F034EE /* Resources */,
-				AC9DA5292412CE5800F034EE /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC9DA5282412CE5800F034EE /* PBXTargetDependency */,
-			);
-			name = AnalyticsFacebookDrain;
-			packageProductDependencies = (
-				AC9DA52A2412CE5B00F034EE /* FacebookCore */,
-			);
-			productName = AnalyticsFacebookDrain;
-			productReference = AC9DA5192412CE5200F034EE /* AnalyticsFacebookDrain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AC9DA52F2412CECC00F034EE /* UtilsTests */ = {
@@ -911,9 +804,6 @@
 					AC9DA5022412CE1F00F034EE = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					AC9DA5182412CE5200F034EE = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
 					AC9DA52F2412CECC00F034EE = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = AC9DA45F2412CACC00F034EE;
@@ -930,7 +820,6 @@
 			);
 			mainGroup = AC9DA4572412CACC00F034EE;
 			packageReferences = (
-				AC9DA4F02412CCF400F034EE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 				AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = AC9DA4612412CACC00F034EE /* Products */;
@@ -940,7 +829,6 @@
 				AC9DA45F2412CACC00F034EE /* Demo */,
 				AC9DA4BA2412CC1E00F034EE /* UtilsCore */,
 				AC9DA5022412CE1F00F034EE /* Analytics */,
-				AC9DA5182412CE5200F034EE /* AnalyticsFacebookDrain */,
 				AC9DA52F2412CECC00F034EE /* UtilsTests */,
 				AC21157F2416287E00FCA866 /* Alert */,
 			);
@@ -972,13 +860,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC9DA5012412CE1F00F034EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5172412CE5200F034EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1067,14 +948,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC9DA5152412CE5200F034EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA53C2412CF1000F034EE /* FacebookAnalyticsDrain.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC9DA52C2412CECC00F034EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1130,16 +1003,6 @@
 			isa = PBXTargetDependency;
 			target = AC9DA4BA2412CC1E00F034EE /* UtilsCore */;
 			targetProxy = AC9DA5112412CE3900F034EE /* PBXContainerItemProxy */;
-		};
-		AC9DA51F2412CE5200F034EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC9DA5182412CE5200F034EE /* AnalyticsFacebookDrain */;
-			targetProxy = AC9DA51E2412CE5200F034EE /* PBXContainerItemProxy */;
-		};
-		AC9DA5282412CE5800F034EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC9DA5022412CE1F00F034EE /* Analytics */;
-			targetProxy = AC9DA5272412CE5800F034EE /* PBXContainerItemProxy */;
 		};
 		AC9DA5362412CECC00F034EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1486,62 +1349,6 @@
 			};
 			name = Release;
 		};
-		AC9DA5232412CE5200F034EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Utils/Analytics/Facebook/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.AnalyticsFacebookDrain;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC9DA5242412CE5200F034EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Utils/Analytics/Facebook/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.AnalyticsFacebookDrain;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AC9DA5382412CECC00F034EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1632,15 +1439,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC9DA5222412CE5200F034EE /* Build configuration list for PBXNativeTarget "AnalyticsFacebookDrain" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC9DA5232412CE5200F034EE /* Debug */,
-				AC9DA5242412CE5200F034EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AC9DA5372412CECC00F034EE /* Build configuration list for PBXNativeTarget "UtilsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1661,14 +1459,6 @@
 				minimumVersion = 1.7.2;
 			};
 		};
-		AC9DA4F02412CCF400F034EE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1676,11 +1466,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
-		};
-		AC9DA52A2412CE5B00F034EE /* FacebookCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC9DA4F02412CCF400F034EE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

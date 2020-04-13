@@ -19,14 +19,7 @@ let package = Package(
         .library(
             name: "Analytics",
             targets: ["Analytics"]
-        ),
-        .library(
-            name: "AnalyticsFacebookDrain",
-            targets: ["AnalyticsFacebookDrain"]
         )
-    ],
-    dependencies: [
-         .package(url: "https://github.com/facebook/facebook-ios-sdk", from: "6.0.0")
     ],
     targets: [
         .target(
@@ -43,11 +36,6 @@ let package = Package(
             name: "Alert",
             dependencies: [],
             path: "Utils/Alert/Sources"
-        ),
-        .target(
-            name: "AnalyticsFacebookDrain",
-            dependencies: ["Analytics", "FacebookCore"],
-            path: "Utils/Analytics/Facebook/Sources"
         ),
         .testTarget(
             name: "UtilsTests",
