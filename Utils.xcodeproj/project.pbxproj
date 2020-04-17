@@ -596,6 +596,7 @@
 				AC9DA4822412CB5700F034EE /* Synchronize.swift */,
 				AC9DA4842412CB5700F034EE /* ErrorTracker.swift */,
 				AC2EB1B024142A260039FA85 /* Operators.swift */,
+				AC38FF782449D81D002BAD27 /* Builder.swift */,
 				AC9DA4852412CB5700F034EE /* Assertions.swift */,
 				AC9DA4862412CB5700F034EE /* Trace.swift */,
 			);
@@ -622,7 +623,6 @@
 		AC9DA48C2412CB5700F034EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AC38FF782449D81D002BAD27 /* Builder.swift */,
 				AC9DA48D2412CB5700F034EE /* Analytics.swift */,
 				AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */,
 				AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */,
