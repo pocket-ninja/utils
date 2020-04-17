@@ -23,5 +23,5 @@ public extension Withable {
     }
 }
 
-extension NSObject: Builder {}
-extension NSObject: Withable {}
+public extension NSObject: Builder {}
+public extension NSObject: Withable {}
