@@ -104,6 +104,15 @@ public extension CGSize {
 
         return width / height
     }
+    
+    var minSide: CGFloat {
+        return min(width, height)
+    }
+
+    var maxSide: CGFloat {
+        return max(width, height)
+    }
+
 
     static func - (l: CGSize, r: CGSize) -> CGSize {
         return CGSize(width: l.width - r.width, height: l.height - r.height)
@@ -174,6 +183,14 @@ public extension CGRect {
         return CGRect(origin: l.origin * by, size: l.size * by)
     }
 
+    var maxSide: CGFloat {
+        return size.maxSide
+    }
+
+    var minSide: CGFloat {
+        return size.minSide
+    }
+    
     var center: CGPoint {
         return CGPoint(x: midX, y: midY)
     }
@@ -185,6 +202,15 @@ public extension CGRect {
             CGPoint(x: maxX, y: maxY),
             CGPoint(x: maxX, y: minY)
         ]
+    }
+    
+    init(center: CGPoint, size: CGSize) {
+        self.init(
+            x: center.x - size.width / 2,
+            y: center.y - size.height / 2,
+            width: size.width,
+            height: size.height
+        )
     }
 
     init(size: CGSize) {

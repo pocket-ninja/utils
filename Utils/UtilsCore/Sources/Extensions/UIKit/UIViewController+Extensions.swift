@@ -22,6 +22,12 @@ public extension UIViewController {
     typealias LayoutCallback = (UIViewController, UIViewController) -> Void
     typealias LayoutAnimator = ViewControllerLayoutAnimator
 
+    var topPresentedViewController: UIViewController {
+        return presentedViewController.flatMap {
+            $0.topPresentedViewController
+        } ?? self
+    }
+    
     func add(child: UIViewController, withLayout layout: LayoutCallback? = nil) {
         add(child: child, in: view, withLayout: layout)
     }

@@ -131,6 +131,13 @@ class CGRectExtensionsTests: XCTestCase {
         XCTAssertEqual(CGRect(x: 10, y: 20, width: 30, height: 40).center, CGPoint(x: 25, y: 40))
     }
     
+    func testRectInitWithCenter() {
+        XCTAssertEqual(
+            CGRect(center: CGPoint(x: 10, y: 10), size: CGSize(width: 10, height: 10)),
+            CGRect(x: 5, y: 5, width: 10, height: 10)
+        )
+    }
+    
     func testCenteredIn() {
         let innerRect = CGRect(x: 0, y: 0, width: 50, height: 100)
         let outerRect = CGRect(x: 10, y: 15, width: 200, height: 300)

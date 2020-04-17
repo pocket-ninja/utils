@@ -35,7 +35,7 @@
 		AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */; };
 		AC2EB1572414257B0039FA85 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB155241425780039FA85 /* Application.swift */; };
 		AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */; };
-		AC2EB1A1241429A10039FA85 /* Geometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18F241429A10039FA85 /* Geometry+Extensions.swift */; };
+		AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */; };
 		AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */; };
 		AC2EB1A3241429A10039FA85 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB192241429A10039FA85 /* UIView+Extensions.swift */; };
 		AC2EB1A4241429A10039FA85 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB193241429A10039FA85 /* UIColor+Extensions.swift */; };
@@ -56,12 +56,20 @@
 		AC2EB21724142D700039FA85 /* UIColorExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB20E24142D700039FA85 /* UIColorExtensionsTests.swift */; };
 		AC2EB21824142D700039FA85 /* UIViewControllerExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB20F24142D700039FA85 /* UIViewControllerExtensionsTests.swift */; };
 		AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21024142D700039FA85 /* OptionalExtensionsTests.swift */; };
-		AC2EB21A24142D700039FA85 /* GeometryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21124142D700039FA85 /* GeometryExtensionsTests.swift */; };
+		AC2EB21A24142D700039FA85 /* CGGeometryExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21124142D700039FA85 /* CGGeometryExtensionsTests.swift */; };
 		AC2EB21B24142D700039FA85 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21224142D700039FA85 /* StringExtensionsTests.swift */; };
 		AC2EB21C24142D700039FA85 /* DataExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21324142D700039FA85 /* DataExtensionsTests.swift */; };
 		AC2EB21D24142D700039FA85 /* MathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21424142D700039FA85 /* MathExtensionsTests.swift */; };
 		AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */; };
 		AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21624142D700039FA85 /* CGAffineTransformExtensionsTests.swift */; };
+		AC38FF7A2449D820002BAD27 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF782449D81D002BAD27 /* Builder.swift */; };
+		AC38FF7C2449E565002BAD27 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF7B2449E565002BAD27 /* UIFont+Extensions.swift */; };
+		AC38FF7E2449E689002BAD27 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF7D2449E689002BAD27 /* DispatchQueue+Extensions.swift */; };
+		AC38FF802449E696002BAD27 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF7F2449E696002BAD27 /* URL+Extensions.swift */; };
+		AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */; };
+		AC38FF842449E838002BAD27 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */; };
+		AC38FF862449E8EF002BAD27 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF852449E8EF002BAD27 /* Time.swift */; };
+		AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF872449E98A002BAD27 /* TimeTests.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
 		AC9DA4992412CB5700F034EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */; };
@@ -187,7 +195,7 @@
 		AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounterTests.swift; sourceTree = "<group>"; };
 		AC2EB155241425780039FA85 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Extensions.swift"; sourceTree = "<group>"; };
-		AC2EB18F241429A10039FA85 /* Geometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geometry+Extensions.swift"; sourceTree = "<group>"; };
+		AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB192241429A10039FA85 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB193241429A10039FA85 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -208,12 +216,20 @@
 		AC2EB20E24142D700039FA85 /* UIColorExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB20F24142D700039FA85 /* UIViewControllerExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21024142D700039FA85 /* OptionalExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExtensionsTests.swift; sourceTree = "<group>"; };
-		AC2EB21124142D700039FA85 /* GeometryExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryExtensionsTests.swift; sourceTree = "<group>"; };
+		AC2EB21124142D700039FA85 /* CGGeometryExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGGeometryExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21224142D700039FA85 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21324142D700039FA85 /* DataExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21424142D700039FA85 /* MathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtensionsTests.swift; sourceTree = "<group>"; };
 		AC2EB21624142D700039FA85 /* CGAffineTransformExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransformExtensionsTests.swift; sourceTree = "<group>"; };
+		AC38FF782449D81D002BAD27 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		AC38FF7B2449E565002BAD27 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		AC38FF7D2449E689002BAD27 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		AC38FF7F2449E696002BAD27 /* URL+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		AC38FF852449E8EF002BAD27 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Time.swift; path = ../Time.swift; sourceTree = "<group>"; };
+		AC38FF872449E98A002BAD27 /* TimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		AC9DA4602412CACC00F034EE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DA47A2412CB5700F034EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -337,6 +353,7 @@
 				AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */,
 				AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */,
 				AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */,
+				AC38FF872449E98A002BAD27 /* TimeTests.swift */,
 				AC2EB148241423B20039FA85 /* CacherTests.swift */,
 				AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */,
 				AC2EB145241423B20039FA85 /* QueueTests.swift */,
@@ -377,6 +394,7 @@
 		AC2EB13024141CD60039FA85 /* DataStructs */ = {
 			isa = PBXGroup;
 			children = (
+				AC38FF852449E8EF002BAD27 /* Time.swift */,
 				AC2EB13424141E600039FA85 /* Cacher.swift */,
 				AC9DA4812412CB5700F034EE /* Storage.swift */,
 				AC2EB12124141A7F0039FA85 /* Queue.swift */,
@@ -415,7 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */,
-				AC2EB18F241429A10039FA85 /* Geometry+Extensions.swift */,
+				AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -423,6 +441,8 @@
 		AC2EB190241429A10039FA85 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */,
+				AC38FF7B2449E565002BAD27 /* UIFont+Extensions.swift */,
 				AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */,
 				AC2EB192241429A10039FA85 /* UIView+Extensions.swift */,
 				AC2EB193241429A10039FA85 /* UIColor+Extensions.swift */,
@@ -444,6 +464,9 @@
 				AC2EB19D241429A10039FA85 /* Optional+Extensions.swift */,
 				AC2EB19E241429A10039FA85 /* Data+Extensions.swift */,
 				AC2EB19F241429A10039FA85 /* Collection+Extensions.swift */,
+				AC38FF7D2449E689002BAD27 /* DispatchQueue+Extensions.swift */,
+				AC38FF7F2449E696002BAD27 /* URL+Extensions.swift */,
+				AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -471,7 +494,7 @@
 				AC2EB20E24142D700039FA85 /* UIColorExtensionsTests.swift */,
 				AC2EB20F24142D700039FA85 /* UIViewControllerExtensionsTests.swift */,
 				AC2EB21024142D700039FA85 /* OptionalExtensionsTests.swift */,
-				AC2EB21124142D700039FA85 /* GeometryExtensionsTests.swift */,
+				AC2EB21124142D700039FA85 /* CGGeometryExtensionsTests.swift */,
 				AC2EB21224142D700039FA85 /* StringExtensionsTests.swift */,
 				AC2EB21324142D700039FA85 /* DataExtensionsTests.swift */,
 				AC2EB21424142D700039FA85 /* MathExtensionsTests.swift */,
@@ -516,8 +539,8 @@
 		AC9DA4772412CB5700F034EE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AC2115812416287E00FCA866 /* Alert */,
 				AC9DA47F2412CB5700F034EE /* UtilsCore */,
+				AC2115812416287E00FCA866 /* Alert */,
 				AC9DA48A2412CB5700F034EE /* Analytics */,
 				AC9DA4782412CB5700F034EE /* Demo */,
 			);
@@ -599,6 +622,7 @@
 		AC9DA48C2412CB5700F034EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AC38FF782449D81D002BAD27 /* Builder.swift */,
 				AC9DA48D2412CB5700F034EE /* Analytics.swift */,
 				AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */,
 				AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */,
@@ -897,15 +921,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC38FF842449E838002BAD27 /* UIImageView+Extensions.swift in Sources */,
+				AC38FF802449E696002BAD27 /* URL+Extensions.swift in Sources */,
 				AC2EB1B124142A260039FA85 /* Operators.swift in Sources */,
 				AC2EB1B424142B320039FA85 /* Percent.swift in Sources */,
 				AC2EB1A6241429A10039FA85 /* UICollectionView+Extensions.swift in Sources */,
 				AC2EB1AB241429A10039FA85 /* Codable+Extensions.swift in Sources */,
 				AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */,
 				AC2EB1A8241429A10039FA85 /* String+Extensions.swift in Sources */,
-				AC2EB1A1241429A10039FA85 /* Geometry+Extensions.swift in Sources */,
+				AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */,
+				AC38FF7A2449D820002BAD27 /* Builder.swift in Sources */,
 				AC2EB1AA241429A10039FA85 /* NSAttributedString+Extensions.swift in Sources */,
 				AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */,
+				AC38FF862449E8EF002BAD27 /* Time.swift in Sources */,
 				AC2EB1A7241429A10039FA85 /* Numeric+Extensions.swift in Sources */,
 				AC9DA4C92412CC6F00F034EE /* Synchronize.swift in Sources */,
 				AC9DA4CA2412CC6F00F034EE /* Environment.swift in Sources */,
@@ -916,11 +944,14 @@
 				AC2EB1AF241429A10039FA85 /* Collection+Extensions.swift in Sources */,
 				AC2EB1A3241429A10039FA85 /* UIView+Extensions.swift in Sources */,
 				AC9DA4C82412CC6F00F034EE /* Storage.swift in Sources */,
+				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
 				AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */,
+				AC38FF7E2449E689002BAD27 /* DispatchQueue+Extensions.swift in Sources */,
 				AC2EB12024141A700039FA85 /* Target.swift in Sources */,
 				AC2EB1A9241429A10039FA85 /* Bool+Extensions.swift in Sources */,
 				AC2EB1AD241429A10039FA85 /* Optional+Extensions.swift in Sources */,
 				AC2EB1572414257B0039FA85 /* Application.swift in Sources */,
+				AC38FF7C2449E565002BAD27 /* UIFont+Extensions.swift in Sources */,
 				AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */,
 				AC9DA4CC2412CC6F00F034EE /* Assertions.swift in Sources */,
 				AC2EB13524141E600039FA85 /* Cacher.swift in Sources */,
@@ -954,7 +985,7 @@
 			files = (
 				AC2EB21C24142D700039FA85 /* DataExtensionsTests.swift in Sources */,
 				AC2EB1B724142C050039FA85 /* PercentTests.swift in Sources */,
-				AC2EB21A24142D700039FA85 /* GeometryExtensionsTests.swift in Sources */,
+				AC2EB21A24142D700039FA85 /* CGGeometryExtensionsTests.swift in Sources */,
 				AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */,
 				AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */,
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
@@ -964,6 +995,7 @@
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
+				AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
 				AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */,
