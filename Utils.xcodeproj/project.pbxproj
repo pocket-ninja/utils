@@ -72,6 +72,8 @@
 		AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF872449E98A002BAD27 /* TimeTests.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
+		AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CD9244B0EE10000CD24 /* Matrix.swift */; };
+		AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CDB244B10280000CD24 /* MatrixTests.swift */; };
 		AC9DA4992412CB5700F034EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */; };
 		AC9DA49A2412CB5700F034EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47D2412CB5700F034EE /* Assets.xcassets */; };
 		AC9DA4B52412CBEC00F034EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA47A2412CB5700F034EE /* AppDelegate.swift */; };
@@ -231,6 +233,8 @@
 		AC38FF852449E8EF002BAD27 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Time.swift; path = ../Time.swift; sourceTree = "<group>"; };
 		AC38FF872449E98A002BAD27 /* TimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
+		AC6C8CD9244B0EE10000CD24 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		AC6C8CDB244B10280000CD24 /* MatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
 		AC9DA4602412CACC00F034EE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DA47A2412CB5700F034EE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -359,6 +363,7 @@
 				AC2EB145241423B20039FA85 /* QueueTests.swift */,
 				AC2EB147241423B20039FA85 /* ReusableTests.swift */,
 				AC2EB144241423B20039FA85 /* TargetTests.swift */,
+				AC6C8CDB244B10280000CD24 /* MatrixTests.swift */,
 			);
 			path = UtilsCore;
 			sourceTree = "<group>";
@@ -394,6 +399,8 @@
 		AC2EB13024141CD60039FA85 /* DataStructs */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C8CD9244B0EE10000CD24 /* Matrix.swift */,
+				AC2EB1B324142B320039FA85 /* Percent.swift */,
 				AC38FF852449E8EF002BAD27 /* Time.swift */,
 				AC2EB13424141E600039FA85 /* Cacher.swift */,
 				AC9DA4812412CB5700F034EE /* Storage.swift */,
@@ -469,14 +476,6 @@
 				AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		AC2EB1B224142B220039FA85 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-				AC2EB1B324142B320039FA85 /* Percent.swift */,
-			);
-			path = Math;
 			sourceTree = "<group>";
 		};
 		AC2EB1B524142BFB0039FA85 /* Math */ = {
@@ -587,7 +586,6 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB18C241429A10039FA85 /* Extensions */,
-				AC2EB1B224142B220039FA85 /* Math */,
 				AC2EB13324141DCF0039FA85 /* Services */,
 				AC2EB13124141D010039FA85 /* Interface */,
 				AC2EB13024141CD60039FA85 /* DataStructs */,
@@ -944,6 +942,7 @@
 				AC2EB1AF241429A10039FA85 /* Collection+Extensions.swift in Sources */,
 				AC2EB1A3241429A10039FA85 /* UIView+Extensions.swift in Sources */,
 				AC9DA4C82412CC6F00F034EE /* Storage.swift in Sources */,
+				AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */,
 				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
 				AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */,
 				AC38FF7E2449E689002BAD27 /* DispatchQueue+Extensions.swift in Sources */,
@@ -991,6 +990,7 @@
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
 				AC2EB10624140C6E0039FA85 /* AnalyticsEvent+Stub.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
+				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
