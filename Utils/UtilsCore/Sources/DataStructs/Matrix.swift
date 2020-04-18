@@ -51,9 +51,11 @@ public struct Matrix<T> {
 
     public subscript(row: Int, column: Int) -> T {
         get {
+            precondition(isValid(row: row, column: column))
             return grid[(row * columns) + column]
         }
         set {
+            precondition(isValid(row: row, column: column))
             grid[(row * columns) + column] = newValue
         }
     }
@@ -86,16 +88,12 @@ public extension Matrix {
         return grid[safe: (row * columns) + column]
     }
 
-    subscript(safe row: Int) -> [T]? {
-        return (0 ..< rows).contains(row) ? self[row] : nil
-    }
-
     subscript(row row: Int) -> [T] {
         return self[row]
     }
 
     subscript(safeRow row: Int) -> [T]? {
-        return self[safe: row]
+        return (0 ..< rows).contains(row) ? self[row] : nil
     }
 
     subscript(column column: Int) -> [T] {

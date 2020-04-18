@@ -106,12 +106,9 @@ class MatrixTests: XCTestCase {
         array.indices.forEach { idx in
             XCTAssertEqual(array[idx], m[idx])
             XCTAssertEqual(array[idx], m[row: idx])
-            XCTAssertNotNil(m[safe: idx])
             XCTAssertNotNil(m[safeRow: idx])
         }
 
-        XCTAssertNil(m[safe: 4])
-        XCTAssertNil(m[safe: -1])
         XCTAssertNil(m[safeRow: 4])
         XCTAssertNil(m[safeRow: -1])
     }
