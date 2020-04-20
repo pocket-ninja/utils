@@ -17,11 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard Environment.isTests == false else {
             return false
         }
-        true.onTrue {
-            
-        }
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = DemoViewController()
         window?.makeKeyAndVisible()
         
         return true
