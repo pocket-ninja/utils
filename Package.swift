@@ -17,6 +17,10 @@ let package = Package(
             targets: ["Alert"]
         ),
         .library(
+            name: "Sharing",
+            targets: ["Sharing"]
+        ),
+        .library(
             name: "Analytics",
             targets: ["Analytics"]
         )
@@ -36,6 +40,11 @@ let package = Package(
             name: "Alert",
             dependencies: [],
             path: "Utils/Alert/Sources"
+        ),
+        .target(
+            name: "Sharing",
+            dependencies: [],
+            path: "Utils/Sharing/Sources"
         ),
         .testTarget(
             name: "UtilsTests",
