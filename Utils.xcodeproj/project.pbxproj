@@ -41,7 +41,7 @@
 		AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB147241423B20039FA85 /* ReusableTests.swift */; };
 		AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB148241423B20039FA85 /* CacherTests.swift */; };
 		AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */; };
-		AC2EB1572414257B0039FA85 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB155241425780039FA85 /* Application.swift */; };
+		AC2EB1572414257B0039FA85 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB155241425780039FA85 /* UIApplication+Extensions.swift */; };
 		AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */; };
 		AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */; };
 		AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */; };
@@ -220,7 +220,7 @@
 		AC2EB147241423B20039FA85 /* ReusableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
 		AC2EB148241423B20039FA85 /* CacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacherTests.swift; sourceTree = "<group>"; };
 		AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounterTests.swift; sourceTree = "<group>"; };
-		AC2EB155241425780039FA85 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		AC2EB155241425780039FA85 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -459,7 +459,6 @@
 			isa = PBXGroup;
 			children = (
 				ACF4B0E8244DA898009D0CB3 /* Directory.swift */,
-				AC2EB155241425780039FA85 /* Application.swift */,
 				AC2EB11F24141A700039FA85 /* Target.swift */,
 				AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */,
 				AC2EB12324141A930039FA85 /* PersistentCounter.swift */,
@@ -520,6 +519,7 @@
 		AC2EB190241429A10039FA85 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				AC2EB155241425780039FA85 /* UIApplication+Extensions.swift */,
 				AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */,
 				AC38FF7B2449E565002BAD27 /* UIFont+Extensions.swift */,
 				AC2EB191241429A10039FA85 /* UIViewController+Extensions.swift */,
@@ -1077,7 +1077,7 @@
 				AC2EB12024141A700039FA85 /* Target.swift in Sources */,
 				AC2EB1A9241429A10039FA85 /* Bool+Extensions.swift in Sources */,
 				AC2EB1AD241429A10039FA85 /* Optional+Extensions.swift in Sources */,
-				AC2EB1572414257B0039FA85 /* Application.swift in Sources */,
+				AC2EB1572414257B0039FA85 /* UIApplication+Extensions.swift in Sources */,
 				AC38FF7C2449E565002BAD27 /* UIFont+Extensions.swift in Sources */,
 				AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */,
 				AC9DA4CC2412CC6F00F034EE /* Assertions.swift in Sources */,
