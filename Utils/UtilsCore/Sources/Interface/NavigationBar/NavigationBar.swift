@@ -154,7 +154,7 @@ open class NavigationBar: UIView {
                 titleView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: centerYOffset),
                 titleView.centerXAnchor.constraint(equalTo: centerXAnchor).set(\.priority, to: .defaultLow),
                 titleView.leftAnchor.constraint(greaterThanOrEqualTo: leftAnchor, constant: contentInsets.left),
-                titleView.rightAnchor.constraint(lessThanOrEqualTo: leftAnchor, constant: -contentInsets.right)
+                titleView.rightAnchor.constraint(lessThanOrEqualTo: rightAnchor, constant: -contentInsets.right)
             ])
         }
 
