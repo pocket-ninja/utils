@@ -108,6 +108,12 @@
 		AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */; };
 		AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */; };
 		AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */; };
+		ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21582452FADE00C33CC2 /* NavigationBar.swift */; };
+		ACAF215E2452FADE00C33CC2 /* NavigationBarViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */; };
+		ACAF215F2452FADE00C33CC2 /* NavigationBarLabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */; };
+		ACAF21602452FADE00C33CC2 /* NavigationBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF215B2452FADE00C33CC2 /* NavigationBarButtonItem.swift */; };
+		ACAF21612452FADE00C33CC2 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */; };
+		ACAF21632452FB2F00C33CC2 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */; };
 		ACC409112451AFBD006D8E6A /* LayerWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */; };
 		ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
 /* End PBXBuildFile section */
@@ -289,6 +295,12 @@
 		AC9DA5052412CE1F00F034EE /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		AC9DA5062412CE1F00F034EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9DA5302412CECC00F034EE /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACAF21582452FADE00C33CC2 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarViewItem.swift; sourceTree = "<group>"; };
+		ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarLabelItem.swift; sourceTree = "<group>"; };
+		ACAF215B2452FADE00C33CC2 /* NavigationBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarButtonItem.swift; sourceTree = "<group>"; };
+		ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
+		ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
 		ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerWrapperView.swift; sourceTree = "<group>"; };
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -483,8 +495,10 @@
 		AC2EB13124141D010039FA85 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				ACAF21572452FADE00C33CC2 /* NavigationBar */,
 				AC2EB12D24141BC30039FA85 /* Reusable.swift */,
 				ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */,
+				ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -750,6 +764,18 @@
 				AC9DA5062412CE1F00F034EE /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ACAF21572452FADE00C33CC2 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF21582452FADE00C33CC2 /* NavigationBar.swift */,
+				ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */,
+				ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */,
+				ACAF215B2452FADE00C33CC2 /* NavigationBarButtonItem.swift */,
+				ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1059,6 +1085,7 @@
 				AC38FF7A2449D820002BAD27 /* Builder.swift in Sources */,
 				AC2EB1AA241429A10039FA85 /* NSAttributedString+Extensions.swift in Sources */,
 				AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */,
+				ACAF21612452FADE00C33CC2 /* NavigationItem.swift in Sources */,
 				AC38FF862449E8EF002BAD27 /* Time.swift in Sources */,
 				AC2EB1A7241429A10039FA85 /* Numeric+Extensions.swift in Sources */,
 				AC9DA4C92412CC6F00F034EE /* Synchronize.swift in Sources */,
@@ -1068,11 +1095,16 @@
 				AC2EB13E24141EF90039FA85 /* ValueWrapper.swift in Sources */,
 				AC2EB1AE241429A10039FA85 /* Data+Extensions.swift in Sources */,
 				AC2EB1AF241429A10039FA85 /* Collection+Extensions.swift in Sources */,
+				ACAF215E2452FADE00C33CC2 /* NavigationBarViewItem.swift in Sources */,
+				ACAF21602452FADE00C33CC2 /* NavigationBarButtonItem.swift in Sources */,
 				AC2EB1A3241429A10039FA85 /* UIView+Extensions.swift in Sources */,
 				AC9DA4C82412CC6F00F034EE /* Storage.swift in Sources */,
 				AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */,
 				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
+				ACAF21632452FB2F00C33CC2 /* ExtendedButton.swift in Sources */,
+				ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */,
 				AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */,
+				ACAF215F2452FADE00C33CC2 /* NavigationBarLabelItem.swift in Sources */,
 				AC38FF7E2449E689002BAD27 /* DispatchQueue+Extensions.swift in Sources */,
 				AC2EB12024141A700039FA85 /* Target.swift in Sources */,
 				AC2EB1A9241429A10039FA85 /* Bool+Extensions.swift in Sources */,
