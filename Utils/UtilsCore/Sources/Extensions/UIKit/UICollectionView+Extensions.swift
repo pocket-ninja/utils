@@ -16,6 +16,14 @@ public extension UICollectionView {
         register(cellClass, forCellWithReuseIdentifier: Cell.reusableIdentifier)
     }
 
+    func registerHeader<View: UICollectionReusableView>(_ viewClass: View.Type) {
+        register(
+            viewClass,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: View.reusableIdentifier
+        )
+    }
+    
     func registerFooter<View: UICollectionReusableView>(_ viewClass: View.Type) {
         register(
             viewClass,
