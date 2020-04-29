@@ -10,6 +10,8 @@ public enum AnalyticsEvent: Hashable {
 
     public enum PurchaseType: String, Codable, Hashable {
         case subscription
+        case consumable
+        case nonConsumable
     }
     
     case plain(
