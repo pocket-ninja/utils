@@ -115,6 +115,17 @@
 		ACAF21612452FADE00C33CC2 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */; };
 		ACAF21632452FB2F00C33CC2 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */; };
 		ACC409112451AFBD006D8E6A /* LayerWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */; };
+		ACD63647246ABE950042483E /* LineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63645246ABE950042483E /* LineSegment.swift */; };
+		ACD63648246ABE950042483E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63646246ABE950042483E /* Line.swift */; };
+		ACD6364A246ABF190042483E /* CGPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63649246ABF190042483E /* CGPath+Extensions.swift */; };
+		ACD6364D246ABF660042483E /* PathPolygonizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6364B246ABF660042483E /* PathPolygonizer.swift */; };
+		ACD6364E246ABF660042483E /* PathCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6364C246ABF660042483E /* PathCommand.swift */; };
+		ACD63653246AC0D80042483E /* LineSegmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63651246AC0D70042483E /* LineSegmentTests.swift */; };
+		ACD63654246AC0D80042483E /* LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63652246AC0D80042483E /* LineTests.swift */; };
+		ACD63657246AC1280042483E /* CGPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63655246AC1280042483E /* CGPathExtensionsTests.swift */; };
+		ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63656246AC1280042483E /* CGPathPolygonizationTests.swift */; };
+		ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63659246AC21E0042483E /* ShapeContainer.swift */; };
+		ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6365B246AC2A50042483E /* CGPath+Stub.swift */; };
 		ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +313,17 @@
 		ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItem.swift; sourceTree = "<group>"; };
 		ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
 		ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerWrapperView.swift; sourceTree = "<group>"; };
+		ACD63645246ABE950042483E /* LineSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegment.swift; sourceTree = "<group>"; };
+		ACD63646246ABE950042483E /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		ACD63649246ABF190042483E /* CGPath+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPath+Extensions.swift"; sourceTree = "<group>"; };
+		ACD6364B246ABF660042483E /* PathPolygonizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathPolygonizer.swift; sourceTree = "<group>"; };
+		ACD6364C246ABF660042483E /* PathCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathCommand.swift; sourceTree = "<group>"; };
+		ACD63651246AC0D70042483E /* LineSegmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegmentTests.swift; sourceTree = "<group>"; };
+		ACD63652246AC0D80042483E /* LineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineTests.swift; sourceTree = "<group>"; };
+		ACD63655246AC1280042483E /* CGPathExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPathExtensionsTests.swift; sourceTree = "<group>"; };
+		ACD63656246AC1280042483E /* CGPathPolygonizationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPathPolygonizationTests.swift; sourceTree = "<group>"; };
+		ACD63659246AC21E0042483E /* ShapeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContainer.swift; sourceTree = "<group>"; };
+		ACD6365B246AC2A50042483E /* CGPath+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Stub.swift"; sourceTree = "<group>"; };
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -454,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB10824140CBB0039FA85 /* StorageMock.swift */,
+				ACD6365B246AC2A50042483E /* CGPath+Stub.swift */,
 			);
 			path = Stub;
 			sourceTree = "<group>";
@@ -463,6 +486,7 @@
 			children = (
 				AC2EB10924140CBB0039FA85 /* TestBundle.swift */,
 				AC2EB11B241417820039FA85 /* XCTestCase.swift */,
+				ACD63659246AC21E0042483E /* ShapeContainer.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -524,6 +548,7 @@
 		AC2EB18D241429A10039FA85 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				ACD63649246ABF190042483E /* CGPath+Extensions.swift */,
 				AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */,
 				AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */,
 			);
@@ -567,6 +592,8 @@
 		AC2EB1B524142BFB0039FA85 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				ACD63651246AC0D70042483E /* LineSegmentTests.swift */,
+				ACD63652246AC0D80042483E /* LineTests.swift */,
 				AC2EB1B624142C050039FA85 /* PercentTests.swift */,
 			);
 			path = Math;
@@ -581,6 +608,8 @@
 				AC2EB21024142D700039FA85 /* OptionalExtensionsTests.swift */,
 				AC2EB21124142D700039FA85 /* CGGeometryExtensionsTests.swift */,
 				AC2EB21224142D700039FA85 /* StringExtensionsTests.swift */,
+				ACD63656246AC1280042483E /* CGPathPolygonizationTests.swift */,
+				ACD63655246AC1280042483E /* CGPathExtensionsTests.swift */,
 				AC2EB21324142D700039FA85 /* DataExtensionsTests.swift */,
 				AC2EB21424142D700039FA85 /* MathExtensionsTests.swift */,
 				AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */,
@@ -675,6 +704,7 @@
 		AC9DA4802412CB5700F034EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				ACD63644246ABE840042483E /* Math */,
 				AC2EB18C241429A10039FA85 /* Extensions */,
 				AC2EB13324141DCF0039FA85 /* Services */,
 				AC2EB13124141D010039FA85 /* Interface */,
@@ -776,6 +806,17 @@
 				ACAF215C2452FADE00C33CC2 /* NavigationItem.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		ACD63644246ABE840042483E /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				ACD6364C246ABF660042483E /* PathCommand.swift */,
+				ACD6364B246ABF660042483E /* PathPolygonizer.swift */,
+				ACD63646246ABE950042483E /* Line.swift */,
+				ACD63645246ABE950042483E /* LineSegment.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1080,13 +1121,17 @@
 				AC2EB1A6241429A10039FA85 /* UICollectionView+Extensions.swift in Sources */,
 				AC2EB1AB241429A10039FA85 /* Codable+Extensions.swift in Sources */,
 				AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */,
+				ACD6364D246ABF660042483E /* PathPolygonizer.swift in Sources */,
 				AC2EB1A8241429A10039FA85 /* String+Extensions.swift in Sources */,
+				ACD6364A246ABF190042483E /* CGPath+Extensions.swift in Sources */,
 				AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */,
 				AC38FF7A2449D820002BAD27 /* Builder.swift in Sources */,
 				AC2EB1AA241429A10039FA85 /* NSAttributedString+Extensions.swift in Sources */,
 				AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */,
 				ACAF21612452FADE00C33CC2 /* NavigationItem.swift in Sources */,
 				AC38FF862449E8EF002BAD27 /* Time.swift in Sources */,
+				ACD6364E246ABF660042483E /* PathCommand.swift in Sources */,
+				ACD63647246ABE950042483E /* LineSegment.swift in Sources */,
 				AC2EB1A7241429A10039FA85 /* Numeric+Extensions.swift in Sources */,
 				AC9DA4C92412CC6F00F034EE /* Synchronize.swift in Sources */,
 				AC9DA4CA2412CC6F00F034EE /* Environment.swift in Sources */,
@@ -1101,6 +1146,7 @@
 				AC9DA4C82412CC6F00F034EE /* Storage.swift in Sources */,
 				AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */,
 				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
+				ACD63648246ABE950042483E /* Line.swift in Sources */,
 				ACAF21632452FB2F00C33CC2 /* ExtendedButton.swift in Sources */,
 				ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */,
 				AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */,
@@ -1153,9 +1199,14 @@
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
 				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
+				ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */,
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
+				ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */,
+				ACD63654246AC0D80042483E /* LineTests.swift in Sources */,
+				ACD63653246AC0D80042483E /* LineSegmentTests.swift in Sources */,
+				ACD63657246AC1280042483E /* CGPathExtensionsTests.swift in Sources */,
 				AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
@@ -1167,6 +1218,7 @@
 				AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */,
 				AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */,
 				AC2EB21B24142D700039FA85 /* StringExtensionsTests.swift in Sources */,
+				ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */,
 				AC2EB14E241423B20039FA85 /* QueueTests.swift in Sources */,
 				AC2EB21D24142D700039FA85 /* MathExtensionsTests.swift in Sources */,
 				AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */,
