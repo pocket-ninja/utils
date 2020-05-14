@@ -6,34 +6,6 @@ import UIKit
 import UtilsCore
 
 public extension Gradient {
-        #warning("FIX")
-//    init(linear: Macaw.LinearGradient) {
-//        let type = GradientType.linear(
-//            start: CGPoint(x: linear.x1, y: linear.y1),
-//            end: CGPoint(x: linear.x2, y: linear.y2)
-//        )
-//
-//        self = Gradient(
-//            type: type,
-//            stops: linear.stops.map(GradientStop.init),
-//            units: linear.userSpace ? .userSpace : .boundingBox
-//        )
-//    }
-//
-//    init(radial: Macaw.RadialGradient) {
-//        let type = GradientType.radial(
-//            center: CGPoint(x: radial.cx, y: radial.cy),
-//            focal: CGPoint(x: radial.fx, y: radial.fy),
-//            radius: CGFloat(radial.r)
-//        )
-//
-//        self = Gradient(
-//            type: type,
-//            stops: radial.stops.map(GradientStop.init),
-//            units: radial.userSpace ? .userSpace : .boundingBox
-//        )
-//    }
-
     func scaled(by scale: CGFloat) -> Gradient {
         switch units {
         case .userSpace:
@@ -51,13 +23,6 @@ public extension Gradient {
             return self
         }
     }
-}
-
-public extension GradientStop {
-        #warning("FIX")
-//    init(with stop: Macaw.Stop) {
-//        self.init(offset: CGFloat(stop.offset), color: stop.color.toCG())
-//    }
 }
 
 public extension GradientUnits {

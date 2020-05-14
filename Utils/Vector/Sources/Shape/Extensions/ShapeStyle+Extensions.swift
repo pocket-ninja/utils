@@ -19,14 +19,6 @@ public extension ShapeStyle {
         }
     }
 
-        #warning("FIX")
-//    init(from shape: Macaw.Shape) {
-//        self.init(
-//            fill: ShapeFill(with: shape.fill),
-//            stroke: ShapeStroke(with: shape.stroke)
-//        )
-//    }
-
     func scaled(by scale: CGFloat) -> ShapeStyle {
         return ShapeStyle(
             fill: fill.scaled(by: scale),
@@ -52,16 +44,6 @@ public extension ShapeStroke {
         )
     }
 
-        #warning("FIX")
-//    init(with stroke: Macaw.Stroke?) {
-//        self.init(
-//            lineJoin: stroke.flatMap { $0.join.toCG() } ?? .round,
-//            lineCap: stroke.flatMap { $0.cap.toCG() } ?? .round,
-//            lineWidth: stroke.flatMap { CGFloat($0.width) } ?? 0,
-//            color: stroke.flatMap { ($0.fill as? Color)?.toCG() } ?? UIColor.clear.cgColor
-//        )
-//    }
-
     func scaled(by scale: CGFloat) -> ShapeStroke {
         return ShapeStroke(
             lineJoin: lineJoin,
@@ -73,20 +55,6 @@ public extension ShapeStroke {
 }
 
 public extension ShapeFill {
-        #warning("FIX")
-//    init(with fill: Macaw.Fill?) {
-//        switch fill {
-//        case let c as Macaw.Color:
-//            self = .color(c.toCG())
-//        case let g as RadialGradient:
-//            self = .gradient(Gradient(radial: g))
-//        case let g as Macaw.LinearGradient:
-//            self = .gradient(Gradient(linear: g))
-//        default:
-//            self = .color(UIColor.clear.cgColor)
-//        }
-//    }
-
     var color: CGColor? {
         switch self {
         case let .color(color): return color

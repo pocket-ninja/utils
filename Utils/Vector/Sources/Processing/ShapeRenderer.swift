@@ -6,6 +6,20 @@ import UIKit
 import UtilsCore
 
 public class ShapeRenderer {
+    public struct Format {
+        public var fills: Bool
+        public var strokes: Bool
+        
+        public init(fills: Bool = true, strokes: Bool = true) {
+            self.fills = fills
+            self.strokes = strokes
+        }
+    }
+    
+    public init(format: Format = Format()) {
+        self.format = format
+    }
+    
     public func render(_ shape: Shape) -> CGImage? {
         let size = shape.bounds.size * UIScreen.main.scale
         return render(shape, fitting: size)
@@ -39,21 +53,23 @@ public class ShapeRenderer {
     public func render(_ shape: Shape, in ctx: CGContext) {
         ctx.saveGState()
         ctx.setStyle(shape.style)
-
-        defer {
-            ctx.restoreGState()
-        }
-
-        ctx.setPath(shape.path)
-        ctx.drawPath(using: .stroke)
+        defer { ctx.restoreGState() }
         
-        switch shape.style.fill {
-        case let .gradient(g):
-            GradientRenderer.render(g, in: ctx)
-        case .color:
-            ctx.drawPath(using: .fill)
+        if format.fills {
+            ctx.setPath(shape.path)
+            switch shape.style.fill {
+            case let .gradient(g): GradientRenderer.render(g, in: ctx)
+            case .color: ctx.drawPath(using: .fill)
+            }
+        }
+        
+        if format.strokes {
+            ctx.setPath(shape.path)
+            ctx.drawPath(using: .stroke)
         }
     }
+    
+    private let format: Format
 }
 
 private extension CGContext {

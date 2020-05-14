@@ -27,6 +27,16 @@ let package = Package(
         .library(
             name: "Vector",
             targets: ["Vector"]
+        ),
+        .library(
+            name: "MacawAdditions",
+            targets: ["MacawAdditions"]
+        ),
+    ],
+    dependencies: [
+        .package(
+            url: "https://github.com/sroik/Macaw.git",
+            .branch("master")
         )
     ],
     targets: [
@@ -55,9 +65,14 @@ let package = Package(
             dependencies: ["UtilsCore"],
             path: "Utils/Vector/Sources"
         ),
+        .target(
+            name: "MacawAdditions",
+            dependencies: ["Vector", "Macaw"],
+            path: "Utils/MacawAdditions/Sources"
+        ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Analytics", "Vector"],
+            dependencies: ["UtilsCore", "Analytics", "Vector", "MacawAdditions"],
             path: "UtilsTests/Sources"
         ),
     ],

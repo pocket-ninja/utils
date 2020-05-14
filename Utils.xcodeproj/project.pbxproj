@@ -18,7 +18,6 @@
 		AC27E4B7244E033700CFD763 /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B5244E033700CFD763 /* ShareContent.swift */; };
 		AC27E4BB244E050E00CFD763 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B9244E035700CFD763 /* DemoViewController.swift */; };
 		AC27E4BE244E059D00CFD763 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = AC27E4BD244E059D00CFD763 /* file.json */; };
-		AC27E4BF244E059D00CFD763 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = AC27E4BD244E059D00CFD763 /* file.json */; };
 		AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB0FF24140BE30039FA85 /* CompositeAnalyticsTests.swift */; };
 		AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10024140BE30039FA85 /* AnalyticsTests.swift */; };
 		AC2EB10624140C6E0039FA85 /* AnalyticsEvent+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10524140C6E0039FA85 /* AnalyticsEvent+Stub.swift */; };
@@ -98,6 +97,19 @@
 		AC4F79AE246D666C00F92968 /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79AD246D666C00F92968 /* CGContext.swift */; };
 		AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B1246D679200F92968 /* GenericSizeTests.swift */; };
 		AC4F79B3246D67E100F92968 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79AF246D671E00F92968 /* Size.swift */; };
+		AC4F79B5246D7EE900F92968 /* Shape+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B4246D7EE900F92968 /* Shape+Stub.swift */; };
+		AC4F79CF246D9F1700F92968 /* ShapesLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79CD246D9E8B00F92968 /* ShapesLayer.swift */; };
+		AC4F79D5246DA71000F92968 /* ShapeLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */; };
+		AC4F79D7246DA71000F92968 /* ShapeRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */; };
+		AC4F79D8246DA71000F92968 /* ShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B7246D81D600F92968 /* ShapeTests.swift */; };
+		AC4F79E2246DA8B800F92968 /* MacawAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4F79E0246DA8B800F92968 /* MacawAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC4F79E6246DA8B800F92968 /* MacawAdditions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC4F79EA246DA8C100F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
+		AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79ED246DA8F400F92968 /* Macaw */; };
+		AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */; };
+		AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79F9246DB07E00F92968 /* Macaw */; };
+		AC4F79FC246DB10000F92968 /* bird.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC4F79CB246D936300F92968 /* bird.svg */; };
+		AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
 		AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CD9244B0EE10000CD24 /* Matrix.swift */; };
@@ -171,6 +183,13 @@
 			remoteGlobalIDString = AC4F796D246D5EDA00F92968;
 			remoteInfo = Vector;
 		};
+		AC4F79E3246DA8B800F92968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4F79DD246DA8B800F92968;
+			remoteInfo = MacawAdditions;
+		};
 		AC9DA4C02412CC1E00F034EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -208,6 +227,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AC4F79E6246DA8B800F92968 /* MacawAdditions.framework in Embed Frameworks */,
 				AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */,
 				AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */,
 				AC27E4AE244E02EF00CFD763 /* Sharing.framework in Embed Frameworks */,
@@ -322,6 +342,18 @@
 		AC4F79AD246D666C00F92968 /* CGContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGContext.swift; sourceTree = "<group>"; };
 		AC4F79AF246D671E00F92968 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		AC4F79B1246D679200F92968 /* GenericSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericSizeTests.swift; sourceTree = "<group>"; };
+		AC4F79B4246D7EE900F92968 /* Shape+Stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shape+Stub.swift"; sourceTree = "<group>"; };
+		AC4F79B7246D81D600F92968 /* ShapeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeTests.swift; sourceTree = "<group>"; };
+		AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRendererTests.swift; sourceTree = "<group>"; };
+		AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayerTests.swift; sourceTree = "<group>"; };
+		AC4F79BD246D838E00F92968 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
+		AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Macaw+Extensions.swift"; sourceTree = "<group>"; };
+		AC4F79CB246D936300F92968 /* bird.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bird.svg; sourceTree = "<group>"; };
+		AC4F79CD246D9E8B00F92968 /* ShapesLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayer.swift; sourceTree = "<group>"; };
+		AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacawAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4F79E0246DA8B800F92968 /* MacawAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacawAdditions.h; sourceTree = "<group>"; };
+		AC4F79E1246DA8B800F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayerTests.swift; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		AC6C8CD9244B0EE10000CD24 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		AC6C8CDB244B10280000CD24 /* MatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
@@ -397,6 +429,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC4F79DB246DA8B800F92968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9DA45D2412CACC00F034EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,6 +468,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */,
 				AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,7 +551,6 @@
 		AC2EB10424140C340039FA85 /* UtilsCore */ = {
 			isa = PBXGroup;
 			children = (
-				AC2EB10724140CB10039FA85 /* Stub */,
 				AC2EB20D24142D700039FA85 /* Extensions */,
 				AC2EB1B524142BFB0039FA85 /* Math */,
 				AC2EB10C241410760039FA85 /* StorageTests.swift */,
@@ -532,6 +572,7 @@
 		AC2EB10724140CB10039FA85 /* Stub */ = {
 			isa = PBXGroup;
 			children = (
+				AC4F79B4246D7EE900F92968 /* Shape+Stub.swift */,
 				AC2EB10824140CBB0039FA85 /* StorageMock.swift */,
 				ACD6365B246AC2A50042483E /* CGPath+Stub.swift */,
 			);
@@ -724,6 +765,7 @@
 			children = (
 				AC4F7987246D625D00F92968 /* Extensions */,
 				AC4F798B246D625D00F92968 /* ShapeLayer.swift */,
+				AC4F79CD246D9E8B00F92968 /* ShapesLayer.swift */,
 			);
 			path = Layer;
 			sourceTree = "<group>";
@@ -756,6 +798,52 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		AC4F79B6246D7F2C00F92968 /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F79BD246D838E00F92968 /* __Snapshots__ */,
+				AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */,
+				AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */,
+				AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */,
+				AC4F79B7246D81D600F92968 /* ShapeTests.swift */,
+			);
+			path = Vector;
+			sourceTree = "<group>";
+		};
+		AC4F79CA246D935B00F92968 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F79CB246D936300F92968 /* bird.svg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC4F79DF246DA8B800F92968 /* MacawAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F79EC246DA8CF00F92968 /* SupportingFiles */,
+				AC4F79EB246DA8C300F92968 /* Sources */,
+			);
+			path = MacawAdditions;
+			sourceTree = "<group>";
+		};
+		AC4F79EB246DA8C300F92968 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AC4F79EC246DA8CF00F92968 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AC4F79E0246DA8B800F92968 /* MacawAdditions.h */,
+				AC4F79E1246DA8B800F92968 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		AC768B8524448D33000772B0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +874,7 @@
 				AC2115802416287E00FCA866 /* Alert.framework */,
 				AC27E4A6244E02EF00CFD763 /* Sharing.framework */,
 				AC4F796E246D5EDA00F92968 /* Vector.framework */,
+				AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -798,6 +887,7 @@
 				AC9DA48A2412CB5700F034EE /* Analytics */,
 				AC27E4A7244E02EF00CFD763 /* Sharing */,
 				AC4F796F246D5EDA00F92968 /* Vector */,
+				AC4F79DF246DA8B800F92968 /* MacawAdditions */,
 				AC9DA4782412CB5700F034EE /* Demo */,
 			);
 			path = Utils;
@@ -896,6 +986,7 @@
 		AC9DA4AC2412CB6000F034EE /* UtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AC4F79CA246D935B00F92968 /* Resources */,
 				AC9DA4AD2412CB6000F034EE /* Sources */,
 				AC9DA4B02412CB6000F034EE /* SupportingFiles */,
 			);
@@ -906,6 +997,8 @@
 			isa = PBXGroup;
 			children = (
 				AC2EB11A2414177A0039FA85 /* Helpers */,
+				AC2EB10724140CB10039FA85 /* Stub */,
+				AC4F79B6246D7F2C00F92968 /* Vector */,
 				AC2EB10424140C340039FA85 /* UtilsCore */,
 				AC2EB10324140C2E0039FA85 /* Analytics */,
 			);
@@ -986,6 +1079,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC4F79D9246DA8B800F92968 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4F79E2246DA8B800F92968 /* MacawAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9DA4B62412CC1E00F034EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1054,8 +1155,31 @@
 			dependencies = (
 			);
 			name = Vector;
+			packageProductDependencies = (
+			);
 			productName = Vector;
 			productReference = AC4F796E246D5EDA00F92968 /* Vector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC4F79DD246DA8B800F92968 /* MacawAdditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4F79E7246DA8B800F92968 /* Build configuration list for PBXNativeTarget "MacawAdditions" */;
+			buildPhases = (
+				AC4F79D9246DA8B800F92968 /* Headers */,
+				AC4F79DA246DA8B800F92968 /* Sources */,
+				AC4F79DB246DA8B800F92968 /* Frameworks */,
+				AC4F79DC246DA8B800F92968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacawAdditions;
+			packageProductDependencies = (
+				AC4F79ED246DA8F400F92968 /* Macaw */,
+			);
+			productName = MacawAdditions;
+			productReference = AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AC9DA45F2412CACC00F034EE /* Demo */ = {
@@ -1075,8 +1199,11 @@
 				AC2115862416287E00FCA866 /* PBXTargetDependency */,
 				AC27E4AC244E02EF00CFD763 /* PBXTargetDependency */,
 				AC4F7974246D5EDA00F92968 /* PBXTargetDependency */,
+				AC4F79E4246DA8B800F92968 /* PBXTargetDependency */,
 			);
 			name = Demo;
+			packageProductDependencies = (
+			);
 			productName = Project;
 			productReference = AC9DA4602412CACC00F034EE /* Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -1135,6 +1262,7 @@
 			name = UtilsTests;
 			packageProductDependencies = (
 				AC4F890C24143364005DE7E2 /* SnapshotTesting */,
+				AC4F79F9246DB07E00F92968 /* Macaw */,
 			);
 			productName = UtilsTests;
 			productReference = AC9DA5302412CECC00F034EE /* UtilsTests.xctest */;
@@ -1159,6 +1287,9 @@
 						LastSwiftMigration = 1140;
 					};
 					AC4F796D246D5EDA00F92968 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					AC4F79DD246DA8B800F92968 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 					AC9DA45F2412CACC00F034EE = {
@@ -1187,6 +1318,7 @@
 			mainGroup = AC9DA4572412CACC00F034EE;
 			packageReferences = (
 				AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */,
 			);
 			productRefGroup = AC9DA4612412CACC00F034EE /* Products */;
 			projectDirPath = "";
@@ -1199,6 +1331,7 @@
 				AC21157F2416287E00FCA866 /* Alert */,
 				AC27E4A5244E02EF00CFD763 /* Sharing */,
 				AC4F796D246D5EDA00F92968 /* Vector */,
+				AC4F79DD246DA8B800F92968 /* MacawAdditions */,
 			);
 		};
 /* End PBXProject section */
@@ -1215,11 +1348,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC27E4BF244E059D00CFD763 /* file.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC4F796C246D5EDA00F92968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4F79DC246DA8B800F92968 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1255,6 +1394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */,
+				AC4F79FC246DB10000F92968 /* bird.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,6 +1423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4F79A3246D635900F92968 /* Shape+Codable.swift in Sources */,
+				AC4F79CF246D9F1700F92968 /* ShapesLayer.swift in Sources */,
 				AC4F79A9246D64CA00F92968 /* ShapeStyle+Extensions.swift in Sources */,
 				AC4F79A8246D64B900F92968 /* Shape+Extensions.swift in Sources */,
 				AC4F79AE246D666C00F92968 /* CGContext.swift in Sources */,
@@ -1297,6 +1438,14 @@
 				AC4F79A2246D631F00F92968 /* Gradient+Codable.swift in Sources */,
 				AC4F79A7246D648200F92968 /* ShapeLayer.swift in Sources */,
 				AC4F79A5246D644000F92968 /* ShapeStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4F79DA246DA8B800F92968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4F79EA246DA8C100F92968 /* Macaw+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1401,7 +1550,10 @@
 				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
 				ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */,
+				AC4F79D5246DA71000F92968 /* ShapeLayerTests.swift in Sources */,
 				AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */,
+				AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */,
+				AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */,
 				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
@@ -1411,6 +1563,8 @@
 				ACD63657246AC1280042483E /* CGPathExtensionsTests.swift in Sources */,
 				AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */,
 				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
+				AC4F79B5246D7EE900F92968 /* Shape+Stub.swift in Sources */,
+				AC4F79D8246DA71000F92968 /* ShapeTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
 				AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */,
 				AC2EB21824142D700039FA85 /* UIViewControllerExtensionsTests.swift in Sources */,
@@ -1424,6 +1578,7 @@
 				AC2EB14E241423B20039FA85 /* QueueTests.swift in Sources */,
 				AC2EB21D24142D700039FA85 /* MathExtensionsTests.swift in Sources */,
 				AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */,
+				AC4F79D7246DA71000F92968 /* ShapeRendererTests.swift in Sources */,
 				AC2EB21724142D700039FA85 /* UIColorExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1445,6 +1600,11 @@
 			isa = PBXTargetDependency;
 			target = AC4F796D246D5EDA00F92968 /* Vector */;
 			targetProxy = AC4F7973246D5EDA00F92968 /* PBXContainerItemProxy */;
+		};
+		AC4F79E4246DA8B800F92968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4F79DD246DA8B800F92968 /* MacawAdditions */;
+			targetProxy = AC4F79E3246DA8B800F92968 /* PBXContainerItemProxy */;
 		};
 		AC9DA4C12412CC1E00F034EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1643,6 +1803,66 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.Vector;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC4F79E8246DA8B800F92968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.MacawAdditions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC4F79E9246DA8B800F92968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.MacawAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -2001,6 +2221,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AC4F79E7246DA8B800F92968 /* Build configuration list for PBXNativeTarget "MacawAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4F79E8246DA8B800F92968 /* Debug */,
+				AC4F79E9246DA8B800F92968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC9DA45B2412CACC00F034EE /* Build configuration list for PBXProject "Utils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2057,9 +2286,27 @@
 				minimumVersion = 1.7.2;
 			};
 		};
+		AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sroik/Macaw";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC4F79ED246DA8F400F92968 /* Macaw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */;
+			productName = Macaw;
+		};
+		AC4F79F9246DB07E00F92968 /* Macaw */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */;
+			productName = Macaw;
+		};
 		AC4F890C24143364005DE7E2 /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;

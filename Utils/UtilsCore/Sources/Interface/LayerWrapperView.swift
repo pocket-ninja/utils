@@ -9,12 +9,12 @@ public class LayerWrapperView<Layer: CALayer>: UIView {
 
     public let wrapped: Layer
     public var onLayout: LayoutBlock?
-    public var filles: Bool
+    public var fills: Bool
     public var centers: Bool
 
-    public init(layer: Layer, filles: Bool = true, centers: Bool = true) {
+    public init(layer: Layer, fills: Bool = true, centers: Bool = true) {
         self.wrapped = layer
-        self.filles = filles
+        self.fills = fills
         self.centers = centers
         super.init(frame: wrapped.frame)
         self.layer.addSublayer(wrapped)
@@ -32,7 +32,7 @@ public class LayerWrapperView<Layer: CALayer>: UIView {
             wrapped.position = bounds.center
         }
         
-        if filles {
+        if fills {
             wrapped.frame = bounds
         }
         

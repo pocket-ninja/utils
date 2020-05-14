@@ -10,16 +10,6 @@ public extension Shape {
         return path.boundingBox
     }
 
-    #warning("FIX")
-//    init(identifier: ShapeIdentifier, index: Int, shape: Macaw.Shape) {
-//        self.init(
-//            identifier: identifier,
-//            index: index,
-//            path: shape.form.toCGPath(),
-//            style: ShapeStyle(from: shape)
-//        )
-//    }
-
     func with(strokeScale: CGFloat) -> Shape {
         return with(strokeWidth: style.stroke.lineWidth * strokeScale)
     }
