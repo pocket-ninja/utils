@@ -23,6 +23,10 @@ let package = Package(
         .library(
             name: "Analytics",
             targets: ["Analytics"]
+        ),
+        .library(
+            name: "Vector",
+            targets: ["Vector"]
         )
     ],
     targets: [
@@ -46,9 +50,14 @@ let package = Package(
             dependencies: [],
             path: "Utils/Sharing/Sources"
         ),
+        .target(
+            name: "Vector",
+            dependencies: ["UtilsCore"],
+            path: "Utils/Vector/Sources"
+        ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Analytics"],
+            dependencies: ["UtilsCore", "Analytics", "Vector"],
             path: "UtilsTests/Sources"
         ),
     ],
