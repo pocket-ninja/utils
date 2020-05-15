@@ -32,7 +32,7 @@ public extension CGPoint {
     func distance(to: CGPoint) -> CGFloat {
         let dx = x - to.x
         let dy = y - to.y
-        return sqrt(dx * dx + dy * dy)
+        return hypot(dx, dy)
     }
 
     func rounded(rule: FloatingPointRoundingRule = .toNearestOrAwayFromZero) -> CGPoint {
@@ -237,14 +237,10 @@ public extension CGRect {
         return CGRect(origin: .zero, size: scaledSize).centered(in: rect)
     }
 
-    func centered(in rect: CGRect, rounded: Bool = true) -> CGRect {
+    func centered(in rect: CGRect) -> CGRect {
         let width = (rect.width - self.width) / 2
         let height = (rect.height - self.height) / 2
-        let translation = CGPoint(
-            x: rounded ? round(width) : width,
-            y: rounded ? round(height) : height
-        )
-
+        let translation = CGPoint(x: width, y: height)
         return CGRect(origin: rect.origin.translated(by: translation), size: size)
     }
 

@@ -13,13 +13,10 @@ public class ShapesLayer: CALayer {
         return Array(layers.values)
     }
 
-    public var layersFrame: CGRect {
-        return CGRect(size: size).centered(in: bounds, rounded: false)
-    }
-
     public var layersTransform: CGAffineTransform {
         let scale = size.scale(toFit: bounds.size)
-        return CGAffineTransform(scaleX: scale, y: scale)
+        let translation = size.center.translation(to: bounds.center)
+        return CGAffineTransform(scaleX: scale, y: scale).translated(by: translation)
     }
     
     public init(shapes: [Shape], size: CGSize) {
@@ -64,7 +61,7 @@ public class ShapesLayer: CALayer {
     
     private func layout(layer: ShapeLayer) {
         layer.transform = CATransform3DIdentity
-        layer.frame = layersFrame
+        layer.frame = CGRect(origin: .zero, size: size)
         layer.transform = layersTransform.caTransform
     }
     
