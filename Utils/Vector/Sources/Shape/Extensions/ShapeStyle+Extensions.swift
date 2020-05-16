@@ -14,11 +14,13 @@ public extension ShapeStyle {
 
     var accentColor: CGColor? {
         switch fill {
-        case let .color(color): return color
-        case let .gradient(gradient): return gradient.stops.first?.color
+        case let .color(color):
+            return color
+        case let .gradient(gradient):
+            return gradient.stops.first?.color
         }
     }
-
+    
     func scaled(by scale: CGFloat) -> ShapeStyle {
         return ShapeStyle(
             fill: fill.scaled(by: scale),
@@ -55,6 +57,15 @@ public extension ShapeStroke {
 }
 
 public extension ShapeFill {
+    var colors: [CGColor] {
+        switch self {
+        case let .color(color):
+            return [color]
+        case let .gradient(gradient):
+            return gradient.stops.map { $0.color }
+        }
+    }
+
     var color: CGColor? {
         switch self {
         case let .color(color): return color
