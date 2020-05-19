@@ -8,7 +8,7 @@ end
 
 lane :bump_version do |options|
   fastlane_require 'fastlane-ext'
-  
+
   UI.message "Going to bump project version"
   sync_git_tags
 
@@ -18,10 +18,10 @@ lane :bump_version do |options|
 end
 
 lane :test do
-  scan(scheme: "Demo")
+  scan(scheme: "Demo", device: 'iPhone 11')
 end
 
-lane :test_if_needed do 
+lane :test_if_needed do
   unless stopped?
     test
   end
@@ -29,7 +29,7 @@ end
 
 def stopped?
   stop_keywords.any? do |k|
-    last_git_commit[:message].to_s.downcase.include?(k) 
+    last_git_commit[:message].to_s.downcase.include?(k)
   end
 end
 
