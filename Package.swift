@@ -32,11 +32,19 @@ let package = Package(
             name: "MacawAdditions",
             targets: ["MacawAdditions"]
         ),
+        .library(
+            name: "RxPocket",
+            targets: ["RxPocket"]
+        ),
     ],
     dependencies: [
         .package(
             url: "https://github.com/sroik/Macaw.git",
             .branch("master")
+        ),
+        .package(
+            url: "https://github.com/ReactiveX/RxSwift.git",
+            from: "5.0.0"
         )
     ],
     targets: [
@@ -69,6 +77,11 @@ let package = Package(
             name: "MacawAdditions",
             dependencies: ["Vector", "Macaw"],
             path: "Utils/MacawAdditions/Sources"
+        ),
+        .target(
+            name: "RxPocket",
+            dependencies: ["RxSwift", "RxRelay"],
+            path: "Utils/RxPocket/Sources"
         ),
         .testTarget(
             name: "UtilsTests",
