@@ -85,7 +85,7 @@ let package = Package(
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Analytics", "Vector", "MacawAdditions"],
+            dependencies: ["UtilsCore", "Analytics", "Vector", "MacawAdditions", "RxPocket"],
             path: "UtilsTests/Sources"
         ),
     ],
