@@ -166,6 +166,7 @@
 		F6808938247414BD005A13DA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F6808937247414BD005A13DA /* RxRelay */; };
 		F680893A247414BD005A13DA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6808939247414BD005A13DA /* RxSwift */; };
 		F680893C247415B7005A13DA /* PropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680893B247415B7005A13DA /* PropertyTests.swift */; };
+		F680893D24741EBC005A13DA /* UtilsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA4882412CB5700F034EE /* UtilsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1152,6 +1153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F680893D24741EBC005A13DA /* UtilsCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
