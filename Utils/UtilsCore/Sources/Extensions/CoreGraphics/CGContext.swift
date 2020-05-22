@@ -1,5 +1,5 @@
 //
-//  Copyright © 2018 sroik. All rights reserved.
+//  Copyright © 2020 sroik. All rights reserved.
 //
 
 import CoreGraphics
