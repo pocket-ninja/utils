@@ -60,7 +60,10 @@ public extension CGContext {
     }
 
     func fill(with image: CGImage) {
-        draw(image, in: CGRect(origin: .zero, size: size.cgSize))
+        let bounds = CGRect(origin: .zero, size: size.cgSize)
+        let imageSize = CGSize(width: image.width, height: image.height)
+        let imageRect = CGRect(size: imageSize).filled(in: bounds)
+        draw(image, in: imageRect)
     }
 
     func prepareForDrawing() {
