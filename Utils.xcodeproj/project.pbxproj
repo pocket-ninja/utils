@@ -159,13 +159,6 @@
 		ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63659246AC21E0042483E /* ShapeContainer.swift */; };
 		ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6365B246AC2A50042483E /* CGPath+Stub.swift */; };
 		ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
-		F680892424741393005A13DA /* RxPocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F680891D24741393005A13DA /* RxPocket.framework */; };
-		F680892524741393005A13DA /* RxPocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F680891D24741393005A13DA /* RxPocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F680892C247413E3005A13DA /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680892B247413E3005A13DA /* Property.swift */; };
-		F680893124741419005A13DA /* RxPocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F680892D247413F0005A13DA /* RxPocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6808938247414BD005A13DA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F6808937247414BD005A13DA /* RxRelay */; };
-		F680893A247414BD005A13DA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F6808939247414BD005A13DA /* RxSwift */; };
-		F680893C247415B7005A13DA /* PropertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680893B247415B7005A13DA /* PropertyTests.swift */; };
 		F680893D24741EBC005A13DA /* UtilsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA4882412CB5700F034EE /* UtilsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F680894024742056005A13DA /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 /* End PBXBuildFile section */
@@ -227,13 +220,6 @@
 			remoteGlobalIDString = AC9DA45F2412CACC00F034EE;
 			remoteInfo = Demo;
 		};
-		F680892224741393005A13DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F680891C24741393005A13DA;
-			remoteInfo = RxPocket;
-		};
 		F680893E24742046005A13DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -254,7 +240,6 @@
 				AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */,
 				AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */,
 				AC27E4AE244E02EF00CFD763 /* Sharing.framework in Embed Frameworks */,
-				F680892524741393005A13DA /* RxPocket.framework in Embed Frameworks */,
 				AC9DA50B2412CE1F00F034EE /* Analytics.framework in Embed Frameworks */,
 				AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */,
 			);
@@ -429,11 +414,6 @@
 		ACD63659246AC21E0042483E /* ShapeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContainer.swift; sourceTree = "<group>"; };
 		ACD6365B246AC2A50042483E /* CGPath+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Stub.swift"; sourceTree = "<group>"; };
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
-		F680891D24741393005A13DA /* RxPocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F680892B247413E3005A13DA /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
-		F680892D247413F0005A13DA /* RxPocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RxPocket.h; path = Utils/RxPocket/SupportingFiles/RxPocket.h; sourceTree = SOURCE_ROOT; };
-		F680892E247413F0005A13DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Utils/RxPocket/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
-		F680893B247415B7005A13DA /* PropertyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,7 +451,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F680892424741393005A13DA /* RxPocket.framework in Frameworks */,
 				AC4F7975246D5EDA00F92968 /* Vector.framework in Frameworks */,
 				AC9DA4C22412CC1E00F034EE /* UtilsCore.framework in Frameworks */,
 				AC27E4AD244E02EF00CFD763 /* Sharing.framework in Frameworks */,
@@ -501,15 +480,6 @@
 			files = (
 				AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */,
 				AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F680891A24741393005A13DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F680893A247414BD005A13DA /* RxSwift in Frameworks */,
-				F6808938247414BD005A13DA /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,7 +575,6 @@
 				AC2EB144241423B20039FA85 /* TargetTests.swift */,
 				AC4F79B1246D679200F92968 /* GenericSizeTests.swift */,
 				AC6C8CDB244B10280000CD24 /* MatrixTests.swift */,
-				F680893B247415B7005A13DA /* PropertyTests.swift */,
 			);
 			path = UtilsCore;
 			sourceTree = "<group>";
@@ -916,7 +885,6 @@
 				AC27E4A6244E02EF00CFD763 /* Sharing.framework */,
 				AC4F796E246D5EDA00F92968 /* Vector.framework */,
 				AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */,
-				F680891D24741393005A13DA /* RxPocket.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -924,7 +892,6 @@
 		AC9DA4772412CB5700F034EE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				F680891E24741393005A13DA /* RxPocket */,
 				AC9DA47F2412CB5700F034EE /* UtilsCore */,
 				AC2115812416287E00FCA866 /* Alert */,
 				AC9DA48A2412CB5700F034EE /* Analytics */,
@@ -1095,34 +1062,6 @@
 			path = Math;
 			sourceTree = "<group>";
 		};
-		F680891E24741393005A13DA /* RxPocket */ = {
-			isa = PBXGroup;
-			children = (
-				F680892A247413E3005A13DA /* Sources */,
-				F6808929247413A9005A13DA /* SupportingFiles */,
-			);
-			name = RxPocket;
-			path = ../RxPocket;
-			sourceTree = "<group>";
-		};
-		F6808929247413A9005A13DA /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				F680892E247413F0005A13DA /* Info.plist */,
-				F680892D247413F0005A13DA /* RxPocket.h */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		F680892A247413E3005A13DA /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				F680892B247413E3005A13DA /* Property.swift */,
-			);
-			name = Sources;
-			path = Utils/RxPocket/Sources;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1171,14 +1110,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9DA5072412CE1F00F034EE /* Analytics.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F680891824741393005A13DA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F680893124741419005A13DA /* RxPocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1281,7 +1212,6 @@
 				AC27E4AC244E02EF00CFD763 /* PBXTargetDependency */,
 				AC4F7974246D5EDA00F92968 /* PBXTargetDependency */,
 				AC4F79E4246DA8B800F92968 /* PBXTargetDependency */,
-				F680892324741393005A13DA /* PBXTargetDependency */,
 			);
 			name = Demo;
 			packageProductDependencies = (
@@ -1350,28 +1280,6 @@
 			productReference = AC9DA5302412CECC00F034EE /* UtilsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F680891C24741393005A13DA /* RxPocket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F680892824741393005A13DA /* Build configuration list for PBXNativeTarget "RxPocket" */;
-			buildPhases = (
-				F680891824741393005A13DA /* Headers */,
-				F680891924741393005A13DA /* Sources */,
-				F680891A24741393005A13DA /* Frameworks */,
-				F680891B24741393005A13DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RxPocket;
-			packageProductDependencies = (
-				F6808937247414BD005A13DA /* RxRelay */,
-				F6808939247414BD005A13DA /* RxSwift */,
-			);
-			productName = RxPocket;
-			productReference = F680891D24741393005A13DA /* RxPocket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1409,9 +1317,6 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = AC9DA45F2412CACC00F034EE;
 					};
-					F680891C24741393005A13DA = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
 				};
 			};
 			buildConfigurationList = AC9DA45B2412CACC00F034EE /* Build configuration list for PBXProject "Utils" */;
@@ -1426,7 +1331,6 @@
 			packageReferences = (
 				AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */,
-				F6808932247414A7005A13DA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = AC9DA4612412CACC00F034EE /* Products */;
 			projectDirPath = "";
@@ -1440,7 +1344,6 @@
 				AC27E4A5244E02EF00CFD763 /* Sharing */,
 				AC4F796D246D5EDA00F92968 /* Vector */,
 				AC4F79DD246DA8B800F92968 /* MacawAdditions */,
-				F680891C24741393005A13DA /* RxPocket */,
 			);
 		};
 /* End PBXProject section */
@@ -1504,13 +1407,6 @@
 			files = (
 				AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */,
 				AC4F79FC246DB10000F92968 /* bird.svg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F680891B24741393005A13DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1687,7 +1583,6 @@
 				AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */,
 				AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */,
 				AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */,
-				F680893C247415B7005A13DA /* PropertyTests.swift in Sources */,
 				AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */,
 				AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */,
 				AC2EB21B24142D700039FA85 /* StringExtensionsTests.swift in Sources */,
@@ -1697,14 +1592,6 @@
 				AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */,
 				AC4F79D7246DA71000F92968 /* ShapeRendererTests.swift in Sources */,
 				AC2EB21724142D700039FA85 /* UIColorExtensionsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F680891924741393005A13DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F680892C247413E3005A13DA /* Property.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1750,11 +1637,6 @@
 			isa = PBXTargetDependency;
 			target = AC9DA45F2412CACC00F034EE /* Demo */;
 			targetProxy = AC9DA5352412CECC00F034EE /* PBXContainerItemProxy */;
-		};
-		F680892324741393005A13DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F680891C24741393005A13DA /* RxPocket */;
-			targetProxy = F680892224741393005A13DA /* PBXContainerItemProxy */;
 		};
 		F680893F24742046005A13DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2326,66 +2208,6 @@
 			};
 			name = Release;
 		};
-		F680892624741393005A13DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Utils/RxPocket/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.RxPocket;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F680892724741393005A13DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Utils/RxPocket/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.RxPocket;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2470,15 +2292,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F680892824741393005A13DA /* Build configuration list for PBXNativeTarget "RxPocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F680892624741393005A13DA /* Debug */,
-				F680892724741393005A13DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -2498,14 +2311,6 @@
 				kind = branch;
 			};
 		};
-		F6808932247414A7005A13DA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2523,16 +2328,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
-		};
-		F6808937247414BD005A13DA /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6808932247414A7005A13DA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		F6808939247414BD005A13DA /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6808932247414A7005A13DA /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
