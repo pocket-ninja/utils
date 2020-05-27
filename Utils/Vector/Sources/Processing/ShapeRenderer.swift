@@ -76,7 +76,7 @@ private extension CGContext {
     func setStyle(_ style: ShapeStyle) {
         setLineCap(style.stroke.lineCap)
         setLineJoin(style.stroke.lineJoin)
-        setLineWidth(style.stroke.lineWidth / scale)
+        setLineWidth(style.stroke.lineWidth)
         setStrokeColor(style.stroke.color)
         style.fill.color.apply(setFillColor)
     }

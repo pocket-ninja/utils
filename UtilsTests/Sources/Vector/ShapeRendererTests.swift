@@ -29,6 +29,12 @@ class ShapeRendererTests: XCTestCase {
         imageView.image = UIImage(cgImage: cgImage)
         assertSnapshot(matching: imageView, as: .image)
     }
+    
+    func testLargeSizeColorFill() throws {
+        let cgImage = try ShapeRenderer().render(.stub(), fitting: CGSize(width: 900, height: 900)).get()
+        imageView.image = UIImage(cgImage: cgImage)
+        assertSnapshot(matching: imageView, as: .image)
+    }
 
     func testLinearGradient() throws {
         let shape = Shape.stub(style: .stub(fill: .linearGradientStub))
