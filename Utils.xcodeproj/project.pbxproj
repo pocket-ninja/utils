@@ -163,6 +163,7 @@
 		F680894024742056005A13DA /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 		F6826C3E24863F7C001A327E /* CodableColorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */; };
 		F6826C4024863FF2001A327E /* CodableColorWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */; };
+		F6826C4224864184001A327E /* DebugOverridableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6826C4124864184001A327E /* DebugOverridableWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,6 +419,7 @@
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
 		F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapper.swift; sourceTree = "<group>"; };
 		F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapperTests.swift; sourceTree = "<group>"; };
+		F6826C4124864184001A327E /* DebugOverridableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverridableWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1080,6 +1082,7 @@
 			isa = PBXGroup;
 			children = (
 				F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */,
+				F6826C4124864184001A327E /* DebugOverridableWrapper.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -1504,6 +1507,7 @@
 				AC4F79B3246D67E100F92968 /* Size.swift in Sources */,
 				AC2EB1A6241429A10039FA85 /* UICollectionView+Extensions.swift in Sources */,
 				AC2EB1AB241429A10039FA85 /* Codable+Extensions.swift in Sources */,
+				F6826C4224864184001A327E /* DebugOverridableWrapper.swift in Sources */,
 				AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */,
 				ACD6364D246ABF660042483E /* PathPolygonizer.swift in Sources */,
 				AC2EB1A8241429A10039FA85 /* String+Extensions.swift in Sources */,
