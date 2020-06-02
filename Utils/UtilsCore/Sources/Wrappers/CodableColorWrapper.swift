@@ -6,7 +6,7 @@ import Foundation
 import UIKit
 
 @propertyWrapper
-public struct CodableColor: Equatable {
+public struct CodableColor: Equatable, Hashable {
     public var wrappedValue: UIColor = .clear
 
     public init(wrappedValue value: UIColor) {
