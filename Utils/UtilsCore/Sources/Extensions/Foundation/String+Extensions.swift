@@ -20,3 +20,43 @@ public extension String {
         return String(self[start ..< end])
     }
 }
+
+/// Leveraging Swift 5 new string interpolation API
+/// References:
+/// - [String Interpolation in Swift explained | Antoine van der Lee](https://www.avanderlee.com/swift/string-interpolation)
+/// - [SE-228 | Fix ExpressibleByStringInterpolation] (https://github.com/apple/swift-evolution/blob/master/proposals/0228-fix-expressiblebystringinterpolation.md)
+public extension String.StringInterpolation {
+    /// Prints `Optional` values by only interpolating it if the value is set.
+    /// `nil` is used as a fallback value to provide a clear output.
+    mutating func appendInterpolation<T: CustomStringConvertible>(_ value: T?) {
+        appendInterpolation(value ?? "nil" as CustomStringConvertible)
+    }
+    
+    ///    let jsonData = """
+    ///        {
+    ///            "name": "Antoine van der Lee"
+    ///        }
+    ///    """.data(using: .utf8)!
+    ///
+    ///    print("The provided JSON is \(json: jsonData)")
+    /// Prints: The provided JSON is
+    /// {
+    ///   "name" : "Antoine van der Lee"
+    /// }
+    mutating func appendInterpolation(json JSONData: Data) {
+           guard
+               let JSONObject = try? JSONSerialization.jsonObject(with: JSONData, options: []),
+               let jsonData = try? JSONSerialization.data(withJSONObject: JSONObject, options: .prettyPrinted) else {
+               appendInterpolation("Invalid JSON data")
+               return
+           }
+           appendInterpolation("\n\(String(decoding: jsonData, as: UTF8.self))")
+       }
+    
+    /// let request = URLRequest(url: URL(string: "https://google.com")!)
+    /// print("The request is \(request)")
+    /// Prints: "The request is https://google.com | GET | Headers: nil"
+    mutating func appendInterpolation(_ request: URLRequest) {
+        appendInterpolation("\(request.url) | \(request.httpMethod) | Headers: \(request.allHTTPHeaderFields)")
+    }
+}
