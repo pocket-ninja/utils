@@ -7,13 +7,8 @@ import UtilsCore
 import Vector
 
 extension Shape {
-    static func stub(
-        id: ShapeIdentifier = 3,
-        index: Int = 3,
-        path: CGPath = .arrowStub,
-        style: ShapeStyle = .stub()
-    ) -> Shape {
-        return Shape(identifier: id, index: index, path: path, style: style)
+    static func stub(path: CGPath = .arrowStub, style: ShapeStyle = .stub()) -> Shape {
+        return Shape(id: 0, path: path, style: style)
     }
 }
 

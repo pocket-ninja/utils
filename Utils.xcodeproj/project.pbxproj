@@ -108,7 +108,7 @@
 		AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79ED246DA8F400F92968 /* Macaw */; };
 		AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */; };
 		AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79F9246DB07E00F92968 /* Macaw */; };
-		AC4F79FC246DB10000F92968 /* bird.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC4F79CB246D936300F92968 /* bird.svg */; };
+		AC4F79FC246DB10000F92968 /* coco.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC4F79CB246D936300F92968 /* coco.svg */; };
 		AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
@@ -360,7 +360,7 @@
 		AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayerTests.swift; sourceTree = "<group>"; };
 		AC4F79BD246D838E00F92968 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Macaw+Extensions.swift"; sourceTree = "<group>"; };
-		AC4F79CB246D936300F92968 /* bird.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bird.svg; sourceTree = "<group>"; };
+		AC4F79CB246D936300F92968 /* coco.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.svg; sourceTree = "<group>"; };
 		AC4F79CD246D9E8B00F92968 /* ShapesLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayer.swift; sourceTree = "<group>"; };
 		AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacawAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4F79E0246DA8B800F92968 /* MacawAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacawAdditions.h; sourceTree = "<group>"; };
@@ -830,7 +830,7 @@
 		AC4F79CA246D935B00F92968 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				AC4F79CB246D936300F92968 /* bird.svg */,
+				AC4F79CB246D936300F92968 /* coco.svg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1431,7 +1431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */,
-				AC4F79FC246DB10000F92968 /* bird.svg in Resources */,
+				AC4F79FC246DB10000F92968 /* coco.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

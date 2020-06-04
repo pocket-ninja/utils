@@ -4,22 +4,17 @@
 
 import CoreGraphics
 
-public typealias ShapeIdentifier = Int
-
-public struct Shape: Hashable {
-    public let identifier: ShapeIdentifier
-    public var index: Int
+public struct Shape: Hashable, Identifiable {
+    public let id: Int
     public var path: CGPath
     public var style: ShapeStyle
 
     public init(
-        identifier: ShapeIdentifier,
-        index: Int,
+        id: ID,
         path: CGPath,
         style: ShapeStyle
     ) {
-        self.identifier = identifier
-        self.index = index
+        self.id = id
         self.path = path
         self.style = style
     }
