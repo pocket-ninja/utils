@@ -14,6 +14,7 @@ class ShapesLayerTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        
         container = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 400))
         container.backgroundColor = .white
     }
@@ -24,10 +25,10 @@ class ShapesLayerTests: XCTestCase {
     }
 
     func testShapesLayer() throws {
-        let url = try Bundle.test.url(forResource: "bird.svg", withExtension: nil).get()
+        let url = try Bundle.test.url(forResource: "coco.svg", withExtension: nil).get()
         let svg = try Macaw.SVGParser.parse(fullPath: url.path)
         let shapesLayer = ShapesLayer(
-            shapes: svg.childShapes,
+            shapes: svg.recursiveChildShapes,
             size: try svg.viewBox.get().size
         )
 

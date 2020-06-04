@@ -26,8 +26,7 @@ public extension Shape {
         style: ShapeStyle? = nil
     ) -> Shape {
         return Shape(
-            identifier: identifier,
-            index: index,
+            id: id,
             path: path ?? self.path,
             style: style ?? self.style
         )
@@ -35,8 +34,7 @@ public extension Shape {
 
     func translated(by translation: CGPoint) -> Shape {
         return Shape(
-            identifier: identifier,
-            index: index,
+            id: id,
             path: path.translated(by: translation),
             style: style.translated(by: translation)
         )
@@ -44,8 +42,7 @@ public extension Shape {
 
     func scaled(by scale: CGFloat) -> Shape {
         return Shape(
-            identifier: identifier,
-            index: index,
+            id: id,
             path: path.scaled(by: scale),
             style: style.scaled(by: scale)
         )
@@ -63,8 +60,7 @@ public extension Shape {
 public extension Shape {
     static var empty: Shape {
         return Shape(
-            identifier: 0,
-            index: 0,
+            id: 0,
             path: CGPath(rect: .zero, transform: nil),
             style: .empty
         )

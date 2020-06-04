@@ -7,11 +7,13 @@ import Macaw
 import Vector
 
 public extension Vector.Shape {
-    init(identifier: Vector.ShapeIdentifier, index: Int, shape: Macaw.Shape) {
+    init(id: Int = 0, shape: Macaw.Shape, transform: CGAffineTransform = .identity) {
+        let path = shape.form.toCGPath().transformed(with: shape.place.toCG())
+        let transformedPath = path.transformed(with: transform)
+        
         self.init(
-            identifier: identifier,
-            index: index,
-            path: shape.form.toCGPath(),
+            id: id,
+            path: transformedPath,
             style: Vector.ShapeStyle(from: shape)
         )
     }
@@ -101,40 +103,39 @@ public extension Macaw.Node {
         return boxSize
     }
 
-    var childShapes: [Vector.Shape] {
-        return macawChildShapes.enumerated().map {
-            let index = $0.offset + 1
-            return Shape(identifier: index, index: index, shape: $0.element)
-        }
-    }
-
-    func childShapes(withPredicate predicate: Predicate) -> [Vector.Shape] {
-        var index: Int = 1
-
-        return macawChildShapes.enumerated().compactMap {
-            let shape = Vector.Shape(identifier: index, index: index, shape: $0.element)
-
-            guard predicate(shape) else {
-                return nil
-            }
-
-            index += 1
-            return shape
-        }
+    var recursiveChildShapes: [Vector.Shape] {
+        return recursiveChildShapes(transform: place.toCG())
     }
     
-    var macawChildShapes: [Macaw.Shape] {
+    func recursiveChildShapes(transform: CGAffineTransform) -> [Vector.Shape] {
         switch self {
         case let group as Macaw.Group:
-            return group.contents.flatMap { node in
-                node.macawChildShapes
+            return group.contents.flatMap { (node: Macaw.Node) -> [Vector.Shape] in
+                let transform = group.place.toCG().concatenating(transform)
+                return node.recursiveChildShapes(transform: transform)
             }
 
-        case let shape as Macaw.Shape:
+        case let macawShape as Macaw.Shape:
+            let shape = Shape(shape: macawShape, transform: transform)
             return [shape]
-
+        
         default:
             return []
         }
     }
+    
+    var recursiveMacawChildShapes: [Macaw.Shape] {
+           switch self {
+           case let group as Macaw.Group:
+               return group.contents.flatMap { node in
+                   node.recursiveMacawChildShapes
+               }
+
+           case let shape as Macaw.Shape:
+               return [shape]
+
+           default:
+               return []
+           }
+       }
 }
