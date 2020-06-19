@@ -28,20 +28,18 @@ public extension UIViewController {
         } ?? self
     }
     
-    func add(child: UIViewController, withLayout layout: LayoutCallback? = nil) {
+    func add(child: UIViewController, withLayout layout: LayoutCallback = { _, _ in }) {
         add(child: child, in: view, withLayout: layout)
     }
 
     func add(
         child: UIViewController,
         in container: UIView,
-        withLayout layout: LayoutCallback? = nil
+        withLayout layout: LayoutCallback = { _, _ in }
     ) {
         child.willMove(toParent: self)
         container.addSubview(child.view)
-        if let layout = layout {
-            layout(self, child)
-        }
+        layout(self, child)
         addChild(child)
         child.didMove(toParent: self)
     }
