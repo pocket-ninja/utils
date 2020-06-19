@@ -159,6 +159,8 @@
 		ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63659246AC21E0042483E /* ShapeContainer.swift */; };
 		ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6365B246AC2A50042483E /* CGPath+Stub.swift */; };
 		ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
+		F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */; };
+		F6354BCF249D02F50084C408 /* ClampingWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCB249D01700084C408 /* ClampingWrapper.swift */; };
 		F680893D24741EBC005A13DA /* UtilsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA4882412CB5700F034EE /* UtilsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F680894024742056005A13DA /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 		F6826C3E24863F7C001A327E /* CodableColorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */; };
@@ -417,6 +419,8 @@
 		ACD63659246AC21E0042483E /* ShapeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContainer.swift; sourceTree = "<group>"; };
 		ACD6365B246AC2A50042483E /* CGPath+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Stub.swift"; sourceTree = "<group>"; };
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
+		F6354BCB249D01700084C408 /* ClampingWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampingWrapper.swift; sourceTree = "<group>"; };
+		F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampingWrapperTests.swift; sourceTree = "<group>"; };
 		F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapper.swift; sourceTree = "<group>"; };
 		F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapperTests.swift; sourceTree = "<group>"; };
 		F6826C4124864184001A327E /* DebugOverridableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverridableWrapper.swift; sourceTree = "<group>"; };
@@ -1074,6 +1078,7 @@
 			isa = PBXGroup;
 			children = (
 				F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */,
+				F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -1083,6 +1088,7 @@
 			children = (
 				F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */,
 				F6826C4124864184001A327E /* DebugOverridableWrapper.swift */,
+				F6354BCB249D01700084C408 /* ClampingWrapper.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -1536,6 +1542,7 @@
 				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
 				ACD63648246ABE950042483E /* Line.swift in Sources */,
 				ACAF21632452FB2F00C33CC2 /* ExtendedButton.swift in Sources */,
+				F6354BCF249D02F50084C408 /* ClampingWrapper.swift in Sources */,
 				F6826C3E24863F7C001A327E /* CodableColorWrapper.swift in Sources */,
 				ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */,
 				AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */,
@@ -1586,6 +1593,7 @@
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
 				AC2EB10624140C6E0039FA85 /* AnalyticsEvent+Stub.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
+				F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */,
 				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
 				ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */,
