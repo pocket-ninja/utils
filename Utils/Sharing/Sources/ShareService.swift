@@ -36,4 +36,26 @@ public struct ShareService {
 
         sourceViewController.present(activityController, animated: true)
     }
+    
+    public static func shareToPhotos(
+        content: ShareContent,
+        then completion: @escaping SharePhotosProvider.Completion
+    ) {
+        SharePhotosProvider.share(
+            content: content,
+            then: completion
+        )
+    }
+    
+    public static func shareToPhotos(
+        content: ShareContent,
+        album: String,
+        then completion: @escaping SharePhotosProvider.Completion
+    ) {
+        SharePhotosProvider.share(
+            content: content,
+            to: album,
+            then: completion
+        )
+    }
 }
