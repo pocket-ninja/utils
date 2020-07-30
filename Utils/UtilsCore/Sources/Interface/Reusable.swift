@@ -14,4 +14,6 @@ public extension Reusable {
     }
 }
 
+#if os(iOS)
 extension UICollectionReusableView: Reusable {}
+#endif

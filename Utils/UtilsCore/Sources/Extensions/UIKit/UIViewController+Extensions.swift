@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public struct ViewControllerLayoutContext {
     public let parent: UIViewController
     public let child: UIViewController
@@ -207,3 +208,4 @@ public extension UIViewController {
         }
     }
 }
+#endif

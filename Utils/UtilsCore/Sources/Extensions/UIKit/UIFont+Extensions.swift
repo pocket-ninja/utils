@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public extension UIFont {
     static func system(size: CGFloat, weight: Weight) -> UIFont {
         return .systemFont(ofSize: size, weight: weight)
@@ -37,3 +38,4 @@ public extension UIFont {
         return .system(size: size, weight: .heavy)
     }
 }
+#endif

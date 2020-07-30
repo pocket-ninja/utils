@@ -2,7 +2,8 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import CoreGraphics
+import Foundation
 
 public extension CGAffineTransform {
     typealias Scale = CGPoint
@@ -16,10 +17,6 @@ public extension CGAffineTransform {
 
     var rotation: CGFloat {
         return atan2(b, a)
-    }
-
-    var caTransform: CATransform3D {
-        return CATransform3DMakeAffineTransform(self)
     }
 
     func translated(by: CGPoint) -> CGAffineTransform {

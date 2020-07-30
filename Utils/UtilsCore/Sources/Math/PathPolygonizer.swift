@@ -2,7 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import CoreGraphics
+
 
 public final class PathPolygonizer {
     public init(accuracy: Accuracy) {

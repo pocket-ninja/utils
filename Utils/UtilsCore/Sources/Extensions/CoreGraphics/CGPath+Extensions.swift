@@ -2,6 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+import Foundation
 import CoreGraphics
 
 public extension CGPath {

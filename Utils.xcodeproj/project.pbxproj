@@ -141,6 +141,7 @@
 		AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */; };
 		AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */; };
 		AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */; };
+		ACA00B4B24D2A76F003983F8 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */; };
 		ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21582452FADE00C33CC2 /* NavigationBar.swift */; };
 		ACAF215E2452FADE00C33CC2 /* NavigationBarViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */; };
 		ACAF215F2452FADE00C33CC2 /* NavigationBarLabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */; };
@@ -402,6 +403,7 @@
 		AC9DA5052412CE1F00F034EE /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		AC9DA5062412CE1F00F034EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9DA5302412CECC00F034EE /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		ACAF21582452FADE00C33CC2 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarViewItem.swift; sourceTree = "<group>"; };
 		ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarLabelItem.swift; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 				AC2EB193241429A10039FA85 /* UIColor+Extensions.swift */,
 				AC2EB194241429A10039FA85 /* UICollectionViewFlowLayout+Extensions.swift */,
 				AC2EB195241429A10039FA85 /* UICollectionView+Extensions.swift */,
+				ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1524,6 +1527,7 @@
 				ACD6364A246ABF190042483E /* CGPath+Extensions.swift in Sources */,
 				AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */,
 				AC38FF7A2449D820002BAD27 /* Builder.swift in Sources */,
+				ACA00B4B24D2A76F003983F8 /* UIEdgeInsets+Extensions.swift in Sources */,
 				AC2EB1AA241429A10039FA85 /* NSAttributedString+Extensions.swift in Sources */,
 				AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */,
 				ACAF21612452FADE00C33CC2 /* NavigationItem.swift in Sources */,

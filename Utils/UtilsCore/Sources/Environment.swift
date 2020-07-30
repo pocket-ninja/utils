@@ -5,8 +5,10 @@
 import UIKit
 
 public class Environment {
-    public static let isPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone
-    public static let isPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    #if os(iOS)
+        public static let isPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone
+        public static let isPad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    #endif
 
     public static var isTests: Bool {
         return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil

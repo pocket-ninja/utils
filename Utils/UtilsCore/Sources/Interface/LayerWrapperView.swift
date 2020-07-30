@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public class LayerWrapperView<Layer: CALayer>: UIView {
     public typealias LayoutBlock = (LayerWrapperView) -> Void
 
@@ -39,3 +40,4 @@ public class LayerWrapperView<Layer: CALayer>: UIView {
         onLayout?(self)
     }
 }
+#endif

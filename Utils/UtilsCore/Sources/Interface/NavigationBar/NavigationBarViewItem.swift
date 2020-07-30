@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 open class NavigationBarViewItem: NavigationItem {
     public typealias StateHandler = (NavigationBarViewItem, NavigationItemState) -> Void
 
@@ -31,3 +32,4 @@ open class NavigationBarViewItem: NavigationItem {
         view.tintColor = color
     }
 }
+#endif

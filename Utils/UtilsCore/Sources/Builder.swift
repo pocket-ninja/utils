@@ -2,7 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public protocol Builder {}
 public protocol Withable {}

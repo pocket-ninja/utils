@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 extension UIApplication {
     @discardableResult
     public func redirect(to url: URL) -> Bool {
@@ -24,3 +25,4 @@ extension UIApplication {
         return redirect(to: url)
     }
 }
+#endif

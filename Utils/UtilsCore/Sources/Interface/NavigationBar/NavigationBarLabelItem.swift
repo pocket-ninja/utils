@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 open class NavigationBarLabelItem: NavigationItem {
     open var view: UIView {
         return label
@@ -53,3 +54,4 @@ open class NavigationBarLabelItem: NavigationItem {
         }
     }
 }
+#endif

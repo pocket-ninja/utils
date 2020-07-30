@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public extension UIImageView {
     func set(image: UIImage?, animated: Bool = true, fadeDuration: TimeInterval = 0.15) {
         guard animated, image != nil else {
@@ -17,3 +18,4 @@ public extension UIImageView {
         layer.add(transition, forKey: nil)
     }
 }
+#endif

@@ -2,9 +2,8 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+import Foundation
 import CoreGraphics
-import UIKit
-import UtilsCore
 
 public extension CGContext {
     static func with(data: UnsafeMutableRawPointer? = nil, size: CGSize) -> CGContext? {
