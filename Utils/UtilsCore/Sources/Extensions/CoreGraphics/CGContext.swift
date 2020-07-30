@@ -3,8 +3,9 @@
 //
 
 import Foundation
-import CoreGraphics
+import UIKit
 
+#if os(iOS)
 public extension CGContext {
     static func with(data: UnsafeMutableRawPointer? = nil, size: CGSize) -> CGContext? {
         return with(data: data, size: Size(cgSize: size))
@@ -100,6 +101,7 @@ public extension CGContext {
         CTFrameDraw(ctFrame, self)
     }
 }
+#endif
 
 public enum BitmapBackground {
     case image(CGImage?)
