@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 open class NavigationBar: UIView {
     public typealias Item = NavigationItem
     public typealias ButtonItem = NavigationBarButtonItem
@@ -194,3 +195,4 @@ open class NavigationBar: UIView {
     private let separator = UIView()
     private let effectsView = UIVisualEffectView()
 }
+#endif

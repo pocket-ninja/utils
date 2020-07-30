@@ -2,7 +2,7 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public enum Directory: String, Codable, Hashable {
     case caches

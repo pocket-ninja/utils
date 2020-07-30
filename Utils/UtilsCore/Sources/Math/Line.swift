@@ -2,7 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import CoreGraphics
+
 
 /* All names are taken from https://en.wikipedia.org/wiki/Line_(geometry) */
 public enum Line: Hashable {

@@ -2,7 +2,8 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import CoreGraphics
 
 precedencegroup PipePrecedence {
     associativity: left

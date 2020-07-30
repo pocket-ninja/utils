@@ -2,7 +2,8 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import CoreGraphics
 
 public struct Size<T: Measurable>: Hashable, Codable {
     public var width: T

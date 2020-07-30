@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public extension UICollectionView {
     typealias CellConfigurator<Cell: UICollectionViewCell> = (Cell, IndexPath) -> Void
 
@@ -46,3 +47,4 @@ public extension UICollectionView {
     }
 
 }
+#endif

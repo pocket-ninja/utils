@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public extension UIView {
     func addSubviews(_ subviews: UIView...) {
         subviews.forEach(addSubview(_:))
@@ -87,3 +88,4 @@ public extension UIView {
         )
     }
 }
+#endif

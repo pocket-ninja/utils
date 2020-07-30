@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 open class NavigationBarButtonItem: NavigationItem {
     open var view: UIView {
         return button
@@ -105,3 +106,4 @@ open class NavigationBarButtonItem: NavigationItem {
         button.isUserInteractionEnabled = false
     }
 }
+#endif
