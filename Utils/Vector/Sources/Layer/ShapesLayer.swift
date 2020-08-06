@@ -62,7 +62,7 @@ public class ShapesLayer: CALayer {
     private func layout(layer: ShapeLayer) {
         layer.transform = CATransform3DIdentity
         layer.frame = CGRect(origin: .zero, size: size)
-        layer.transform = layersTransform.caTransform
+        layer.transform = CATransform3DMakeAffineTransform(layersTransform)
     }
     
     private var layers: [Shape: ShapeLayer] = [:]

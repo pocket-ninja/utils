@@ -19,9 +19,6 @@
 		AC27E4B7244E033700CFD763 /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B5244E033700CFD763 /* ShareContent.swift */; };
 		AC27E4BB244E050E00CFD763 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B9244E035700CFD763 /* DemoViewController.swift */; };
 		AC27E4BE244E059D00CFD763 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = AC27E4BD244E059D00CFD763 /* file.json */; };
-		AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB0FF24140BE30039FA85 /* CompositeAnalyticsTests.swift */; };
-		AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10024140BE30039FA85 /* AnalyticsTests.swift */; };
-		AC2EB10624140C6E0039FA85 /* AnalyticsEvent+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10524140C6E0039FA85 /* AnalyticsEvent+Stub.swift */; };
 		AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10824140CBB0039FA85 /* StorageMock.swift */; };
 		AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10924140CBB0039FA85 /* TestBundle.swift */; };
 		AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10C241410760039FA85 /* StorageTests.swift */; };
@@ -95,7 +92,6 @@
 		AC4F79AA246D64E900F92968 /* Gradient+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F797F246D625D00F92968 /* Gradient+Extensions.swift */; };
 		AC4F79AB246D65B900F92968 /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F798D246D625E00F92968 /* ShapeRenderer.swift */; };
 		AC4F79AC246D65E400F92968 /* GradientRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F798F246D625E00F92968 /* GradientRenderer.swift */; };
-		AC4F79AE246D666C00F92968 /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79AD246D666C00F92968 /* CGContext.swift */; };
 		AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B1246D679200F92968 /* GenericSizeTests.swift */; };
 		AC4F79B3246D67E100F92968 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79AF246D671E00F92968 /* Size.swift */; };
 		AC4F79B5246D7EE900F92968 /* Shape+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B4246D7EE900F92968 /* Shape+Stub.swift */; };
@@ -126,21 +122,7 @@
 		AC9DA4CB2412CC6F00F034EE /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4842412CB5700F034EE /* ErrorTracker.swift */; };
 		AC9DA4CC2412CC6F00F034EE /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4852412CB5700F034EE /* Assertions.swift */; };
 		AC9DA4CD2412CC6F00F034EE /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4862412CB5700F034EE /* Trace.swift */; };
-		AC9DA5072412CE1F00F034EE /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA5052412CE1F00F034EE /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC9DA50A2412CE1F00F034EE /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; };
-		AC9DA50B2412CE1F00F034EE /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA5032412CE1F00F034EE /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC9DA50F2412CE3900F034EE /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
-		AC9DA5102412CE3900F034EE /* UtilsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */; };
-		AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */; };
-		AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48D2412CB5700F034EE /* Analytics.swift */; };
-		AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */; };
-		AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */; };
-		AC9DA5402412CF1700F034EE /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4902412CB5700F034EE /* AnalyticsEvent.swift */; };
-		AC9DA5412412CF1700F034EE /* OneShotable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4912412CB5700F034EE /* OneShotable.swift */; };
-		AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */; };
-		AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */; };
-		AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */; };
 		ACA00B4B24D2A76F003983F8 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */; };
 		ACAF215D2452FADE00C33CC2 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21582452FADE00C33CC2 /* NavigationBar.swift */; };
 		ACAF215E2452FADE00C33CC2 /* NavigationBarViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */; };
@@ -161,6 +143,7 @@
 		ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63659246AC21E0042483E /* ShapeContainer.swift */; };
 		ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6365B246AC2A50042483E /* CGPath+Stub.swift */; };
 		ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
+		ACFDBB5124DC4F3800B54ED1 /* CGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79AD246D666C00F92968 /* CGContext.swift */; };
 		F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */; };
 		F6354BCF249D02F50084C408 /* ClampingWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCB249D01700084C408 /* ClampingWrapper.swift */; };
 		F680893D24741EBC005A13DA /* UtilsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA4882412CB5700F034EE /* UtilsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -206,20 +189,6 @@
 			remoteGlobalIDString = AC9DA4BA2412CC1E00F034EE;
 			remoteInfo = UtilsCore;
 		};
-		AC9DA5082412CE1F00F034EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC9DA5022412CE1F00F034EE;
-			remoteInfo = Analytics;
-		};
-		AC9DA5112412CE3900F034EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC9DA4BA2412CC1E00F034EE;
-			remoteInfo = UtilsCore;
-		};
 		AC9DA5352412CECC00F034EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -247,19 +216,7 @@
 				AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */,
 				AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */,
 				AC27E4AE244E02EF00CFD763 /* Sharing.framework in Embed Frameworks */,
-				AC9DA50B2412CE1F00F034EE /* Analytics.framework in Embed Frameworks */,
 				AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5132412CE3900F034EE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AC9DA5102412CE3900F034EE /* UtilsCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +237,6 @@
 		AC27E4B5244E033700CFD763 /* ShareContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContent.swift; sourceTree = "<group>"; };
 		AC27E4B9244E035700CFD763 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		AC27E4BD244E059D00CFD763 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
-		AC2EB0FF24140BE30039FA85 /* CompositeAnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeAnalyticsTests.swift; sourceTree = "<group>"; };
-		AC2EB10024140BE30039FA85 /* AnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsTests.swift; sourceTree = "<group>"; };
-		AC2EB10524140C6E0039FA85 /* AnalyticsEvent+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnalyticsEvent+Stub.swift"; sourceTree = "<group>"; };
 		AC2EB10824140CBB0039FA85 /* StorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageMock.swift; sourceTree = "<group>"; };
 		AC2EB10924140CBB0039FA85 /* TestBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBundle.swift; sourceTree = "<group>"; };
 		AC2EB10C241410760039FA85 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageTests.swift; path = ../../StorageTests.swift; sourceTree = "<group>"; };
@@ -387,21 +341,9 @@
 		AC9DA4862412CB5700F034EE /* Trace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trace.swift; sourceTree = "<group>"; };
 		AC9DA4882412CB5700F034EE /* UtilsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCore.h; sourceTree = "<group>"; };
 		AC9DA4892412CB5700F034EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9DA48D2412CB5700F034EE /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsDrain.swift; sourceTree = "<group>"; };
-		AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeAnalytics.swift; sourceTree = "<group>"; };
-		AC9DA4902412CB5700F034EE /* AnalyticsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
-		AC9DA4912412CB5700F034EE /* OneShotable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneShotable.swift; sourceTree = "<group>"; };
-		AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalytics.swift; sourceTree = "<group>"; };
-		AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsDispatcher.swift; sourceTree = "<group>"; };
-		AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraceAnalytics.swift; sourceTree = "<group>"; };
 		AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentTests.swift; sourceTree = "<group>"; };
-		AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryAnalyticsTests.swift; sourceTree = "<group>"; };
 		AC9DA4B12412CB6000F034EE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9DA5032412CE1F00F034EE /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9DA5052412CE1F00F034EE /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
-		AC9DA5062412CE1F00F034EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9DA5302412CECC00F034EE /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		ACAF21582452FADE00C33CC2 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -468,7 +410,6 @@
 				AC4F7975246D5EDA00F92968 /* Vector.framework in Frameworks */,
 				AC9DA4C22412CC1E00F034EE /* UtilsCore.framework in Frameworks */,
 				AC27E4AD244E02EF00CFD763 /* Sharing.framework in Frameworks */,
-				AC9DA50A2412CE1F00F034EE /* Analytics.framework in Frameworks */,
 				AC2115872416287E00FCA866 /* Alert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,14 +418,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA5002412CE1F00F034EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA50F2412CE3900F034EE /* UtilsCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,17 +493,6 @@
 				AC27E4BD244E059D00CFD763 /* file.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		AC2EB10324140C2E0039FA85 /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				AC2EB10524140C6E0039FA85 /* AnalyticsEvent+Stub.swift */,
-				AC2EB10024140BE30039FA85 /* AnalyticsTests.swift */,
-				AC2EB0FF24140BE30039FA85 /* CompositeAnalyticsTests.swift */,
-				AC9DA4AF2412CB6000F034EE /* HistoryAnalyticsTests.swift */,
-			);
-			path = Analytics;
 			sourceTree = "<group>";
 		};
 		AC2EB10424140C340039FA85 /* UtilsCore */ = {
@@ -871,15 +793,6 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		AC768B8524448D33000772B0 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA48C2412CB5700F034EE /* Sources */,
-				AC9DA5042412CE1F00F034EE /* SupportingFiles */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		AC9DA4572412CACC00F034EE = {
 			isa = PBXGroup;
 			children = (
@@ -896,7 +809,6 @@
 			children = (
 				AC9DA4602412CACC00F034EE /* Demo.app */,
 				AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */,
-				AC9DA5032412CE1F00F034EE /* Analytics.framework */,
 				AC9DA5302412CECC00F034EE /* UtilsTests.xctest */,
 				AC2115802416287E00FCA866 /* Alert.framework */,
 				AC27E4A6244E02EF00CFD763 /* Sharing.framework */,
@@ -911,7 +823,6 @@
 			children = (
 				AC9DA47F2412CB5700F034EE /* UtilsCore */,
 				AC2115812416287E00FCA866 /* Alert */,
-				AC9DA48A2412CB5700F034EE /* Analytics */,
 				AC27E4A7244E02EF00CFD763 /* Sharing */,
 				AC4F796F246D5EDA00F92968 /* Vector */,
 				AC4F79DF246DA8B800F92968 /* MacawAdditions */,
@@ -988,29 +899,6 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		AC9DA48A2412CB5700F034EE /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				AC768B8524448D33000772B0 /* Core */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		AC9DA48C2412CB5700F034EE /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA48D2412CB5700F034EE /* Analytics.swift */,
-				AC9DA48E2412CB5700F034EE /* AnalyticsDrain.swift */,
-				AC9DA48F2412CB5700F034EE /* CompositeAnalytics.swift */,
-				AC9DA4902412CB5700F034EE /* AnalyticsEvent.swift */,
-				AC9DA4912412CB5700F034EE /* OneShotable.swift */,
-				AC9DA4922412CB5700F034EE /* HistoryAnalytics.swift */,
-				AC9DA4932412CB5700F034EE /* AnalyticsDispatcher.swift */,
-				AC9DA4942412CB5700F034EE /* TraceAnalytics.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		AC9DA4AC2412CB6000F034EE /* UtilsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1028,7 +916,6 @@
 				AC2EB10724140CB10039FA85 /* Stub */,
 				AC4F79B6246D7F2C00F92968 /* Vector */,
 				AC2EB10424140C340039FA85 /* UtilsCore */,
-				AC2EB10324140C2E0039FA85 /* Analytics */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1046,15 +933,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AC9DA5042412CE1F00F034EE /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AC9DA5052412CE1F00F034EE /* Analytics.h */,
-				AC9DA5062412CE1F00F034EE /* Info.plist */,
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		ACAF21572452FADE00C33CC2 /* NavigationBar */ = {
@@ -1139,14 +1017,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F680893D24741EBC005A13DA /* UtilsCore.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC9DA4FE2412CE1F00F034EE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA5072412CE1F00F034EE /* Analytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1244,7 +1114,6 @@
 			);
 			dependencies = (
 				AC9DA4C12412CC1E00F034EE /* PBXTargetDependency */,
-				AC9DA5092412CE1F00F034EE /* PBXTargetDependency */,
 				AC2115862416287E00FCA866 /* PBXTargetDependency */,
 				AC27E4AC244E02EF00CFD763 /* PBXTargetDependency */,
 				AC4F7974246D5EDA00F92968 /* PBXTargetDependency */,
@@ -1273,26 +1142,6 @@
 			name = UtilsCore;
 			productName = UtilsCore;
 			productReference = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AC9DA5022412CE1F00F034EE /* Analytics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC9DA50C2412CE1F00F034EE /* Build configuration list for PBXNativeTarget "Analytics" */;
-			buildPhases = (
-				AC9DA4FE2412CE1F00F034EE /* Headers */,
-				AC9DA4FF2412CE1F00F034EE /* Sources */,
-				AC9DA5002412CE1F00F034EE /* Frameworks */,
-				AC9DA5012412CE1F00F034EE /* Resources */,
-				AC9DA5132412CE3900F034EE /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC9DA5122412CE3900F034EE /* PBXTargetDependency */,
-			);
-			name = Analytics;
-			productName = Analytics;
-			productReference = AC9DA5032412CE1F00F034EE /* Analytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AC9DA52F2412CECC00F034EE /* UtilsTests */ = {
@@ -1347,9 +1196,6 @@
 					AC9DA4BA2412CC1E00F034EE = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
-					AC9DA5022412CE1F00F034EE = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
 					AC9DA52F2412CECC00F034EE = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = AC9DA45F2412CACC00F034EE;
@@ -1375,7 +1221,6 @@
 			targets = (
 				AC9DA45F2412CACC00F034EE /* Demo */,
 				AC9DA4BA2412CC1E00F034EE /* UtilsCore */,
-				AC9DA5022412CE1F00F034EE /* Analytics */,
 				AC9DA52F2412CECC00F034EE /* UtilsTests */,
 				AC21157F2416287E00FCA866 /* Alert */,
 				AC27E4A5244E02EF00CFD763 /* Sharing */,
@@ -1431,13 +1276,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC9DA5012412CE1F00F034EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC9DA52E2412CECC00F034EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1476,7 +1314,6 @@
 				AC4F79CF246D9F1700F92968 /* ShapesLayer.swift in Sources */,
 				AC4F79A9246D64CA00F92968 /* ShapeStyle+Extensions.swift in Sources */,
 				AC4F79A8246D64B900F92968 /* Shape+Extensions.swift in Sources */,
-				AC4F79AE246D666C00F92968 /* CGContext.swift in Sources */,
 				AC4F79A4246D641A00F92968 /* CAGradientLayer+Extensions.swift in Sources */,
 				AC4F7997246D625E00F92968 /* Shape.swift in Sources */,
 				AC4F79AA246D64E900F92968 /* Gradient+Extensions.swift in Sources */,
@@ -1523,6 +1360,7 @@
 				F6826C4224864184001A327E /* DebugOverridableWrapper.swift in Sources */,
 				AC2EB1A2241429A10039FA85 /* UIViewController+Extensions.swift in Sources */,
 				ACD6364D246ABF660042483E /* PathPolygonizer.swift in Sources */,
+				ACFDBB5124DC4F3800B54ED1 /* CGContext.swift in Sources */,
 				AC2EB1A8241429A10039FA85 /* String+Extensions.swift in Sources */,
 				ACD6364A246ABF190042483E /* CGPath+Extensions.swift in Sources */,
 				AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */,
@@ -1574,21 +1412,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC9DA4FF2412CE1F00F034EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC9DA5402412CF1700F034EE /* AnalyticsEvent.swift in Sources */,
-				AC9DA5432412CF1700F034EE /* AnalyticsDispatcher.swift in Sources */,
-				AC9DA5412412CF1700F034EE /* OneShotable.swift in Sources */,
-				AC9DA53F2412CF1700F034EE /* CompositeAnalytics.swift in Sources */,
-				AC9DA5422412CF1700F034EE /* HistoryAnalytics.swift in Sources */,
-				AC9DA53D2412CF1700F034EE /* Analytics.swift in Sources */,
-				AC9DA5442412CF1700F034EE /* TraceAnalytics.swift in Sources */,
-				AC9DA53E2412CF1700F034EE /* AnalyticsDrain.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC9DA52C2412CECC00F034EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1599,7 +1422,6 @@
 				AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */,
 				AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */,
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
-				AC2EB10624140C6E0039FA85 /* AnalyticsEvent+Stub.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
 				F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */,
 				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
@@ -1617,7 +1439,6 @@
 				ACD63653246AC0D80042483E /* LineSegmentTests.swift in Sources */,
 				ACD63657246AC1280042483E /* CGPathExtensionsTests.swift in Sources */,
 				AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */,
-				AC2EB10124140BE30039FA85 /* CompositeAnalyticsTests.swift in Sources */,
 				AC4F79B5246D7EE900F92968 /* Shape+Stub.swift in Sources */,
 				AC4F79D8246DA71000F92968 /* ShapeTests.swift in Sources */,
 				AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */,
@@ -1625,9 +1446,7 @@
 				F6826C4024863FF2001A327E /* CodableColorWrapperTests.swift in Sources */,
 				AC2EB21824142D700039FA85 /* UIViewControllerExtensionsTests.swift in Sources */,
 				AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */,
-				AC2EB10224140BE30039FA85 /* AnalyticsTests.swift in Sources */,
 				AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */,
-				AC9DA53B2412CF0300F034EE /* HistoryAnalyticsTests.swift in Sources */,
 				AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */,
 				AC2EB21B24142D700039FA85 /* StringExtensionsTests.swift in Sources */,
 				ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */,
@@ -1666,16 +1485,6 @@
 			isa = PBXTargetDependency;
 			target = AC9DA4BA2412CC1E00F034EE /* UtilsCore */;
 			targetProxy = AC9DA4C02412CC1E00F034EE /* PBXContainerItemProxy */;
-		};
-		AC9DA5092412CE1F00F034EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC9DA5022412CE1F00F034EE /* Analytics */;
-			targetProxy = AC9DA5082412CE1F00F034EE /* PBXContainerItemProxy */;
-		};
-		AC9DA5122412CE3900F034EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC9DA4BA2412CC1E00F034EE /* UtilsCore */;
-			targetProxy = AC9DA5112412CE3900F034EE /* PBXContainerItemProxy */;
 		};
 		AC9DA5362412CECC00F034EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2150,66 +1959,6 @@
 			};
 			name = Release;
 		};
-		AC9DA50D2412CE1F00F034EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Utils/Analytics/Core/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Analytics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC9DA50E2412CE1F00F034EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Utils/Analytics/Core/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Analytics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AC9DA5382412CECC00F034EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2314,15 +2063,6 @@
 			buildConfigurations = (
 				AC9DA4C52412CC1E00F034EE /* Debug */,
 				AC9DA4C62412CC1E00F034EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC9DA50C2412CE1F00F034EE /* Build configuration list for PBXNativeTarget "Analytics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC9DA50D2412CE1F00F034EE /* Debug */,
-				AC9DA50E2412CE1F00F034EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

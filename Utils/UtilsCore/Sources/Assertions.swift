@@ -22,7 +22,7 @@ public func assertWrapper(_ condition: @autoclosure () -> Bool,
     if !Environment.isDebug {
         let domain = "[Assertion]: \(domain().capitalized)"
         let parameters = ["message": message() ?? domain, "file": String(describing: file), "line": "\(line)"]
-        let error = AnalyticsError(domain: domain, parameters: parameters)
+        let error = NSError(domain: domain, code: 1, userInfo: parameters)
         errorTracker?.track(error)
     }
 }
