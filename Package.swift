@@ -22,10 +22,6 @@ let package = Package(
             targets: ["Sharing"]
         ),
         .library(
-            name: "Analytics",
-            targets: ["Analytics"]
-        ),
-        .library(
             name: "Vector",
             targets: ["Vector"]
         ),
@@ -45,11 +41,6 @@ let package = Package(
             name: "UtilsCore",
             dependencies: [],
             path: "Utils/UtilsCore/Sources"
-        ),
-        .target(
-            name: "Analytics",
-            dependencies: ["UtilsCore"],
-            path: "Utils/Analytics/Core/Sources"
         ),
         .target(
             name: "Alert",
@@ -73,7 +64,7 @@ let package = Package(
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Analytics", "Vector", "MacawAdditions", "RxPocket"],
+            dependencies: ["UtilsCore", "Vector", "MacawAdditions"],
             path: "UtilsTests/Sources"
         ),
     ],
