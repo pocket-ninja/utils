@@ -3,7 +3,6 @@
 //
 
 import UIKit
-import UtilsCore
 
 public class ShapesLayer: CALayer {
     public var shapes: [Shape]

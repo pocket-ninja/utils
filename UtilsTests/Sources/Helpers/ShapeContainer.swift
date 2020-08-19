@@ -3,10 +3,8 @@
 //
 
 import UIKit
-import UtilsCore
 
 class ShapeContainer: UIView {
-
     let shape: CAShapeLayer
 
     var shapePath: CGPath {

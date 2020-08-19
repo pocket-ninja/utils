@@ -34,7 +34,8 @@ let package = Package(
         .package(
             url: "https://github.com/sroik/Macaw.git",
             .branch("master")
-        )
+        ),
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.8.1"),
     ],
     targets: [
         .target(
@@ -64,7 +65,7 @@ let package = Package(
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Vector", "MacawAdditions"],
+            dependencies: ["UtilsCore", "Vector", "MacawAdditions", "SnapshotTesting"],
             path: "UtilsTests/Sources"
         ),
     ],
