@@ -8,8 +8,7 @@ import XCTest
 class TargetTests: XCTestCase {
     func testTargetInitialization() {
         let target = Target(bundle: .test)
-        XCTAssert(!target.displayName.isEmpty)
-        XCTAssert(!target.name.isEmpty)
-        XCTAssert(!target.version.isEmpty)
+        XCTAssertFalse(target.displayName.isEmpty)
+        XCTAssertFalse(target.name.isEmpty)
     }
 }
