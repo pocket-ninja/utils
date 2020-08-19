@@ -115,6 +115,7 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
             return
         }
 
+        addSubview(badge)
         badge.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             badge.centerYAnchor.constraint(equalTo: iconView.topAnchor, constant: 2.5),
