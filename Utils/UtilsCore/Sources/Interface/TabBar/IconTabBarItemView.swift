@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public final class IconTabBarItemView: UIView, TabBarItemViewable {
     public var badgeView: UIView? {
         didSet {
@@ -124,3 +125,4 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
     private let titleLabel = UILabel()
     private let iconView = UIImageView()
 }
+#endif

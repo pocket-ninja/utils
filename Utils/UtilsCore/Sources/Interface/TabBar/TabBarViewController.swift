@@ -4,6 +4,7 @@
 
 import UIKit
 
+#if os(iOS)
 public protocol TabBarViewControllerDelegate: AnyObject {
     func tabBar(_ controller: TabBarViewController, didSelect tab: TabBarItem)
     func tabBar(_ controller: TabBarViewController, didConsecutivelySelect tab: TabBarItem)
@@ -165,3 +166,4 @@ extension TabBarViewController: TabBarViewDelegate {
         selectTab(at: index, animated: true)
     }
 }
+#endif
