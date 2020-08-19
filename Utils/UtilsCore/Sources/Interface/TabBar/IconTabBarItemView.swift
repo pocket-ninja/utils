@@ -50,7 +50,7 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
             renderState()
         }
     }
-    
+
     public var state: TabBarItemState = .normal {
         didSet {
             renderState()
@@ -58,7 +58,6 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
     }
 
     public var tapHandler: TapHandler?
-    
 
     public init(title: String? = nil, icon: UIImage? = nil, badge: UIView? = nil) {
         self.badgeView = badge
@@ -92,9 +91,16 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
             iconView.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor),
             iconView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -4)
         ])
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        addGestureRecognizer(tapGesture)
 
         renderState()
         renderBadge()
+    }
+    
+    @objc private func handleTap() {
+        tapHandler?(self)
     }
 
     public func renderState() {
