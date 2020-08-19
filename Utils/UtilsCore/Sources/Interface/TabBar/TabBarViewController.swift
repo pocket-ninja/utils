@@ -16,8 +16,8 @@ public extension TabBarViewControllerDelegate {
 }
 
 public final class TabBarViewController: UIViewController {
-    public enum ChildLayout {
-        case barPinned
+    public enum ChildLayout: Equatable {
+        case barPinned(contentOffset: CGFloat)
         case fullHeight
     }
 
@@ -50,7 +50,7 @@ public final class TabBarViewController: UIViewController {
     public weak var delegate: TabBarViewControllerDelegate?
 
     public init(
-        layout: ChildLayout = .barPinned,
+        layout: ChildLayout = .barPinned(contentOffset: 0),
         tabBarView: TabBarViewable,
         tabs: [TabBarItem] = []
     ) {
@@ -76,8 +76,8 @@ public final class TabBarViewController: UIViewController {
         ])
         
         switch layout {
-        case .barPinned:
-            containerView.bottomAnchor.constraint(equalTo: tabBarView.topAnchor).isActive = true
+        case .barPinned(let contentOffset):
+            containerView.bottomAnchor.constraint(equalTo: tabBarView.topAnchor, constant: -contentOffset).isActive = true
         case .fullHeight:
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         }
