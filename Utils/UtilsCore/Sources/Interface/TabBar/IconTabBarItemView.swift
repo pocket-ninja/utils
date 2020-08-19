@@ -76,6 +76,8 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
     private func setup() {
         addSubviews(iconView, titleLabel)
 
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.textAlignment = .center
         titleLabel.setContentHuggingPriority(.required, for: .vertical)
         titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -89,6 +91,7 @@ public final class IconTabBarItemView: UIView, TabBarItemViewable {
         iconView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             iconView.topAnchor.constraint(equalTo: topAnchor),
+            iconView.centerXAnchor.constraint(equalTo: centerXAnchor),
             iconView.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor),
             iconView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -4)
         ])
