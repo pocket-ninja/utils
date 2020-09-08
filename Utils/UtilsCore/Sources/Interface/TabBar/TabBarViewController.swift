@@ -94,7 +94,11 @@ public final class TabBarViewController: UIViewController {
         tabBarView.delegate = self
         NSLayoutConstraint.activate([
             tabBarView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            tabBarView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            tabBarView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tabBarView.topAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+                constant: -tabBarView.height
+            )
         ])
 
         switch insetReference {
