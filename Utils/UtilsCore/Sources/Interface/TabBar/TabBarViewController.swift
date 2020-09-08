@@ -20,6 +20,11 @@ public final class TabBarViewController: UIViewController {
         case barPinned(contentOffset: CGFloat)
         case fullHeight
     }
+    
+    public enum InsetReference {
+        case none
+        case safeArea
+    }
 
     public var tabs: [TabBarItem] {
         didSet {
@@ -51,11 +56,13 @@ public final class TabBarViewController: UIViewController {
 
     public init(
         layout: ChildLayout = .barPinned(contentOffset: 0),
+        insetReference: InsetReference = .safeArea,
         tabBarView: TabBarViewable,
         tabs: [TabBarItem] = []
     ) {
         self.tabs = tabs
         self.layout = layout
+        self.insetReference = insetReference
         self.tabBarView = tabBarView
         super.init(nibName: nil, bundle: nil)
     }
@@ -82,13 +89,20 @@ public final class TabBarViewController: UIViewController {
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         }
 
+        
         tabBarView.translatesAutoresizingMaskIntoConstraints = false
         tabBarView.delegate = self
         NSLayoutConstraint.activate([
-            tabBarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tabBarView.widthAnchor.constraint(equalTo: view.widthAnchor),
             tabBarView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+
+        switch insetReference {
+        case .none:
+            tabBarView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        case .safeArea:
+            tabBarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        }
 
         renderTabs()
     }
@@ -147,6 +161,7 @@ public final class TabBarViewController: UIViewController {
     private let containerView = UIView()
     private let tabBarView: TabBarViewable
     private let layout: ChildLayout
+    private let insetReference: InsetReference
     private var showedController: UIViewController?
 }
 
