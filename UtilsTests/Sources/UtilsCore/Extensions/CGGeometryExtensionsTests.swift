@@ -85,17 +85,25 @@ class CGSizeExtensionsTests: XCTestCase {
     func testScaleToFill() {
         let s1 = CGSize(width: 2, height: 5)
         let s2 = CGSize(width: 3, height: 10)
+        let s3 = CGSize(width: 1, height: 0)
+        
         XCTAssertEqual(s1.scale(toFill: s2), 2)
         XCTAssertEqual(s2.scale(toFill: s1), 2 / 3)
         XCTAssertEqual(CGSize.zero.scale(toFill: s1), 1.0)
+        XCTAssertEqual(s1.scale(toFill: .zero), 0)
+        XCTAssertEqual(s1.scale(toFill: s3), 0.5)
     }
 
     func testScaleToFit() {
         let s1 = CGSize(width: 2, height: 5)
         let s2 = CGSize(width: 3, height: 10)
+        let s3 = CGSize(width: 1, height: 0)
+        
         XCTAssertEqual(s1.scale(toFit: s2), 3 / 2)
         XCTAssertEqual(s2.scale(toFit: s1), 5 / 10)
-        XCTAssertEqual(CGSize.zero.scale(toFit: s1), 1.0)
+        XCTAssertEqual(CGSize.zero.scale(toFit: s1), 1)
+        XCTAssertEqual(s1.scale(toFit: .zero), 0)
+        XCTAssertEqual(s3.scale(toFit: s1), 2)
     }
 
     func testRotatedSize() {

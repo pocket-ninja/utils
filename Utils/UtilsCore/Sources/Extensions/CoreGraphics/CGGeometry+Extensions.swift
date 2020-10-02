@@ -144,10 +144,10 @@ public extension CGSize {
     }
 
     func scale(toFill size: CGSize) -> CGFloat {
-        guard !isEmpty, !size.isEmpty else {
-            return 1.0
+        if isEmpty {
+            return 1
         }
-
+        
         let hRelation = size.width / width
         let vRelation = size.height / height
         let maxRelation = max(hRelation, vRelation)
@@ -155,8 +155,12 @@ public extension CGSize {
     }
 
     func scale(toFit size: CGSize) -> CGFloat {
-        guard !isEmpty, !size.isEmpty else {
-            return 1.0
+        if width < .ulpOfOne, height < .ulpOfOne {
+            return 1
+        }
+
+        if size.isEmpty {
+            return 0
         }
 
         let hRelation = size.width / width
