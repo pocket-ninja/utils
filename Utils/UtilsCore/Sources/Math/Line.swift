@@ -72,14 +72,14 @@ public extension Line {
         }
     }
 
-    func isParallel(to line: Line) -> Bool {
+    func isParallel(to line: Line, threshold: CGFloat = .ulpOfOne) -> Bool {
         switch (self, line) {
         case (.vertical, .vertical):
             return true
         case (.vertical, .sloped), (.sloped, .vertical):
             return false
         case let (.sloped(s1, _), .sloped(s2, _)):
-            return s1 == s2
+            return abs(s1 - s2) < threshold
         }
     }
 

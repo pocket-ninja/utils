@@ -20,10 +20,6 @@ public extension LineSegment {
         return a.distance(to: b)
     }
 
-    var slope: CGFloat {
-        return a.x
-    }
-
     var line: Line {
         return Line(segment: self)
     }
