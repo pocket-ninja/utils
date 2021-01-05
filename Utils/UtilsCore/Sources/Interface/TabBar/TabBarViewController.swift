@@ -21,9 +21,11 @@ public final class TabBarViewController: UIViewController {
         case fullHeight
     }
     
-    public enum InsetReference {
-        case none
-        case safeArea
+    public enum TabPivot {
+        case top
+        case topSafeArea
+        case bottom
+        case bottomSafeArea
     }
 
     public var tabs: [TabBarItem] {
@@ -56,13 +58,13 @@ public final class TabBarViewController: UIViewController {
 
     public init(
         layout: ChildLayout = .barPinned(contentOffset: 0),
-        insetReference: InsetReference = .safeArea,
+        tabPivot: TabPivot = .bottomSafeArea,
         tabBarView: TabBarViewable,
         tabs: [TabBarItem] = []
     ) {
         self.tabs = tabs
         self.layout = layout
-        self.insetReference = insetReference
+        self.tabPivot = tabPivot
         self.tabBarView = tabBarView
         super.init(nibName: nil, bundle: nil)
     }
@@ -83,29 +85,52 @@ public final class TabBarViewController: UIViewController {
         ])
         
         switch layout {
-        case .barPinned(let contentOffset):
-            containerView.bottomAnchor.constraint(equalTo: tabBarView.topAnchor, constant: -contentOffset).isActive = true
         case .fullHeight:
-            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+            containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
+        case .barPinned(let contentOffset):
+            switch tabPivot {
+            case .bottom, .bottomSafeArea:
+                containerView.bottomAnchor.constraint(
+                    equalTo: tabBarView.topAnchor,
+                    constant: -contentOffset
+                ).activate()
+            case .top, .topSafeArea:
+                containerView.topAnchor.constraint(
+                    equalTo: tabBarView.bottomAnchor,
+                    constant: contentOffset
+                ).activate()
+            }
         }
-
         
         tabBarView.translatesAutoresizingMaskIntoConstraints = false
         tabBarView.delegate = self
         NSLayoutConstraint.activate([
             tabBarView.widthAnchor.constraint(equalTo: view.widthAnchor),
             tabBarView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+
+        switch tabPivot {
+        case .bottom, .bottomSafeArea:
             tabBarView.topAnchor.constraint(
                 equalTo: view.safeAreaLayoutGuide.bottomAnchor,
                 constant: -tabBarView.height
-            )
-        ])
-
-        switch insetReference {
-        case .none:
-            tabBarView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        case .safeArea:
-            tabBarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+            ).activate()
+        case .top, .topSafeArea:
+            tabBarView.bottomAnchor.constraint(
+                equalTo: view.safeAreaLayoutGuide.topAnchor,
+                constant: tabBarView.height
+            ).activate()
+        }
+        
+        switch tabPivot {
+        case .bottom:
+            tabBarView.bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
+        case .bottomSafeArea:
+            tabBarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).activate()
+        case .top:
+            tabBarView.topAnchor.constraint(equalTo: view.topAnchor).activate()
+        case .topSafeArea:
+            tabBarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).activate()
         }
 
         renderTabs()
@@ -165,7 +190,7 @@ public final class TabBarViewController: UIViewController {
     private let containerView = UIView()
     private let tabBarView: TabBarViewable
     private let layout: ChildLayout
-    private let insetReference: InsetReference
+    private let tabPivot: TabPivot
     private var showedController: UIViewController?
 }
 
@@ -183,6 +208,12 @@ extension TabBarViewController: TabBarViewDelegate {
         delegate?.tabBar(self, didSelect: tab)
         selectedIndex = index
         selectTab(at: index, animated: true)
+    }
+}
+
+private extension NSLayoutConstraint {
+    func activate() {
+        isActive =  true
     }
 }
 #endif
