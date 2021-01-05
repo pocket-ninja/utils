@@ -79,7 +79,6 @@ public final class TabBarViewController: UIViewController {
         view.addSubviews(containerView, tabBarView)
         containerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: view.topAnchor),
             containerView.leftAnchor.constraint(equalTo: view.leftAnchor),
             containerView.rightAnchor.constraint(equalTo: view.rightAnchor),
         ])
@@ -90,11 +89,13 @@ public final class TabBarViewController: UIViewController {
         case .barPinned(let contentOffset):
             switch tabPivot {
             case .bottom, .bottomSafeArea:
+                containerView.topAnchor.constraint(equalTo: view.topAnchor).activate()
                 containerView.bottomAnchor.constraint(
                     equalTo: tabBarView.topAnchor,
                     constant: -contentOffset
                 ).activate()
             case .top, .topSafeArea:
+                containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
                 containerView.topAnchor.constraint(
                     equalTo: tabBarView.bottomAnchor,
                     constant: contentOffset
