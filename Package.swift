@@ -11,22 +11,27 @@ let package = Package(
     products: [
         .library(
             name: "UtilsCore",
+            type: .dynamic,
             targets: ["UtilsCore"]
         ),
         .library(
             name: "Alert",
+            type: .dynamic,
             targets: ["Alert"]
         ),
         .library(
             name: "Sharing",
+            type: .dynamic,
             targets: ["Sharing"]
         ),
         .library(
             name: "Vector",
+            type: .dynamic,
             targets: ["Vector"]
         ),
         .library(
             name: "MacawAdditions",
+            type: .dynamic,
             targets: ["MacawAdditions"]
         )
     ],
