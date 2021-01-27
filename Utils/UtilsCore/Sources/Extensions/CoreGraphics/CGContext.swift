@@ -35,7 +35,7 @@ public extension CGContext {
     }
 
     var scale: CGFloat {
-        return ctm.scale.x / UIScreen.main.scale
+        return ctm.absScale.x / UIScreen.main.scale
     }
 
     func fill(_ rect: CGRect, with color: CGColor) {

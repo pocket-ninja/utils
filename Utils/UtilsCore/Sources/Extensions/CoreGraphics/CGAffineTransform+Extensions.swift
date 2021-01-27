@@ -8,10 +8,14 @@ import Foundation
 public extension CGAffineTransform {
     typealias Scale = CGPoint
 
+    var absScale: Scale {
+        scale.abs
+    }
+    
     var scale: Scale {
         return CGPoint(
-            x: sqrt(a * a + c * c),
-            y: sqrt(b * b + d * d)
+            x: sqrt(a * a + c * c) * a.signum,
+            y: sqrt(b * b + d * d) * d.signum
         )
     }
 
