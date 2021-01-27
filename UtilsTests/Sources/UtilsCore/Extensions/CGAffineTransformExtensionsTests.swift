@@ -10,11 +10,11 @@ class CGAffineTransformExtensionsTests: XCTestCase {
 
     func testScale() {
         var t = CGAffineTransform(scaleX: -1.5, y: 2.0)
-        XCTAssertEqual(t.scale, CGPoint(x: -1.5, y: 2.0))
+        XCTAssertEqual(t.signScale, CGPoint(x: -1.5, y: 2.0))
         XCTAssertEqual(t.absScale, CGPoint(x: 1.5, y: 2.0))
         
         t = t.scaledBy(x: 2, y: 3)
-        XCTAssertEqual(t.scale, CGPoint(x: -3, y: 6.0))
+        XCTAssertEqual(t.signScale, CGPoint(x: -3, y: 6.0))
     }
 
     func testRotation() {

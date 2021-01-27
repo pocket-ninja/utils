@@ -9,13 +9,13 @@ public extension CGAffineTransform {
     typealias Scale = CGPoint
 
     var absScale: Scale {
-        scale.abs
+        signScale.abs
     }
     
-    var scale: Scale {
+    var signScale: Scale {
         return CGPoint(
-            x: sqrt(a * a + c * c) * a.signum,
-            y: sqrt(b * b + d * d) * d.signum
+            x: sqrt(a * a + c * c) * (a >= 0 ? 1 : -1),
+            y: sqrt(b * b + d * d) * (d >= 0 ? 1 : -1)
         )
     }
 

@@ -12,12 +12,6 @@ public extension Int {
     }
 }
 
-public extension BinaryFloatingPoint where Self: Comparable {
-    var signum: Self {
-        self / abs(self)
-    }
-}
-
 public extension Comparable {
     func clamped(from: Self, to: Self) -> Self {
         assertWrapper(from <= to, "invalid clamp range", "`to` should be greater than `from`")
