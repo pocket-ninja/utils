@@ -20,9 +20,9 @@ let package = Package(
             targets: ["Alert"]
         ),
         .library(
-            name: "Sharing",
+            name: "MySharing",
             type: .dynamic,
-            targets: ["Sharing"]
+            targets: ["MySharing"]
         ),
         .library(
             name: "Vector",
