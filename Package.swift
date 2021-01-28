@@ -54,7 +54,7 @@ let package = Package(
             path: "Utils/Alert/Sources"
         ),
         .target(
-            name: "Sharing",
+            name: "MySharing",
             dependencies: [],
             path: "Utils/Sharing/Sources"
         ),
