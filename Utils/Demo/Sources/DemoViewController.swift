@@ -3,7 +3,7 @@
 //
 
 import UIKit
-import Sharing
+import PocketSharing
 import UtilsCore
 
 final class DemoViewController: UIViewController {

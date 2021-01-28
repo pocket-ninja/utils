@@ -20,9 +20,9 @@ let package = Package(
             targets: ["Alert"]
         ),
         .library(
-            name: "Sharing",
+            name: "PocketSharing",
             type: .dynamic,
-            targets: ["Sharing"]
+            targets: ["PocketSharing"]
         ),
         .library(
             name: "Vector",
@@ -54,7 +54,7 @@ let package = Package(
             path: "Utils/Alert/Sources"
         ),
         .target(
-            name: "Sharing",
+            name: "PocketSharing",
             dependencies: [],
             path: "Utils/Sharing/Sources"
         ),
