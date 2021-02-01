@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC27E4A5244E02EF00CFD763"
-               BuildableName = "Sharing.framework"
-               BlueprintName = "Sharing"
+               BuildableName = "PocketSharing.framework"
+               BlueprintName = "PocketSharing"
                ReferencedContainer = "container:Utils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AC27E4A5244E02EF00CFD763"
-            BuildableName = "Sharing.framework"
-            BlueprintName = "Sharing"
+            BuildableName = "PocketSharing.framework"
+            BlueprintName = "PocketSharing"
             ReferencedContainer = "container:Utils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

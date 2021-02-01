@@ -20,7 +20,7 @@ final class DemoViewController: UIViewController {
         let url = Bundle.main.url(forResource: "file", withExtension: "json").fatal()
         let content = ShareContent(item: .file(url), caption: "This is simple json file")
         
-        ShareService.shareViaActivity(content: content, in: self) { success, activity in
+        ShareService.shared.shareViaActivity(content: content, in: self) { success, activity in
             if let activity = activity, success {
                 print("Successfully shared to: ", activity)
             } else {

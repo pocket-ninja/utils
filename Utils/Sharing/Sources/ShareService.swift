@@ -4,11 +4,13 @@
 
 import UIKit
 
-public struct ShareService {
+public final class ShareService {
     public typealias Content = ShareContent
     public typealias Completion = (Bool, UIActivity.ActivityType?) -> Void
-
-    public static func shareViaActivity(
+    
+    public static let shared = ShareService()
+    
+    public func shareViaActivity(
         content: Content,
         in sourceViewController: UIViewController,
         from rect: CGRect = .zero,
@@ -37,7 +39,7 @@ public struct ShareService {
         sourceViewController.present(activityController, animated: true)
     }
     
-    public static func shareToPhotos(
+    public func shareToPhotos(
         content: ShareContent,
         then completion: @escaping SharePhotosProvider.Completion
     ) {
@@ -47,7 +49,7 @@ public struct ShareService {
         )
     }
     
-    public static func shareToPhotos(
+    public func shareToPhotos(
         content: ShareContent,
         album: String,
         then completion: @escaping SharePhotosProvider.Completion
@@ -58,4 +60,18 @@ public struct ShareService {
             then: completion
         )
     }
+    
+    public func shareToMessages(
+        content: ShareContent,
+        in controller: UIViewController,
+        then completion: @escaping ShareMessagesProvider.Completion
+    ) {
+        messagesProvider.share(
+            content: content,
+            in: controller,
+            then: completion
+        )
+    }
+    
+    private var messagesProvider = ShareMessagesProvider()
 }
