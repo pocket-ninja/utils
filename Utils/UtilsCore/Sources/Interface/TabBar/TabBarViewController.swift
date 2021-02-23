@@ -53,16 +53,27 @@ public final class TabBarViewController: UIViewController {
     public override var childForScreenEdgesDeferringSystemGestures: UIViewController? {
         showedController
     }
+    
+    public override var prefersHomeIndicatorAutoHidden: Bool {
+        showedController?.prefersHomeIndicatorAutoHidden ?? true
+    }
+
+    public override var prefersStatusBarHidden: Bool {
+        showedController?.prefersStatusBarHidden ?? true
+    }
 
     public weak var delegate: TabBarViewControllerDelegate?
+    public var inreasesSafeArea: Bool
 
     public init(
         layout: ChildLayout = .barPinned(contentOffset: 0),
+        inreasesSafeArea: Bool = true,
         tabPivot: TabPivot = .bottomSafeArea,
         tabBarView: TabBarViewable,
         tabs: [TabBarItem] = []
     ) {
         self.tabs = tabs
+        self.inreasesSafeArea = inreasesSafeArea
         self.layout = layout
         self.tabPivot = tabPivot
         self.tabBarView = tabBarView
@@ -171,14 +182,14 @@ public final class TabBarViewController: UIViewController {
         add(fullscreenChild: controller, in: containerView)
         showedController = controller
         updateShowedControllerSafeAreaInsets()
-
+        
         setNeedsStatusBarAppearanceUpdate()
         setNeedsUpdateOfHomeIndicatorAutoHidden()
         setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
     }
 
     private func updateShowedControllerSafeAreaInsets() {
-        if layout == .fullHeight {
+        if layout == .fullHeight, inreasesSafeArea {
             showedController?.additionalSafeAreaInsets.bottom = tabBarView.height
         }
     }
