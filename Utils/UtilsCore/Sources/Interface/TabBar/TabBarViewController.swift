@@ -85,6 +85,7 @@ public final class TabBarViewController: UIViewController {
         
         switch layout {
         case .fullHeight:
+            containerView.topAnchor.constraint(equalTo: view.topAnchor).activate()
             containerView.bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
         case .barPinned(let contentOffset):
             switch tabPivot {
