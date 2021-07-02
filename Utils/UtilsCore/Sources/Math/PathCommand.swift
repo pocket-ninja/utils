@@ -8,34 +8,34 @@ import CoreGraphics
 public enum PathCommand {
     case move(to: CGPoint)
     case line(to: CGPoint)
-    case quadCurve(from: CGPoint, to: CGPoint)
-    case curve(from: CGPoint, through: CGPoint, to: CGPoint)
+    case quadCurve(cp: CGPoint, to: CGPoint)
+    case curve(cp1: CGPoint, cp2: CGPoint, to: CGPoint)
     case close
+
+    public var point: CGPoint? {
+        switch self {
+        case let .quadCurve(_, to): return to
+        case let .curve(_, _, to): return to
+        case let .move(to): return to
+        case let .line(to): return to
+        case .close: return nil
+        }
+    }
 
     public var points: [CGPoint] {
         switch self {
-        case let .quadCurve(cp1, cp2): return [cp1, cp2]
-        case let .curve(cp1, cp2, cp3): return [cp1, cp2, cp3]
+        case let .quadCurve(cp, to): return [cp, to]
+        case let .curve(cp1, cp2, to): return [cp1, cp2, to]
         case let .move(point): return [point]
         case let .line(point): return [point]
         case .close: return []
         }
     }
 
-    public var point: CGPoint? {
-        switch self {
-        case let .quadCurve(point, _): return point
-        case let .curve(point, _, _): return point
-        case let .move(point): return point
-        case let .line(point): return point
-        case .close: return nil
-        }
-    }
-
     public func apply(to path: CGMutablePath) {
         switch self {
-        case let .quadCurve(p, cp): path.addQuadCurve(to: p, control: cp)
-        case let .curve(p, cp2, cp3): path.addCurve(to: p, control1: cp2, control2: cp3)
+        case let .quadCurve(cp, to): path.addQuadCurve(to: to, control: cp)
+        case let .curve(cp1, cp2, to): path.addCurve(to: to, control1: cp1, control2: cp2)
         case let .move(point): path.move(to: point)
         case let .line(point): path.addLine(to: point)
         case .close: path.closeSubpath()
@@ -43,13 +43,13 @@ public enum PathCommand {
     }
 }
 
-public extension CGPathElement {
+extension CGPathElement {
     var command: PathCommand {
         switch type {
         case .moveToPoint: return .move(to: points[0])
         case .addLineToPoint: return .line(to: points[0])
-        case .addQuadCurveToPoint: return .quadCurve(from: points[0], to: points[1])
-        case .addCurveToPoint: return .curve(from: points[0], through: points[1], to: points[2])
+        case .addQuadCurveToPoint: return .quadCurve(cp: points[0], to: points[1])
+        case .addCurveToPoint: return .curve(cp1: points[0], cp2: points[1], to: points[2])
         case .closeSubpath: return .close
         @unknown default: return .close
         }
@@ -79,13 +79,13 @@ extension PathCommand: Codable {
             self = .close
         case .quadCurve:
             self = .quadCurve(
-                from: try points[safe: 0].get(),
+                cp: try points[safe: 0].get(),
                 to: try points[safe: 1].get()
             )
         case .curve:
             self = .curve(
-                from: try points[safe: 0].get(),
-                through: try points[safe: 1].get(),
+                cp1: try points[safe: 0].get(),
+                cp2: try points[safe: 1].get(),
                 to: try points[safe: 2].get()
             )
         }
