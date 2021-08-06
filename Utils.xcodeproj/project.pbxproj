@@ -26,18 +26,14 @@
 		AC2EB11E241419340039FA85 /* TimerScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11D241419340039FA85 /* TimerScheduler.swift */; };
 		AC2EB12024141A700039FA85 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11F24141A700039FA85 /* Target.swift */; };
 		AC2EB12224141A7F0039FA85 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12124141A7F0039FA85 /* Queue.swift */; };
-		AC2EB12424141A930039FA85 /* PersistentCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12324141A930039FA85 /* PersistentCounter.swift */; };
-		AC2EB12824141ADA0039FA85 /* AppSessionCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */; };
 		AC2EB12E24141BC30039FA85 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB12D24141BC30039FA85 /* Reusable.swift */; };
 		AC2EB13524141E600039FA85 /* Cacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13424141E600039FA85 /* Cacher.swift */; };
 		AC2EB13E24141EF90039FA85 /* ValueWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */; };
 		AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */; };
 		AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB144241423B20039FA85 /* TargetTests.swift */; };
 		AC2EB14E241423B20039FA85 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB145241423B20039FA85 /* QueueTests.swift */; };
-		AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */; };
 		AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB147241423B20039FA85 /* ReusableTests.swift */; };
 		AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB148241423B20039FA85 /* CacherTests.swift */; };
-		AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */; };
 		AC2EB1572414257B0039FA85 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB155241425780039FA85 /* UIApplication+Extensions.swift */; };
 		AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */; };
 		AC2EB1A1241429A10039FA85 /* CGGeometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */; };
@@ -109,6 +105,9 @@
 		AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
+		AC595FAB26BD292800698959 /* Published+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC595FA926BD292800698959 /* Published+Storage.swift */; };
+		AC595FAD26BD2AAD00698959 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC595FAC26BD2AAD00698959 /* AnyOptional.swift */; };
+		AC595FAE26BD2AAD00698959 /* AnyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC595FAC26BD2AAD00698959 /* AnyOptional.swift */; };
 		AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CD9244B0EE10000CD24 /* Matrix.swift */; };
 		AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CDB244B10280000CD24 /* MatrixTests.swift */; };
 		AC7552BB2507A9D800619D75 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7552B12507A9C600619D75 /* TabBarItem.swift */; };
@@ -250,18 +249,14 @@
 		AC2EB11D241419340039FA85 /* TimerScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerScheduler.swift; sourceTree = "<group>"; };
 		AC2EB11F24141A700039FA85 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
 		AC2EB12124141A7F0039FA85 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
-		AC2EB12324141A930039FA85 /* PersistentCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentCounter.swift; sourceTree = "<group>"; };
-		AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounter.swift; sourceTree = "<group>"; };
 		AC2EB12D24141BC30039FA85 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		AC2EB13424141E600039FA85 /* Cacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cacher.swift; sourceTree = "<group>"; };
 		AC2EB13D24141EF90039FA85 /* ValueWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapper.swift; sourceTree = "<group>"; };
 		AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueWrapperTests.swift; sourceTree = "<group>"; };
 		AC2EB144241423B20039FA85 /* TargetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTests.swift; sourceTree = "<group>"; };
 		AC2EB145241423B20039FA85 /* QueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
-		AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceCounterTests.swift; sourceTree = "<group>"; };
 		AC2EB147241423B20039FA85 /* ReusableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableTests.swift; sourceTree = "<group>"; };
 		AC2EB148241423B20039FA85 /* CacherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacherTests.swift; sourceTree = "<group>"; };
-		AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionCounterTests.swift; sourceTree = "<group>"; };
 		AC2EB155241425780039FA85 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB18E241429A10039FA85 /* CGAffineTransform+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Extensions.swift"; sourceTree = "<group>"; };
 		AC2EB18F241429A10039FA85 /* CGGeometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Extensions.swift"; sourceTree = "<group>"; };
@@ -332,6 +327,8 @@
 		AC4F79E1246DA8B800F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayerTests.swift; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
+		AC595FA926BD292800698959 /* Published+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Published+Storage.swift"; sourceTree = "<group>"; };
+		AC595FAC26BD2AAD00698959 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
 		AC6C8CD9244B0EE10000CD24 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		AC6C8CDB244B10280000CD24 /* MatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
 		AC7552B12507A9C600619D75 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
@@ -517,10 +514,8 @@
 				AC2EB10C241410760039FA85 /* StorageTests.swift */,
 				AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */,
 				AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */,
-				AC2EB14A241423B20039FA85 /* AppSessionCounterTests.swift */,
 				AC38FF872449E98A002BAD27 /* TimeTests.swift */,
 				AC2EB148241423B20039FA85 /* CacherTests.swift */,
-				AC2EB146241423B20039FA85 /* PersistenceCounterTests.swift */,
 				AC2EB145241423B20039FA85 /* QueueTests.swift */,
 				AC2EB147241423B20039FA85 /* ReusableTests.swift */,
 				AC2EB144241423B20039FA85 /* TargetTests.swift */,
@@ -555,8 +550,6 @@
 			children = (
 				ACF4B0E8244DA898009D0CB3 /* Directory.swift */,
 				AC2EB11F24141A700039FA85 /* Target.swift */,
-				AC2EB12624141ADA0039FA85 /* AppSessionCounter.swift */,
-				AC2EB12324141A930039FA85 /* PersistentCounter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -564,6 +557,7 @@
 		AC2EB13024141CD60039FA85 /* DataStructs */ = {
 			isa = PBXGroup;
 			children = (
+				AC595FAC26BD2AAD00698959 /* AnyOptional.swift */,
 				AC6C8CD9244B0EE10000CD24 /* Matrix.swift */,
 				AC2EB1B324142B320039FA85 /* Percent.swift */,
 				AC38FF852449E8EF002BAD27 /* Time.swift */,
@@ -599,6 +593,7 @@
 		AC2EB18C241429A10039FA85 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC595FA826BD289300698959 /* Combine */,
 				AC2EB18D241429A10039FA85 /* CoreGraphics */,
 				AC2EB190241429A10039FA85 /* UIKit */,
 				AC2EB196241429A10039FA85 /* Foundation */,
@@ -805,6 +800,14 @@
 				AC4F79E1246DA8B800F92968 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AC595FA826BD289300698959 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				AC595FA926BD292800698959 /* Published+Storage.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		AC7552B02507A9C600619D75 /* TabBar */ = {
@@ -1200,7 +1203,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "pocket-ninja";
+				ORGANIZATIONNAME = sroik;
 				TargetAttributes = {
 					AC21157F2416287E00FCA866 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -1369,6 +1372,7 @@
 			files = (
 				ACC409112451AFBD006D8E6A /* LayerWrapperView.swift in Sources */,
 				AC9DA4B52412CBEC00F034EE /* AppDelegate.swift in Sources */,
+				AC595FAD26BD2AAD00698959 /* AnyOptional.swift in Sources */,
 				AC27E4BB244E050E00CFD763 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1403,6 +1407,7 @@
 				ACD63647246ABE950042483E /* LineSegment.swift in Sources */,
 				AC7552BC2507A9D800619D75 /* TabBarViewable.swift in Sources */,
 				AC2EB1A7241429A10039FA85 /* Numeric+Extensions.swift in Sources */,
+				AC595FAE26BD2AAD00698959 /* AnyOptional.swift in Sources */,
 				AC9DA4C92412CC6F00F034EE /* Synchronize.swift in Sources */,
 				AC9DA4CA2412CC6F00F034EE /* Environment.swift in Sources */,
 				AC2EB1A4241429A10039FA85 /* UIColor+Extensions.swift in Sources */,
@@ -1414,6 +1419,7 @@
 				ACAF215E2452FADE00C33CC2 /* NavigationBarViewItem.swift in Sources */,
 				ACAF21602452FADE00C33CC2 /* NavigationBarButtonItem.swift in Sources */,
 				AC2EB1A3241429A10039FA85 /* UIView+Extensions.swift in Sources */,
+				AC595FAB26BD292800698959 /* Published+Storage.swift in Sources */,
 				AC9DA4C82412CC6F00F034EE /* Storage.swift in Sources */,
 				AC6C8CDA244B0EE20000CD24 /* Matrix.swift in Sources */,
 				AC38FF822449E71C002BAD27 /* TimeInterval+Extensions.swift in Sources */,
@@ -1435,10 +1441,8 @@
 				AC9DA4CC2412CC6F00F034EE /* Assertions.swift in Sources */,
 				AC2EB13524141E600039FA85 /* Cacher.swift in Sources */,
 				ACF4B0EE244DA8C5009D0CB3 /* Directory.swift in Sources */,
-				AC2EB12824141ADA0039FA85 /* AppSessionCounter.swift in Sources */,
 				AC2EB1A0241429A10039FA85 /* CGAffineTransform+Extensions.swift in Sources */,
 				AC9DA4CB2412CC6F00F034EE /* ErrorTracker.swift in Sources */,
-				AC2EB12424141A930039FA85 /* PersistentCounter.swift in Sources */,
 				AC9DA4CD2412CC6F00F034EE /* Trace.swift in Sources */,
 				AC2EB1A5241429A10039FA85 /* UICollectionViewFlowLayout+Extensions.swift in Sources */,
 			);
@@ -1451,7 +1455,6 @@
 				AC2EB21C24142D700039FA85 /* DataExtensionsTests.swift in Sources */,
 				AC2EB1B724142C050039FA85 /* PercentTests.swift in Sources */,
 				AC2EB21A24142D700039FA85 /* CGGeometryExtensionsTests.swift in Sources */,
-				AC2EB14F241423B20039FA85 /* PersistenceCounterTests.swift in Sources */,
 				AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */,
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
@@ -1463,7 +1466,6 @@
 				AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */,
 				AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */,
 				AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */,
-				AC2EB153241423B20039FA85 /* AppSessionCounterTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
 				ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */,
@@ -1547,7 +1549,7 @@
 				);
 				INFOPLIST_FILE = Utils/Alert/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1576,7 +1578,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Utils/Alert/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1608,7 +1610,7 @@
 				);
 				INFOPLIST_FILE = Utils/Sharing/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1638,7 +1640,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Utils/Sharing/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1670,7 +1672,7 @@
 				);
 				INFOPLIST_FILE = Utils/Vector/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1698,7 +1700,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Utils/Vector/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1730,7 +1732,7 @@
 				);
 				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1758,7 +1760,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1822,7 +1824,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1876,7 +1878,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1895,7 +1897,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Utils/Demo/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1916,7 +1918,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Utils/Demo/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1942,7 +1944,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Utils/UtilsCore/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1973,7 +1975,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = Utils/UtilsCore/SupportingFiles/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

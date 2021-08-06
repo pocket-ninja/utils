@@ -95,8 +95,8 @@ public extension UIColor {
         }
 
         let divisor: CGFloat = 255
-        var value: UInt32 = 0
-        Scanner(string: string).scanHexInt32(&value)
+        var value: UInt64 = 0
+        Scanner(string: string).scanHexInt64(&value)
 
         switch string.count {
         case 6:
