@@ -64,7 +64,11 @@ public extension Published where Value: UserDefaultsDataStorable {
 
 public struct StandardUserDefaultsStorage<Value>: UserDefaultsStorage {
     public var defaults: UserDefaults
-
+    
+    public init(defaults: UserDefaults) {
+        self.defaults = defaults
+    }
+    
     public func value(forKey key: String) -> Value? {
         defaults.object(forKey: key) as? Value
     }
@@ -77,6 +81,10 @@ public struct StandardUserDefaultsStorage<Value>: UserDefaultsStorage {
 public struct RawUserDefaultsStorage<Value: RawRepresentable>: UserDefaultsStorage {
     public var defaults: UserDefaults
 
+    public init(defaults: UserDefaults) {
+        self.defaults = defaults
+    }
+    
     public func value(forKey key: String) -> Value? {
         guard let rawValue = defaults.object(forKey: key) as? Value.RawValue else {
             return nil
@@ -93,6 +101,10 @@ public struct RawUserDefaultsStorage<Value: RawRepresentable>: UserDefaultsStora
 public struct DataUserDefaultsStorage<Value: Codable>: UserDefaultsStorage {
     public var defaults: UserDefaults
 
+    public init(defaults: UserDefaults) {
+        self.defaults = defaults
+    }
+    
     public func value(forKey key: String) -> Value? {
         guard let data = defaults.object(forKey: key) as? Data else {
             return nil
