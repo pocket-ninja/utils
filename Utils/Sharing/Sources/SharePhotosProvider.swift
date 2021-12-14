@@ -94,6 +94,8 @@ private extension ShareContent {
             return PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: url)
         case let .image(image):
             return PHAssetChangeRequest.creationRequestForAsset(from: image)
+        case .text:
+            return nil
         }
     }
 }

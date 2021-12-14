@@ -16,8 +16,12 @@ public final class ShareMessagesProvider: NSObject, MFMessageComposeViewControll
         let messagesController = MFMessageComposeViewController()
         messagesController.messageComposeDelegate = self
         messagesController.body = content.caption
+        messagesController.subject = content.subject
         
         switch content.item {
+        case let .text(text):
+            messagesController.body = text
+            
         case let .file(url):
             messagesController.addAttachmentURL(
                 url,

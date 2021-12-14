@@ -7,6 +7,7 @@ import UIKit
 public enum ShareItem {
     case image(UIImage)
     case file(URL)
+    case text(String)
 }
 
 public struct ShareContent {
@@ -28,6 +29,8 @@ public extension ShareItem {
             return image
         case let .file(url):
             return url
+        case let .text(text):
+            return text
         }
     }
 }
