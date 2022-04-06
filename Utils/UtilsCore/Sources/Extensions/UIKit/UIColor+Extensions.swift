@@ -120,27 +120,22 @@ public extension UIColor {
     }
 
     func image(size: CGSize, cornerRadius: CGFloat = 0) -> UIImage {
-        return image(
-            size: size,
-            roundedCorners: .allCorners,
-            cornerRadii: CGSize(width: cornerRadius, height: cornerRadius)
-        )
-    }
-
-    func image(
-        size: CGSize,
-        roundedCorners: UIRectCorner,
-        cornerRadii: CGSize
-    ) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         defer { UIGraphicsEndImageContext() }
 
-        let rect = CGRect(origin: .zero, size: size)
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: roundedCorners, cornerRadii: cornerRadii)
         if let ctx = UIGraphicsGetCurrentContext() {
+            let rect = CGRect(origin: .zero, size: size)
+            let path = CGPath(
+                roundedRect: rect,
+                cornerWidth: cornerRadius,
+                cornerHeight: cornerRadius,
+                transform: nil
+            )
+            
             ctx.clear(rect)
             ctx.setFillColor(cgColor)
-            path.fill()
+            ctx.addPath(path)
+            ctx.fillPath()
         }
 
         let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()

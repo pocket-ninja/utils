@@ -49,7 +49,7 @@ class MatrixTests: XCTestCase {
     }
 
     func testSubscript() {
-        var m = Matrix(array: [[1, 2], [3, 4]])!
+        var m = Matrix<Int>(array: [[1, 2], [3, 4]])!
         XCTAssertEqual(m[0, 0], 1)
         XCTAssertEqual(m[0][0], 1)
         XCTAssertEqual(m[0, 1], 2)
@@ -62,7 +62,7 @@ class MatrixTests: XCTestCase {
         let position = MatrixPosition(row: 0, column: 0)
         m[position] = 11
         XCTAssertEqual(m[position], 11)
-        XCTAssertNil(m[safe: Matrix.Position(row: -1, column: -1)])
+        XCTAssertNil(m[safe: MatrixPosition(row: -1, column: -1)])
     }
 
     func testEnumeration() {

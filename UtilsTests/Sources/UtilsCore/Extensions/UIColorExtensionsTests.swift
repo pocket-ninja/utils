@@ -99,15 +99,7 @@ class UIColorExtensionsTests: XCTestCase {
     }
     
     func testImageWithRoundedCorners() {
-        imageView.image = UIColor.red.image(size: CGSize(width: 50, height: 50), cornerRadius: 25)
-        assertSnapshot(matching: imageView, as: .image)
-    }
-
-    func testImageWithLeftRoundedCorners() {
-        let corners: UIRectCorner = [.topLeft, .bottomLeft]
-        let radii = CGSize(width: 25, height: 25)
-        let size = CGSize(width: 50, height: 50)
-        imageView.image = UIColor.red.image(size: size, roundedCorners: corners, cornerRadii: radii)
+        imageView.image = UIColor.red.image(size: CGSize(width: 50, height: 50), cornerRadius: 20)
         assertSnapshot(matching: imageView, as: .image)
     }
 }
