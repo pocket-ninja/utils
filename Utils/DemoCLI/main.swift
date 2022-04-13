@@ -10,4 +10,5 @@ do {
     _ = try nilValue.get()
 } catch {
     print("utils core works perfect in cli 👍")
+    print(BitmapBackground.color(nil))
 }

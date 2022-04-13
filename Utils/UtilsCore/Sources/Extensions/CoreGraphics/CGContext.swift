@@ -3,7 +3,7 @@
 //
 
 import Foundation
-//import CoreGraphics
+import CoreGraphics
 
 #if os(iOS)
 import UIKit
