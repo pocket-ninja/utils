@@ -2,6 +2,7 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS) || os(watchOS)
 import Foundation
 import UIKit
 
@@ -30,3 +31,4 @@ extension CodableColor: Codable {
         self.init(wrappedValue: color)
     }
 }
+#endif

@@ -2,9 +2,9 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 open class NavigationBarButtonItem: NavigationItem {
     open var view: UIView {
         return button

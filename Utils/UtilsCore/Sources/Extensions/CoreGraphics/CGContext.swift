@@ -3,9 +3,11 @@
 //
 
 import Foundation
-import UIKit
+//import CoreGraphics
 
 #if os(iOS)
+import UIKit
+
 public extension CGContext {
     static func with(data: UnsafeMutableRawPointer? = nil, size: CGSize) -> CGContext? {
         return with(data: data, size: Size(cgSize: size))

@@ -2,9 +2,9 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public enum NavigationItemState {
     case enabled
     case disabled

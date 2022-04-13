@@ -2,9 +2,9 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 open class NavigationBarViewItem: NavigationItem {
     public typealias StateHandler = (NavigationBarViewItem, NavigationItemState) -> Void
 

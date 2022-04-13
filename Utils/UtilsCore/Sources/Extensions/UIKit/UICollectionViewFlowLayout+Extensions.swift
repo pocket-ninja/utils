@@ -2,9 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public extension UICollectionViewFlowLayout {
     var workspaceSize: CGSize {
         return collectionView.flatMap(workspaceSize(in:)) ?? .zero

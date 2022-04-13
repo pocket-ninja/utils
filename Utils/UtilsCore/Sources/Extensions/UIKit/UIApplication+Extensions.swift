@@ -2,9 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 extension UIApplication {
     @discardableResult
     public func redirect(to url: URL) -> Bool {

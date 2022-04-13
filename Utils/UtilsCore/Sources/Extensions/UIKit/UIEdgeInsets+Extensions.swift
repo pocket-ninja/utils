@@ -2,6 +2,7 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS) || os(watchOS)
 import UIKit
 
 public extension UIEdgeInsets {
@@ -47,3 +48,4 @@ public extension UIEdgeInsets {
         return rect.inset(by: self)
     }
 }
+#endif

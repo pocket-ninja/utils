@@ -2,9 +2,9 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public protocol TabBarViewControllerDelegate: AnyObject {
     func tabBar(_ controller: TabBarViewController, didSelect tab: TabBarItem)
     func tabBar(_ controller: TabBarViewController, didConsecutivelySelect tab: TabBarItem)

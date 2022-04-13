@@ -2,9 +2,9 @@
 //  Copyright © 2020 pocket-ninja. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public final class IconTabBarItemView: UIView, TabBarItemViewable {
     public var badgeView: UIView? {
         didSet {

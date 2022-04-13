@@ -2,6 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS) || os(watchOS)
 import UIKit
 
 public extension NSAttributedString {
@@ -94,3 +95,4 @@ public extension NSAttributedString {
         return withFont(font)
     }
 }
+#endif

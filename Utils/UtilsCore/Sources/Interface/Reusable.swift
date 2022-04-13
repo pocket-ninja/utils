@@ -2,7 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 public protocol Reusable {
     static var reusableIdentifier: String { get }
@@ -15,5 +15,6 @@ public extension Reusable {
 }
 
 #if os(iOS)
+import UIKit
 extension UICollectionReusableView: Reusable {}
 #endif

@@ -2,7 +2,11 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+import Foundation
+
+#if os(iOS)
 import UIKit
+#endif
 
 public class Environment {
     #if os(iOS)

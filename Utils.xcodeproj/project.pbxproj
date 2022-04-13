@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC06736828071D8300D9337A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC06736728071D8300D9337A /* main.swift */; };
+		AC06737628071F8800D9337A /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
+		AC06737728071F8800D9337A /* UtilsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
 		AC2115842416287E00FCA866 /* Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2115822416287E00FCA866 /* Alert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC2115872416287E00FCA866 /* Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2115802416287E00FCA866 /* Alert.framework */; };
@@ -159,6 +162,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AC06737828071F8800D9337A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9DA4BA2412CC1E00F034EE;
+			remoteInfo = UtilsCore;
+		};
 		AC2115852416287E00FCA866 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -211,6 +221,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AC06736328071D8200D9337A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AC06737A28071F8800D9337A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC06737728071F8800D9337A /* UtilsCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC9DA4C72412CC1E00F034EE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +259,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC06736528071D8200D9337A /* DemoCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC06736728071D8300D9337A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
 		AC2115802416287E00FCA866 /* Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2115822416287E00FCA866 /* Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
@@ -382,6 +414,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC06736228071D8200D9337A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC06737628071F8800D9337A /* UtilsCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC21157D2416287E00FCA866 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +482,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC06736628071D8300D9337A /* DemoCLI */ = {
+			isa = PBXGroup;
+			children = (
+				AC06736728071D8300D9337A /* main.swift */,
+			);
+			path = DemoCLI;
+			sourceTree = "<group>";
+		};
 		AC2115812416287E00FCA866 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,6 +891,7 @@
 				AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */,
 				AC4F796E246D5EDA00F92968 /* Vector.framework */,
 				AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */,
+				AC06736528071D8200D9337A /* DemoCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -856,6 +905,7 @@
 				AC4F796F246D5EDA00F92968 /* Vector */,
 				AC4F79DF246DA8B800F92968 /* MacawAdditions */,
 				AC9DA4782412CB5700F034EE /* Demo */,
+				AC06736628071D8300D9337A /* DemoCLI */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1052,6 +1102,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AC06736428071D8200D9337A /* DemoCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC06736928071D8300D9337A /* Build configuration list for PBXNativeTarget "DemoCLI" */;
+			buildPhases = (
+				AC06736128071D8200D9337A /* Sources */,
+				AC06736228071D8200D9337A /* Frameworks */,
+				AC06736328071D8200D9337A /* CopyFiles */,
+				AC06737A28071F8800D9337A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC06737928071F8800D9337A /* PBXTargetDependency */,
+			);
+			name = DemoCLI;
+			productName = DemoCLI;
+			productReference = AC06736528071D8200D9337A /* DemoCLI */;
+			productType = "com.apple.product-type.tool";
+		};
 		AC21157F2416287E00FCA866 /* Alert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC21158B2416287E00FCA866 /* Build configuration list for PBXNativeTarget "Alert" */;
@@ -1201,10 +1270,13 @@
 		AC9DA4582412CACC00F034EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = sroik;
 				TargetAttributes = {
+					AC06736428071D8200D9337A = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					AC21157F2416287E00FCA866 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
@@ -1255,6 +1327,7 @@
 				AC27E4A5244E02EF00CFD763 /* PocketSharing */,
 				AC4F796D246D5EDA00F92968 /* Vector */,
 				AC4F79DD246DA8B800F92968 /* MacawAdditions */,
+				AC06736428071D8200D9337A /* DemoCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -1317,6 +1390,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC06736128071D8200D9337A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC06736828071D8300D9337A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC21157C2416287E00FCA866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1495,6 +1576,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AC06737928071F8800D9337A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC9DA4BA2412CC1E00F034EE /* UtilsCore */;
+			targetProxy = AC06737828071F8800D9337A /* PBXContainerItemProxy */;
+		};
 		AC2115862416287E00FCA866 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC21157F2416287E00FCA866 /* Alert */;
@@ -1533,6 +1619,36 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AC06736A28071D8300D9337A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AC06736B28071D8300D9337A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AC2115892416287E00FCA866 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1558,6 +1674,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Alert;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1587,6 +1704,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Alert;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1902,7 +2020,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1923,7 +2041,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1934,6 +2052,7 @@
 		AC9DA4C52412CC1E00F034EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1953,7 +2072,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.UtilsCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1965,6 +2085,7 @@
 		AC9DA4C62412CC1E00F034EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1984,7 +2105,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.UtilsCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2038,6 +2160,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC06736928071D8300D9337A /* Build configuration list for PBXNativeTarget "DemoCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC06736A28071D8300D9337A /* Debug */,
+				AC06736B28071D8300D9337A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AC21158B2416287E00FCA866 /* Build configuration list for PBXNativeTarget "Alert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

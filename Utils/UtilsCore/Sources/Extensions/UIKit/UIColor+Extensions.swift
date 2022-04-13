@@ -2,6 +2,7 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS) || os(watchOS)
 import UIKit
 
 public extension UIColor {
@@ -187,3 +188,4 @@ public extension UIColor {
         return mixed(with: .black, proportion: intensity)
     }
 }
+#endif

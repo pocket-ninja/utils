@@ -2,9 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public struct ViewControllerLayoutContext {
     public let parent: UIViewController
     public let child: UIViewController
