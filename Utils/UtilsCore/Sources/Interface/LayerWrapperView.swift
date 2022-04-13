@@ -2,9 +2,9 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-#if os(iOS)
 public class LayerWrapperView<Layer: CALayer>: UIView {
     public typealias LayoutBlock = (LayerWrapperView) -> Void
 
