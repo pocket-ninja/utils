@@ -76,7 +76,6 @@
 		AC0673FE280722F200D9337A /* Synchronize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4822412CB5700F034EE /* Synchronize.swift */; };
 		AC0673FF280722F200D9337A /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4862412CB5700F034EE /* Trace.swift */; };
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
-		AC0C397028C13CF600DA8920 /* PublishedStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0C396F28C13CF600DA8920 /* PublishedStorageTests.swift */; };
 		AC2115842416287E00FCA866 /* Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2115822416287E00FCA866 /* Alert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC2115872416287E00FCA866 /* Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2115802416287E00FCA866 /* Alert.framework */; };
 		AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2115802416287E00FCA866 /* Alert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -262,7 +261,6 @@
 		AC06736528071D8200D9337A /* DemoCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06736728071D8300D9337A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
-		AC0C396F28C13CF600DA8920 /* PublishedStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedStorageTests.swift; sourceTree = "<group>"; };
 		AC2115802416287E00FCA866 /* Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2115822416287E00FCA866 /* Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
 		AC2115832416287E00FCA866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -721,7 +719,6 @@
 				AC2EB21424142D700039FA85 /* MathExtensionsTests.swift */,
 				AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */,
 				AC2EB21624142D700039FA85 /* CGAffineTransformExtensionsTests.swift */,
-				AC0C396F28C13CF600DA8920 /* PublishedStorageTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1550,7 +1547,6 @@
 				AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
-				AC0C397028C13CF600DA8920 /* PublishedStorageTests.swift in Sources */,
 				ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */,
 				ACD63654246AC0D80042483E /* LineTests.swift in Sources */,
 				ACD63653246AC0D80042483E /* LineSegmentTests.swift in Sources */,
@@ -1631,7 +1627,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -1644,7 +1640,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;

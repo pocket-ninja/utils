@@ -5,7 +5,7 @@
 import Foundation
 import CoreGraphics
 
-public enum PathCommand {
+public enum PathCommand: Equatable {
     case move(to: CGPoint)
     case line(to: CGPoint)
     case quadCurve(cp: CGPoint, to: CGPoint)
