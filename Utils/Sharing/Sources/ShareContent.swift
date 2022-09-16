@@ -26,7 +26,7 @@ public extension ShareItem {
     var value: Any {
         switch self {
         case let .image(image):
-            return image
+            return image.pngData() ?? image
         case let .file(url):
             return url
         case let .text(text):
