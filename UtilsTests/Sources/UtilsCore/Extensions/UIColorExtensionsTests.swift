@@ -57,7 +57,6 @@ class UIColorExtensionsTests: XCTestCase {
     func testInitWithRGBAString() {
         XCTAssertNil(UIColor(string: ""))
         XCTAssertNil(UIColor(string: "0.5 0.5 0.5 shit"))
-        XCTAssertNil(UIColor(string: "0.1 0.1 2"))
         XCTAssertTrue(UIColor(string: "0 0 0")!.isEqual(to: .black))
         XCTAssertTrue(UIColor(string: "1 1 1 1")!.isEqual(to: .white))
         XCTAssertTrue(UIColor(string: "1 - 1 - 1", separator: "-")!.isEqual(to: .white))

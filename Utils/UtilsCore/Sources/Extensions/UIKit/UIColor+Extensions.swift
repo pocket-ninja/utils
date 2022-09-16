@@ -75,7 +75,6 @@ public extension UIColor {
 
         guard
             [3, 4].contains(components.count),
-            components.allSatisfy({ (0 ... 1) ~= $0 }),
             components.count == strComponents.count
         else {
             return nil
