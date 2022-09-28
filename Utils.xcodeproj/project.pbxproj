@@ -134,7 +134,6 @@
 		AC4F79E6246DA8B800F92968 /* MacawAdditions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC4F79EA246DA8C100F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
 		AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79ED246DA8F400F92968 /* Macaw */; };
-		AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */; };
 		AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79F9246DB07E00F92968 /* Macaw */; };
 		AC4F79FC246DB10000F92968 /* coco.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC4F79CB246D936300F92968 /* coco.svg */; };
 		AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
@@ -356,7 +355,6 @@
 		AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacawAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4F79E0246DA8B800F92968 /* MacawAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacawAdditions.h; sourceTree = "<group>"; };
 		AC4F79E1246DA8B800F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayerTests.swift; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		AC595FA926BD292800698959 /* Published+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Published+Storage.swift"; sourceTree = "<group>"; };
 		AC595FAC26BD2AAD00698959 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
@@ -808,7 +806,6 @@
 			children = (
 				AC4F79BD246D838E00F92968 /* __Snapshots__ */,
 				AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */,
-				AC4F79F5246DAD6A00F92968 /* ShapesLayerTests.swift */,
 				AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */,
 				AC4F79B7246D81D600F92968 /* ShapeTests.swift */,
 			);
@@ -1544,7 +1541,6 @@
 				AC4F79D5246DA71000F92968 /* ShapeLayerTests.swift in Sources */,
 				AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */,
 				AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */,
-				AC4F79F6246DAD6A00F92968 /* ShapesLayerTests.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
 				ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */,
