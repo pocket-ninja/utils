@@ -92,8 +92,14 @@ private extension ShareContent {
         switch item {
         case let .file(url):
             return PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: url)
-        case let .image(image):
+        case let .image(image, _):
             return PHAssetChangeRequest.creationRequestForAsset(from: image)
+        case let .data(data, type):
+            if type.conforms(to: .image), let image = UIImage(data: data) {
+                return PHAssetChangeRequest.creationRequestForAsset(from: image)
+            } else {
+                return nil
+            }
         case .text:
             return nil
         }

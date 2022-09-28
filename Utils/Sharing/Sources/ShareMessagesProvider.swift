@@ -28,14 +28,20 @@ public final class ShareMessagesProvider: NSObject, MFMessageComposeViewControll
                 withAlternateFilename: nil
             )
             
-        case let .image(image):
-            if let data = image.pngData() {
+        case let .image(image, compression):
+            if let data = image.data(compression: compression) {
                 messagesController.addAttachmentData(
                     data,
-                    typeIdentifier: "image/png",
-                    filename: "image.png"
+                    typeIdentifier: "image/\(compression.ext)",
+                    filename: "image.\(compression.ext)"
                 )
             }
+        case let .data(data, type):
+            messagesController.addAttachmentData(
+                data,
+                typeIdentifier: type.identifier,
+                filename: "file.\(type.preferredFilenameExtension ?? "data")"
+            )
         }
         
         controller.present(messagesController, animated: true, completion: nil)

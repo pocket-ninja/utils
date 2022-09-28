@@ -16,7 +16,7 @@ public final class ShareService {
         from rect: CGRect = .zero,
         then completion: @escaping Completion
     ) {
-        let items: [Any?] = [content.item.value, content.caption]
+        let items: [Any?] = [content.item.activityValue, content.caption]
         let activityController = UIActivityViewController(
             activityItems: items.compactMap { $0 },
             applicationActivities: []
