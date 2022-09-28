@@ -41,7 +41,7 @@ let package = Package(
             url: "https://github.com/sroik/Macaw.git",
             .branch("master")
         ),
-        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.8.1"),
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.10.0"),
     ],
     targets: [
         .target(
