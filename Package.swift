@@ -71,7 +71,12 @@ let package = Package(
         ),
         .testTarget(
             name: "UtilsTests",
-            dependencies: ["UtilsCore", "Vector", "MacawAdditions", "SnapshotTesting"],
+            dependencies: [
+                "UtilsCore",
+                "Vector",
+                "MacawAdditions",
+                .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
+            ],
             path: "UtilsTests/Sources"
         ),
     ],
