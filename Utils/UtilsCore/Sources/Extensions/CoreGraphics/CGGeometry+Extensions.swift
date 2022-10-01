@@ -114,6 +114,9 @@ public extension CGSize {
         return max(width, height)
     }
 
+    var area: CGFloat {
+        width * height
+    }
 
     static func - (l: CGSize, r: CGSize) -> CGSize {
         return CGSize(width: l.width - r.width, height: l.height - r.height)
@@ -131,8 +134,11 @@ public extension CGSize {
         return CGSize(width: l.width / by, height: l.height / by)
     }
 
-    func rounded() -> CGSize {
-        return CGSize(width: round(width), height: round(height))
+    func rounded(rule: FloatingPointRoundingRule = .toNearestOrAwayFromZero) -> CGSize {
+        CGSize(
+            width: width.rounded(rule),
+            height: height.rounded(rule)
+        )
     }
 
     func fitted(in size: CGSize) -> CGSize {
@@ -198,6 +204,10 @@ public extension CGRect {
     
     var center: CGPoint {
         return CGPoint(x: midX, y: midY)
+    }
+    
+    var area: CGFloat {
+        size.area
     }
 
     var vertices: [CGPoint] {
