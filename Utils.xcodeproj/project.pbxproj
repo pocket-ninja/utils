@@ -89,7 +89,6 @@
 		AC27E4BE244E059D00CFD763 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = AC27E4BD244E059D00CFD763 /* file.json */; };
 		AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10824140CBB0039FA85 /* StorageMock.swift */; };
 		AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10924140CBB0039FA85 /* TestBundle.swift */; };
-		AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10C241410760039FA85 /* StorageTests.swift */; };
 		AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB11B241417820039FA85 /* XCTestCase.swift */; };
 		AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */; };
 		AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB144241423B20039FA85 /* TargetTests.swift */; };
@@ -147,6 +146,7 @@
 		AC9DA4C22412CC1E00F034EE /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 		AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */; };
+		ACA466B529067B8C00CD1DE2 /* Published+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA466B429067B8C00CD1DE2 /* Published+UserDefaults.swift */; };
 		ACD63653246AC0D80042483E /* LineSegmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63651246AC0D70042483E /* LineSegmentTests.swift */; };
 		ACD63654246AC0D80042483E /* LineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63652246AC0D80042483E /* LineTests.swift */; };
 		ACD63657246AC1280042483E /* CGPathExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63655246AC1280042483E /* CGPathExtensionsTests.swift */; };
@@ -274,7 +274,6 @@
 		AC27E4BD244E059D00CFD763 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		AC2EB10824140CBB0039FA85 /* StorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageMock.swift; sourceTree = "<group>"; };
 		AC2EB10924140CBB0039FA85 /* TestBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBundle.swift; sourceTree = "<group>"; };
-		AC2EB10C241410760039FA85 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageTests.swift; path = ../../StorageTests.swift; sourceTree = "<group>"; };
 		AC2EB11B241417820039FA85 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		AC2EB11D241419340039FA85 /* TimerScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerScheduler.swift; sourceTree = "<group>"; };
 		AC2EB11F24141A700039FA85 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
@@ -384,6 +383,7 @@
 		AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9DA5302412CECC00F034EE /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		ACA466B429067B8C00CD1DE2 /* Published+UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Published+UserDefaults.swift"; sourceTree = "<group>"; };
 		ACAF21582452FADE00C33CC2 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		ACAF21592452FADE00C33CC2 /* NavigationBarViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarViewItem.swift; sourceTree = "<group>"; };
 		ACAF215A2452FADE00C33CC2 /* NavigationBarLabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarLabelItem.swift; sourceTree = "<group>"; };
@@ -556,7 +556,6 @@
 				F6826C3B24863F3B001A327E /* Wrappers */,
 				AC2EB20D24142D700039FA85 /* Extensions */,
 				AC2EB1B524142BFB0039FA85 /* Math */,
-				AC2EB10C241410760039FA85 /* StorageTests.swift */,
 				AC9DA4AE2412CB6000F034EE /* EnvironmentTests.swift */,
 				AC2EB13F241422E90039FA85 /* ValueWrapperTests.swift */,
 				AC38FF872449E98A002BAD27 /* TimeTests.swift */,
@@ -849,6 +848,7 @@
 		AC595FA826BD289300698959 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
+				ACA466B429067B8C00CD1DE2 /* Published+UserDefaults.swift */,
 				AC595FA926BD292800698959 /* Published+Storage.swift */,
 			);
 			path = Combine;
@@ -1463,6 +1463,7 @@
 				AC0673CC280722F200D9337A /* TimerScheduler.swift in Sources */,
 				AC0673DC280722F200D9337A /* Percent.swift in Sources */,
 				AC0673FA280722F200D9337A /* NavigationItem.swift in Sources */,
+				ACA466B529067B8C00CD1DE2 /* Published+UserDefaults.swift in Sources */,
 				AC0673C8280722F200D9337A /* Optional+Extensions.swift in Sources */,
 				AC0673FE280722F200D9337A /* Synchronize.swift in Sources */,
 				AC0673FD280722F200D9337A /* FileManager+Extensions.swift in Sources */,
@@ -1554,7 +1555,6 @@
 				AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */,
 				F6826C4024863FF2001A327E /* CodableColorWrapperTests.swift in Sources */,
 				AC2EB21824142D700039FA85 /* UIViewControllerExtensionsTests.swift in Sources */,
-				AC2EB10D241410760039FA85 /* StorageTests.swift in Sources */,
 				AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */,
 				AC2EB11C241417820039FA85 /* XCTestCase.swift in Sources */,
 				AC2EB21B24142D700039FA85 /* StringExtensionsTests.swift in Sources */,

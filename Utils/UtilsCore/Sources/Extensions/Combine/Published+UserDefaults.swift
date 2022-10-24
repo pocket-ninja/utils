@@ -50,7 +50,11 @@ public struct StandardUserDefaultsStorage<Value>: PublishedStorage {
     }
 
     public func set(_ value: Value, forKey key: String) {
-        defaults.set(value, forKey: key)
+        if let optional = value as? AnyOptional, optional.isNil {
+            defaults.removeObject(forKey: key)
+        } else {
+            defaults.set(value, forKey: key)
+        }
     }
 }
 
@@ -70,7 +74,11 @@ public struct RawUserDefaultsStorage<Value: RawRepresentable>: PublishedStorage 
     }
 
     public func set(_ value: Value, forKey key: String) {
-        defaults.set(value.rawValue, forKey: key)
+        if let optional = value as? AnyOptional, optional.isNil {
+            defaults.removeObject(forKey: key)
+        } else {
+            defaults.set(value.rawValue, forKey: key)
+        }
     }
 }
 
