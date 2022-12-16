@@ -116,6 +116,21 @@ public struct BitmapPixel: Hashable {
     public var r: UInt8
     public var g: UInt8
     public var b: UInt8
+    
+    init(a: UInt8, r: UInt8, g: UInt8, b: UInt8) {
+        self.a = a
+        self.r = r
+        self.g = g
+        self.b = b
+    }
+
+    init(raw: [UInt8], alphaFirst: Bool) {
+        if alphaFirst {
+            self.init(a: raw[0], r: raw[1], g: raw[2], b: raw[3])
+        } else {
+            self.init(a: raw[3], r: raw[0], g: raw[1], b: raw[2])
+        }
+    }
 }
 
 public extension BitmapPixel {

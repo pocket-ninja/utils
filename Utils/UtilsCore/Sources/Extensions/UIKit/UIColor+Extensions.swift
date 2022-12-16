@@ -69,6 +69,29 @@ public extension UIColor {
         return "\(r) \(g) \(b) \(a)"
     }
 
+    var bitmapPixel: BitmapPixel {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        return BitmapPixel(
+            a: UInt8(a * 255),
+            r: UInt8(r * 255),
+            g: UInt8(g * 255),
+            b: UInt8(b * 255)
+        )
+    }
+    
+    convenience init(pixel: BitmapPixel) {
+        self.init(
+            red: CGFloat(pixel.r) / 255,
+            green: CGFloat(pixel.g) / 255,
+            blue: CGFloat(pixel.b) / 255,
+            alpha: CGFloat(pixel.a) / 255
+        )
+    }
+    
     convenience init?(string: String, separator: String = " ") {
         let strComponents = string.components(separatedBy: separator).map { $0.trimmingCharacters(in: .whitespaces) }
         let components = strComponents.compactMap(Double.init)
