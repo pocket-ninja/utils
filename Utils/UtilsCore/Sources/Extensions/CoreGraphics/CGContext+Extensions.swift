@@ -124,11 +124,23 @@ public struct BitmapPixel: Hashable {
         self.b = b
     }
 
+    public init(gray: UInt8, alpha: UInt8) {
+        self.init(a: alpha, r: gray, g: gray, b: gray)
+    }
+    
     public init(raw: [UInt8], alphaFirst: Bool) {
         if alphaFirst {
             self.init(a: raw[0], r: raw[1], g: raw[2], b: raw[3])
         } else {
             self.init(a: raw[3], r: raw[0], g: raw[1], b: raw[2])
+        }
+    }
+
+    public init(grayRaw: [UInt8], alphaFirst: Bool) {
+        if alphaFirst {
+            self.init(gray: grayRaw[1], alpha: grayRaw[0])
+        } else {
+            self.init(gray: grayRaw[0], alpha: grayRaw[1])
         }
     }
 }
