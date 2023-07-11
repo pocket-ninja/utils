@@ -6,6 +6,14 @@ lane :bump_version_patch do
   bump_version(part: "patch")
 end
 
+lane :bump_version_minor do
+  bump_version(part: "minor")
+end
+
+lane :bump_version_major do
+  bump_version(part: "major")
+end
+
 lane :bump_version do |options|
   fastlane_require 'fastlane-ext'
   raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
