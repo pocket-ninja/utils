@@ -1,14 +1,15 @@
 //
-//  Copyright © 2020 sroik. All rights reserved.
+//  Copyright © 2023 sroik. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
 
-public final class Alert: NSObject {
-    public typealias Callback = () -> Void
-    public typealias OptionCallback = (Bool) -> Void
+public extension UIAlertController {
+    typealias Callback = () -> Void
+    typealias OptionCallback = (Bool) -> Void
 
-    public static func ok(
+    static func ok(
         title: String? = nil,
         message: String? = nil,
         action: String,
@@ -20,7 +21,7 @@ public final class Alert: NSObject {
         return controller
     }
 
-    public static func option(
+    static func option(
         title: String? = nil,
         message: String? = nil,
         positive: String,
@@ -47,7 +48,7 @@ public final class Alert: NSObject {
         return controller
     }
 
-    public static func optionSheet(
+    static func optionSheet(
         title: String? = nil,
         message: String? = nil,
         action: String,
@@ -74,7 +75,7 @@ public final class Alert: NSObject {
         return controller
     }
 
-    public static func settings(
+    static func settings(
         title: String? = nil,
         message: String? = nil,
         positive: String,
@@ -108,3 +109,4 @@ public final class Alert: NSObject {
         )
     }
 }
+#endif

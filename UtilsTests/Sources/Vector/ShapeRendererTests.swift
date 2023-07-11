@@ -13,7 +13,6 @@ class ShapeRendererTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        
         imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 300, height: 200))
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .white

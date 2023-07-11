@@ -76,10 +76,6 @@
 		AC0673FE280722F200D9337A /* Synchronize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4822412CB5700F034EE /* Synchronize.swift */; };
 		AC0673FF280722F200D9337A /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4862412CB5700F034EE /* Trace.swift */; };
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
-		AC2115842416287E00FCA866 /* Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2115822416287E00FCA866 /* Alert.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC2115872416287E00FCA866 /* Alert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2115802416287E00FCA866 /* Alert.framework */; };
-		AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2115802416287E00FCA866 /* Alert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC21158F241628C700FCA866 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21158E241628C700FCA866 /* Alert.swift */; };
 		AC27E4AA244E02EF00CFD763 /* Sharing.h in Headers */ = {isa = PBXBuildFile; fileRef = AC27E4A8244E02EF00CFD763 /* Sharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC27E4AD244E02EF00CFD763 /* PocketSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; };
 		AC27E4AE244E02EF00CFD763 /* PocketSharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -129,15 +125,11 @@
 		AC4F79D5246DA71000F92968 /* ShapeLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */; };
 		AC4F79D7246DA71000F92968 /* ShapeRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */; };
 		AC4F79D8246DA71000F92968 /* ShapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79B7246D81D600F92968 /* ShapeTests.swift */; };
-		AC4F79E2246DA8B800F92968 /* MacawAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4F79E0246DA8B800F92968 /* MacawAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC4F79E6246DA8B800F92968 /* MacawAdditions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC4F79EA246DA8C100F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
-		AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79ED246DA8F400F92968 /* Macaw */; };
 		AC4F79FA246DB07E00F92968 /* Macaw in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F79F9246DB07E00F92968 /* Macaw */; };
 		AC4F79FC246DB10000F92968 /* coco.svg in Resources */ = {isa = PBXBuildFile; fileRef = AC4F79CB246D936300F92968 /* coco.svg */; };
-		AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */; };
 		AC4F890D24143364005DE7E2 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AC4F890C24143364005DE7E2 /* SnapshotTesting */; };
 		AC4F891524143767005DE7E2 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = AC4F891424143767005DE7E2 /* __Snapshots__ */; };
+		AC5CAA7C2A5D696E002DFE5F /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5CAA7B2A5D696E002DFE5F /* UIAlertController+Extensions.swift */; };
 		AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CDB244B10280000CD24 /* MatrixTests.swift */; };
 		AC77B27225C8275B0086D1D9 /* ShareMessagesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC77B27125C8275B0086D1D9 /* ShareMessagesProvider.swift */; };
 		AC9DA4992412CB5700F034EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9DA47C2412CB5700F034EE /* LaunchScreen.storyboard */; };
@@ -168,13 +160,6 @@
 			remoteGlobalIDString = AC9DA4BA2412CC1E00F034EE;
 			remoteInfo = UtilsCore;
 		};
-		AC2115852416287E00FCA866 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC21157F2416287E00FCA866;
-			remoteInfo = Alert;
-		};
 		AC27E4AB244E02EF00CFD763 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
@@ -188,13 +173,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = AC4F796D246D5EDA00F92968;
 			remoteInfo = Vector;
-		};
-		AC4F79E3246DA8B800F92968 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC9DA4582412CACC00F034EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC4F79DD246DA8B800F92968;
-			remoteInfo = MacawAdditions;
 		};
 		AC9DA4C02412CC1E00F034EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -246,11 +224,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC4F79E6246DA8B800F92968 /* MacawAdditions.framework in Embed Frameworks */,
 				AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */,
 				AC9DA4C32412CC1E00F034EE /* UtilsCore.framework in Embed Frameworks */,
 				AC27E4AE244E02EF00CFD763 /* PocketSharing.framework in Embed Frameworks */,
-				AC2115882416287E00FCA866 /* Alert.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +237,6 @@
 		AC06736528071D8200D9337A /* DemoCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06736728071D8300D9337A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
-		AC2115802416287E00FCA866 /* Alert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2115822416287E00FCA866 /* Alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alert.h; sourceTree = "<group>"; };
-		AC2115832416287E00FCA866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC21158E241628C700FCA866 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AC21159024162B1A00FCA866 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27E4A8244E02EF00CFD763 /* Sharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharing.h; sourceTree = "<group>"; };
@@ -349,15 +321,12 @@
 		AC4F79B9246D821400F92968 /* ShapeRendererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeRendererTests.swift; sourceTree = "<group>"; };
 		AC4F79BA246D821400F92968 /* ShapeLayerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayerTests.swift; sourceTree = "<group>"; };
 		AC4F79BD246D838E00F92968 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
-		AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Macaw+Extensions.swift"; sourceTree = "<group>"; };
 		AC4F79CB246D936300F92968 /* coco.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coco.svg; sourceTree = "<group>"; };
 		AC4F79CD246D9E8B00F92968 /* ShapesLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesLayer.swift; sourceTree = "<group>"; };
-		AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MacawAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC4F79E0246DA8B800F92968 /* MacawAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacawAdditions.h; sourceTree = "<group>"; };
-		AC4F79E1246DA8B800F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC4F891424143767005DE7E2 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
 		AC595FA926BD292800698959 /* Published+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Published+Storage.swift"; sourceTree = "<group>"; };
 		AC595FAC26BD2AAD00698959 /* AnyOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOptional.swift; sourceTree = "<group>"; };
+		AC5CAA7B2A5D696E002DFE5F /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
 		AC6C8CD9244B0EE10000CD24 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		AC6C8CDB244B10280000CD24 /* MatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
 		AC7552B12507A9C600619D75 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
@@ -421,13 +390,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC21157D2416287E00FCA866 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC27E4A3244E02EF00CFD763 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,14 +405,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC4F79DB246DA8B800F92968 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC4F79EE246DA8F400F92968 /* Macaw in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC9DA45D2412CACC00F034EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,7 +412,6 @@
 				AC4F7975246D5EDA00F92968 /* Vector.framework in Frameworks */,
 				AC9DA4C22412CC1E00F034EE /* UtilsCore.framework in Frameworks */,
 				AC27E4AD244E02EF00CFD763 /* PocketSharing.framework in Frameworks */,
-				AC2115872416287E00FCA866 /* Alert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,32 +440,6 @@
 				AC06736728071D8300D9337A /* main.swift */,
 			);
 			path = DemoCLI;
-			sourceTree = "<group>";
-		};
-		AC2115812416287E00FCA866 /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-				AC21158D241628AF00FCA866 /* Sources */,
-				AC21158C241628A200FCA866 /* SupportingFiles */,
-			);
-			path = Alert;
-			sourceTree = "<group>";
-		};
-		AC21158C241628A200FCA866 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AC2115822416287E00FCA866 /* Alert.h */,
-				AC2115832416287E00FCA866 /* Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		AC21158D241628AF00FCA866 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AC21158E241628C700FCA866 /* Alert.swift */,
-			);
-			path = Sources;
 			sourceTree = "<group>";
 		};
 		AC27E4A7244E02EF00CFD763 /* Sharing */ = {
@@ -670,6 +597,7 @@
 				AC2EB194241429A10039FA85 /* UICollectionViewFlowLayout+Extensions.swift */,
 				AC2EB195241429A10039FA85 /* UICollectionView+Extensions.swift */,
 				ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */,
+				AC5CAA7B2A5D696E002DFE5F /* UIAlertController+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -822,32 +750,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AC4F79DF246DA8B800F92968 /* MacawAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				AC4F79EC246DA8CF00F92968 /* SupportingFiles */,
-				AC4F79EB246DA8C300F92968 /* Sources */,
-			);
-			path = MacawAdditions;
-			sourceTree = "<group>";
-		};
-		AC4F79EB246DA8C300F92968 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AC4F79BF246D83D200F92968 /* Macaw+Extensions.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		AC4F79EC246DA8CF00F92968 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AC4F79E0246DA8B800F92968 /* MacawAdditions.h */,
-				AC4F79E1246DA8B800F92968 /* Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
 		AC595FA826BD289300698959 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -886,10 +788,8 @@
 				AC9DA4602412CACC00F034EE /* Demo.app */,
 				AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */,
 				AC9DA5302412CECC00F034EE /* UtilsTests.xctest */,
-				AC2115802416287E00FCA866 /* Alert.framework */,
 				AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */,
 				AC4F796E246D5EDA00F92968 /* Vector.framework */,
-				AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */,
 				AC06736528071D8200D9337A /* DemoCLI */,
 			);
 			name = Products;
@@ -899,10 +799,8 @@
 			isa = PBXGroup;
 			children = (
 				AC9DA47F2412CB5700F034EE /* UtilsCore */,
-				AC2115812416287E00FCA866 /* Alert */,
 				AC27E4A7244E02EF00CFD763 /* Sharing */,
 				AC4F796F246D5EDA00F92968 /* Vector */,
-				AC4F79DF246DA8B800F92968 /* MacawAdditions */,
 				AC9DA4782412CB5700F034EE /* Demo */,
 				AC06736628071D8300D9337A /* DemoCLI */,
 			);
@@ -1058,14 +956,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AC21157B2416287E00FCA866 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC2115842416287E00FCA866 /* Alert.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC27E4A1244E02EF00CFD763 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1079,14 +969,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC4F7972246D5EDA00F92968 /* Vector.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC4F79D9246DA8B800F92968 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC4F79E2246DA8B800F92968 /* MacawAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,24 +1001,6 @@
 			productName = DemoCLI;
 			productReference = AC06736528071D8200D9337A /* DemoCLI */;
 			productType = "com.apple.product-type.tool";
-		};
-		AC21157F2416287E00FCA866 /* Alert */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC21158B2416287E00FCA866 /* Build configuration list for PBXNativeTarget "Alert" */;
-			buildPhases = (
-				AC21157B2416287E00FCA866 /* Headers */,
-				AC21157C2416287E00FCA866 /* Sources */,
-				AC21157D2416287E00FCA866 /* Frameworks */,
-				AC21157E2416287E00FCA866 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alert;
-			productName = Alert;
-			productReference = AC2115802416287E00FCA866 /* Alert.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		AC27E4A5244E02EF00CFD763 /* PocketSharing */ = {
 			isa = PBXNativeTarget;
@@ -1177,27 +1041,6 @@
 			productReference = AC4F796E246D5EDA00F92968 /* Vector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AC4F79DD246DA8B800F92968 /* MacawAdditions */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC4F79E7246DA8B800F92968 /* Build configuration list for PBXNativeTarget "MacawAdditions" */;
-			buildPhases = (
-				AC4F79D9246DA8B800F92968 /* Headers */,
-				AC4F79DA246DA8B800F92968 /* Sources */,
-				AC4F79DB246DA8B800F92968 /* Frameworks */,
-				AC4F79DC246DA8B800F92968 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MacawAdditions;
-			packageProductDependencies = (
-				AC4F79ED246DA8F400F92968 /* Macaw */,
-			);
-			productName = MacawAdditions;
-			productReference = AC4F79DE246DA8B800F92968 /* MacawAdditions.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		AC9DA45F2412CACC00F034EE /* Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC9DA4742412CACC00F034EE /* Build configuration list for PBXNativeTarget "Demo" */;
@@ -1211,10 +1054,8 @@
 			);
 			dependencies = (
 				AC9DA4C12412CC1E00F034EE /* PBXTargetDependency */,
-				AC2115862416287E00FCA866 /* PBXTargetDependency */,
 				AC27E4AC244E02EF00CFD763 /* PBXTargetDependency */,
 				AC4F7974246D5EDA00F92968 /* PBXTargetDependency */,
-				AC4F79E4246DA8B800F92968 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			packageProductDependencies = (
@@ -1276,18 +1117,11 @@
 					AC06736428071D8200D9337A = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					AC21157F2416287E00FCA866 = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
-					};
 					AC27E4A5244E02EF00CFD763 = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
 					};
 					AC4F796D246D5EDA00F92968 = {
-						CreatedOnToolsVersion = 11.4;
-					};
-					AC4F79DD246DA8B800F92968 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 					AC9DA45F2412CACC00F034EE = {
@@ -1322,23 +1156,14 @@
 				AC9DA45F2412CACC00F034EE /* Demo */,
 				AC9DA4BA2412CC1E00F034EE /* UtilsCore */,
 				AC9DA52F2412CECC00F034EE /* UtilsTests */,
-				AC21157F2416287E00FCA866 /* Alert */,
 				AC27E4A5244E02EF00CFD763 /* PocketSharing */,
 				AC4F796D246D5EDA00F92968 /* Vector */,
-				AC4F79DD246DA8B800F92968 /* MacawAdditions */,
 				AC06736428071D8200D9337A /* DemoCLI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AC21157E2416287E00FCA866 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC27E4A4244E02EF00CFD763 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1347,13 +1172,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC4F796C246D5EDA00F92968 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC4F79DC246DA8B800F92968 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1397,14 +1215,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC21157C2416287E00FCA866 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC21158F241628C700FCA866 /* Alert.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AC27E4A2244E02EF00CFD763 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1435,14 +1245,6 @@
 				AC4F79A2246D631F00F92968 /* Gradient+Codable.swift in Sources */,
 				AC4F79A7246D648200F92968 /* ShapeLayer.swift in Sources */,
 				AC4F79A5246D644000F92968 /* ShapeStyle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC4F79DA246DA8B800F92968 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC4F79EA246DA8C100F92968 /* Macaw+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1493,6 +1295,7 @@
 				AC0673F5280722F200D9337A /* PathCommand.swift in Sources */,
 				AC0673FC280722F200D9337A /* String+Extensions.swift in Sources */,
 				AC0673D9280722F200D9337A /* UIView+Extensions.swift in Sources */,
+				AC5CAA7C2A5D696E002DFE5F /* UIAlertController+Extensions.swift in Sources */,
 				AC0673C7280722F200D9337A /* Target.swift in Sources */,
 				AC0673F9280722F200D9337A /* UIViewController+Extensions.swift in Sources */,
 				AC0673F4280722F200D9337A /* UIColor+Extensions.swift in Sources */,
@@ -1545,7 +1348,6 @@
 				ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */,
 				AC4F79D5246DA71000F92968 /* ShapeLayerTests.swift in Sources */,
 				AC4F79B2246D679200F92968 /* GenericSizeTests.swift in Sources */,
-				AC4F7A00246DB37000F92968 /* Macaw+Extensions.swift in Sources */,
 				AC2EB140241422E90039FA85 /* ValueWrapperTests.swift in Sources */,
 				AC2EB14D241423B20039FA85 /* TargetTests.swift in Sources */,
 				ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */,
@@ -1579,11 +1381,6 @@
 			target = AC9DA4BA2412CC1E00F034EE /* UtilsCore */;
 			targetProxy = AC06737828071F8800D9337A /* PBXContainerItemProxy */;
 		};
-		AC2115862416287E00FCA866 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC21157F2416287E00FCA866 /* Alert */;
-			targetProxy = AC2115852416287E00FCA866 /* PBXContainerItemProxy */;
-		};
 		AC27E4AC244E02EF00CFD763 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC27E4A5244E02EF00CFD763 /* PocketSharing */;
@@ -1593,11 +1390,6 @@
 			isa = PBXTargetDependency;
 			target = AC4F796D246D5EDA00F92968 /* Vector */;
 			targetProxy = AC4F7973246D5EDA00F92968 /* PBXContainerItemProxy */;
-		};
-		AC4F79E4246DA8B800F92968 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC4F79DD246DA8B800F92968 /* MacawAdditions */;
-			targetProxy = AC4F79E3246DA8B800F92968 /* PBXContainerItemProxy */;
 		};
 		AC9DA4C12412CC1E00F034EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1644,69 +1436,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AC2115892416287E00FCA866 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Utils/Alert/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Alert;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC21158A2416287E00FCA866 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Utils/Alert/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sroik.Alert;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1823,66 +1552,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.Vector;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC4F79E8246DA8B800F92968 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.MacawAdditions;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AC4F79E9246DA8B800F92968 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Utils/MacawAdditions/SupportingFiles/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pocketninja.MacawAdditions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -2169,15 +1838,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC21158B2416287E00FCA866 /* Build configuration list for PBXNativeTarget "Alert" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC2115892416287E00FCA866 /* Debug */,
-				AC21158A2416287E00FCA866 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		AC27E4AF244E02EF00CFD763 /* Build configuration list for PBXNativeTarget "PocketSharing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2192,15 +1852,6 @@
 			buildConfigurations = (
 				AC4F7977246D5EDA00F92968 /* Debug */,
 				AC4F7978246D5EDA00F92968 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC4F79E7246DA8B800F92968 /* Build configuration list for PBXNativeTarget "MacawAdditions" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC4F79E8246DA8B800F92968 /* Debug */,
-				AC4F79E9246DA8B800F92968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2263,11 +1914,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AC4F79ED246DA8F400F92968 /* Macaw */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */;
-			productName = Macaw;
-		};
 		AC4F79F9246DB07E00F92968 /* Macaw */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */;

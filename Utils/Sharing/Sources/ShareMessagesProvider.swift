@@ -23,10 +23,12 @@ public final class ShareMessagesProvider: NSObject, MFMessageComposeViewControll
             messagesController.body = text
             
         case let .file(url):
-            messagesController.addAttachmentURL(
-                url,
-                withAlternateFilename: nil
-            )
+            messagesController.addAttachmentURL(url, withAlternateFilename: nil)
+            
+        case let .files(urls):
+            urls.forEach {
+                messagesController.addAttachmentURL($0, withAlternateFilename: nil)
+            }
             
         case let .image(image, compression):
             if let data = image.data(compression: compression) {

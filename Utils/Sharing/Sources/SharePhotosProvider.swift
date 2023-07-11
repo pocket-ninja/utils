@@ -6,7 +6,7 @@ import Photos
 import UIKit
 
 public struct SharePhotosProvider {
-    public typealias Completion = (Bool, PHAsset?, Error?) -> Void
+    public typealias Completion = (Bool, PHFetchResult<PHAsset>, Error?) -> Void
 
     public static func share(
         content: ShareContent,
@@ -23,32 +23,28 @@ public struct SharePhotosProvider {
         to collection: PHAssetCollection? = nil,
         then completion: @escaping Completion
     ) {
-        var placeholder: PHObjectPlaceholder?
-
+        var placeholders: [PHObjectPlaceholder] = []
+        
         PHPhotoLibrary.shared().performChanges({
-            guard let request = content.photosChangeRequest else {
-                return
+            placeholders = content.photosChangeRequests.compactMap { request in
+                request.creationDate = Date()
+                return request.placeholderForCreatedAsset
             }
 
-            request.creationDate = Date()
-            placeholder = request.placeholderForCreatedAsset
-
-            guard let assetCollection = collection, let assetPlaceholder = placeholder else {
+            guard let assetCollection = collection, !placeholders.isEmpty else {
                 return
             }
 
             let assets = PHAsset.fetchAssets(in: assetCollection, options: nil)
             let collectionChangeRequest = PHAssetCollectionChangeRequest(for: assetCollection, assets: assets)
-            collectionChangeRequest?.addAssets([assetPlaceholder] as NSFastEnumeration)
+            collectionChangeRequest?.addAssets(placeholders as NSFastEnumeration)
 
         }, completionHandler: { success, error in
-            var asset: PHAsset?
-            if success, let id = placeholder?.localIdentifier, id.count > 0 {
-                asset = PHAsset.fetchAssets(withLocalIdentifiers: [id], options: nil).firstObject
-            }
+            let ids = placeholders.map(\.localIdentifier)
+            let fetchedAssets = PHAsset.fetchAssets(withLocalIdentifiers: ids, options: nil)
 
             DispatchQueue.main.async {
-                completion(success, asset, error)
+                completion(success, fetchedAssets, error)
             }
         })
     }
@@ -88,20 +84,32 @@ public struct SharePhotosProvider {
 }
 
 private extension ShareContent {
-    var photosChangeRequest: PHAssetChangeRequest? {
+    var photosChangeRequests: [PHAssetChangeRequest] {
+        var requests: [PHAssetChangeRequest?]
+        
         switch item {
         case let .file(url):
-            return PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: url)
+            requests = [PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: url)]
+            
+        case let .files(urls):
+            requests = urls.map {
+                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: $0)
+            }
+            
         case let .image(image, _):
-            return PHAssetChangeRequest.creationRequestForAsset(from: image)
+            requests = [PHAssetChangeRequest.creationRequestForAsset(from: image)]
+            
         case let .data(data, type):
             if type.conforms(to: .image), let image = UIImage(data: data) {
-                return PHAssetChangeRequest.creationRequestForAsset(from: image)
+                requests = [PHAssetChangeRequest.creationRequestForAsset(from: image)]
             } else {
-                return nil
+                requests = []
             }
+            
         case .text:
-            return nil
+            requests = []
         }
+        
+        return requests.compactMap { $0 }
     }
 }

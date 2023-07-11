@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -16,11 +16,6 @@ let package = Package(
             targets: ["UtilsCore"]
         ),
         .library(
-            name: "Alert",
-            type: .dynamic,
-            targets: ["Alert"]
-        ),
-        .library(
             name: "PocketSharing",
             type: .dynamic,
             targets: ["PocketSharing"]
@@ -29,18 +24,9 @@ let package = Package(
             name: "Vector",
             type: .dynamic,
             targets: ["Vector"]
-        ),
-        .library(
-            name: "MacawAdditions",
-            type: .dynamic,
-            targets: ["MacawAdditions"]
         )
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/sroik/Macaw.git",
-            .branch("master")
-        ),
         .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.10.0"),
     ],
     targets: [
@@ -48,11 +34,6 @@ let package = Package(
             name: "UtilsCore",
             dependencies: [],
             path: "Utils/UtilsCore/Sources"
-        ),
-        .target(
-            name: "Alert",
-            dependencies: [],
-            path: "Utils/Alert/Sources"
         ),
         .target(
             name: "PocketSharing",
@@ -64,17 +45,11 @@ let package = Package(
             dependencies: ["UtilsCore"],
             path: "Utils/Vector/Sources"
         ),
-        .target(
-            name: "MacawAdditions",
-            dependencies: ["Vector", "Macaw"],
-            path: "Utils/MacawAdditions/Sources"
-        ),
         .testTarget(
             name: "UtilsTests",
             dependencies: [
                 "UtilsCore",
                 "Vector",
-                "MacawAdditions",
                 .product(name: "SnapshotTesting", package: "swift-snapshot-testing"),
             ],
             path: "UtilsTests/Sources"

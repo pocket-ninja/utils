@@ -14,6 +14,7 @@ public enum ShareItem {
     case image(UIImage, compression: ShareImageCompression)
     case data(Data, type: UTType)
     case file(URL)
+    case files([URL])
     case text(String)
 }
 
@@ -41,16 +42,18 @@ public extension ShareImageCompression {
 }
 
 public extension ShareItem {
-    var activityValue: Any {
+    var activityValues: [Any] {
         switch self {
         case let .image(image, compression):
-            return image.data(compression: compression) ?? image
+            return [image.data(compression: compression) ?? image]
         case let .data(data, _):
-            return data
+            return [data]
         case let .file(url):
-            return url
+            return [url]
+        case let .files(urls):
+            return urls
         case let .text(text):
-            return text
+            return [text]
         }
     }
 }
