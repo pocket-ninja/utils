@@ -12,6 +12,7 @@ class CGPathPolygonizationTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        isRecording = false
         container = ShapeContainer()
     }
 
