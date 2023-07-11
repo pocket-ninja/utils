@@ -11,8 +11,13 @@ public enum ShareImageCompression {
 }
 
 public struct ShareFile {
-    var url: URL
-    var type: UTType
+    public var url: URL
+    public var type: UTType
+    
+    public init(url: URL, type: UTType) {
+        self.url = url
+        self.type = type
+    }
 }
 
 public enum ShareItem {
