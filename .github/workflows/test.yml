@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Pull Request
+    name: Test
     runs-on: macos-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Ruby 3.2.2
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: 2.2.2
+        ruby-version: 3.2.2
 
     - name: Run all tests
       run: |
