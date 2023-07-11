@@ -76,12 +76,14 @@
 		AC0673FE280722F200D9337A /* Synchronize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4822412CB5700F034EE /* Synchronize.swift */; };
 		AC0673FF280722F200D9337A /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4862412CB5700F034EE /* Trace.swift */; };
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
+		AC1136152A5D86B0003319A2 /* ShareActivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */; };
+		AC1136182A5D8926003319A2 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC1136162A5D8919003319A2 /* image.jpg */; };
 		AC27E4AA244E02EF00CFD763 /* Sharing.h in Headers */ = {isa = PBXBuildFile; fileRef = AC27E4A8244E02EF00CFD763 /* Sharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC27E4AD244E02EF00CFD763 /* PocketSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; };
 		AC27E4AE244E02EF00CFD763 /* PocketSharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC27E4B6244E033700CFD763 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B4244E033700CFD763 /* ShareService.swift */; };
 		AC27E4B7244E033700CFD763 /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B5244E033700CFD763 /* ShareContent.swift */; };
-		AC27E4BB244E050E00CFD763 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B9244E035700CFD763 /* DemoViewController.swift */; };
+		AC27E4BB244E050E00CFD763 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27E4B9244E035700CFD763 /* DemoView.swift */; };
 		AC27E4BE244E059D00CFD763 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = AC27E4BD244E059D00CFD763 /* file.json */; };
 		AC2EB10A24140CBB0039FA85 /* StorageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10824140CBB0039FA85 /* StorageMock.swift */; };
 		AC2EB10B24140CBB0039FA85 /* TestBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB10924140CBB0039FA85 /* TestBundle.swift */; };
@@ -237,13 +239,15 @@
 		AC06736528071D8200D9337A /* DemoCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06736728071D8300D9337A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
+		AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityProvider.swift; sourceTree = "<group>"; };
+		AC1136162A5D8919003319A2 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		AC21159024162B1A00FCA866 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27E4A8244E02EF00CFD763 /* Sharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharing.h; sourceTree = "<group>"; };
 		AC27E4A9244E02EF00CFD763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC27E4B4244E033700CFD763 /* ShareService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
 		AC27E4B5244E033700CFD763 /* ShareContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContent.swift; sourceTree = "<group>"; };
-		AC27E4B9244E035700CFD763 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		AC27E4B9244E035700CFD763 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		AC27E4BD244E059D00CFD763 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		AC2EB10824140CBB0039FA85 /* StorageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageMock.swift; sourceTree = "<group>"; };
 		AC2EB10924140CBB0039FA85 /* TestBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBundle.swift; sourceTree = "<group>"; };
@@ -458,6 +462,7 @@
 				AC27E4B4244E033700CFD763 /* ShareService.swift */,
 				AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */,
 				AC77B27125C8275B0086D1D9 /* ShareMessagesProvider.swift */,
+				AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 		AC27E4BC244E058300CFD763 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC1136162A5D8919003319A2 /* image.jpg */,
 				AC27E4BD244E059D00CFD763 /* file.json */,
 			);
 			path = Resources;
@@ -821,7 +827,7 @@
 			isa = PBXGroup;
 			children = (
 				AC9DA47A2412CB5700F034EE /* AppDelegate.swift */,
-				AC27E4B9244E035700CFD763 /* DemoViewController.swift */,
+				AC27E4B9244E035700CFD763 /* DemoView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1185,6 +1191,7 @@
 				AC9DA49A2412CB5700F034EE /* Assets.xcassets in Resources */,
 				AC27E4BE244E059D00CFD763 /* file.json in Resources */,
 				AC9DA4992412CB5700F034EE /* LaunchScreen.storyboard in Resources */,
+				AC1136182A5D8926003319A2 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1221,6 +1228,7 @@
 			files = (
 				AC27E4B6244E033700CFD763 /* ShareService.swift in Sources */,
 				AC77B27225C8275B0086D1D9 /* ShareMessagesProvider.swift in Sources */,
+				AC1136152A5D86B0003319A2 /* ShareActivityProvider.swift in Sources */,
 				AC27E4B7244E033700CFD763 /* ShareContent.swift in Sources */,
 				AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */,
 			);
@@ -1253,7 +1261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9DA4B52412CBEC00F034EE /* AppDelegate.swift in Sources */,
-				AC27E4BB244E050E00CFD763 /* DemoViewController.swift in Sources */,
+				AC27E4BB244E050E00CFD763 /* DemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

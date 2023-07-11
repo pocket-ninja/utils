@@ -1,8 +1,9 @@
 //
-//  Copyright © 2020 sroik. All rights reserved.
+//  Copyright © 2023 sroik. All rights reserved.
 //
 
 import UIKit
+import SwiftUI
 import UtilsCore
 
 @UIApplicationMain
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = DemoViewController()
+        window?.rootViewController = UIHostingController(rootView: DemoView())
         window?.makeKeyAndVisible()
         
         return true

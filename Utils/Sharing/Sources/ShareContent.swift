@@ -10,12 +10,16 @@ public enum ShareImageCompression {
     case jpg(quality: CGFloat)
 }
 
+public struct ShareFile {
+    var url: URL
+    var type: UTType
+}
+
 public enum ShareItem {
     case image(UIImage, compression: ShareImageCompression)
     case data(Data, type: UTType)
-    case file(URL)
-    case files([URL])
     case text(String)
+    case files([ShareFile])
 }
 
 public struct ShareContent {
@@ -30,30 +34,17 @@ public struct ShareContent {
     }
 }
 
-public extension ShareImageCompression {
-    var ext: String {
-        switch self {
-        case .png:
-            return "png"
-        case .jpg:
-            return "jpeg"
-        }
+public extension ShareItem {
+    static func file(url: URL, type: UTType) -> ShareItem {
+        return ShareItem.files([ShareFile(url: url, type: type)])
     }
 }
 
-public extension ShareItem {
-    var activityValues: [Any] {
+public extension ShareImageCompression {
+    var ext: String {
         switch self {
-        case let .image(image, compression):
-            return [image.data(compression: compression) ?? image]
-        case let .data(data, _):
-            return [data]
-        case let .file(url):
-            return [url]
-        case let .files(urls):
-            return urls
-        case let .text(text):
-            return [text]
+        case .png: return "png"
+        case .jpg: return "jpeg"
         }
     }
 }

@@ -5,38 +5,22 @@
 import UIKit
 
 public final class ShareService {
-    public typealias Content = ShareContent
-    public typealias Completion = (Bool, UIActivity.ActivityType?) -> Void
-    
     public static let shared = ShareService()
+
+    private lazy var messagesProvider = ShareMessagesProvider()
     
     public func shareViaActivity(
-        content: Content,
+        content: ShareContent,
         in sourceViewController: UIViewController,
         from rect: CGRect = .zero,
-        then completion: @escaping Completion
+        then completion: @escaping ShareActivityProvider.Completion
     ) {
-        let items: [Any?] = content.item.activityValues + [content.caption]
-        let activityController = UIActivityViewController(
-            activityItems: items.compactMap { $0 },
-            applicationActivities: []
+        ShareActivityProvider.share(
+            content: content,
+            in: sourceViewController,
+            from: rect,
+            then: completion
         )
-
-        if let subject = content.subject {
-            activityController.setValue(subject, forKey: "subject")
-        }
-
-        activityController.completionWithItemsHandler = { activityType, success, _, _ in
-            completion(success, activityType)
-        }
-
-        if UIDevice.current.userInterfaceIdiom == .pad {
-            activityController.popoverPresentationController?.sourceView = sourceViewController.view
-            activityController.popoverPresentationController?.permittedArrowDirections = .any
-            activityController.popoverPresentationController?.sourceRect = rect
-        }
-
-        sourceViewController.present(activityController, animated: true)
     }
     
     public func shareToPhotos(
@@ -72,6 +56,4 @@ public final class ShareService {
             then: completion
         )
     }
-    
-    private var messagesProvider = ShareMessagesProvider()
 }

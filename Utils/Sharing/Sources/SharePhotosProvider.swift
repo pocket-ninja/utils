@@ -88,12 +88,15 @@ private extension ShareContent {
         var requests: [PHAssetChangeRequest?]
         
         switch item {
-        case let .file(url):
-            requests = [PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: url)]
-            
-        case let .files(urls):
-            requests = urls.map {
-                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: $0)
+        case let .files(files):
+            requests = files.map { file in
+                if file.type.conforms(to: .image) {
+                    return PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: file.url)
+                } else if file.type.conforms(to: .video) {
+                    return PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: file.url)
+                } else {
+                    return nil
+                }
             }
             
         case let .image(image, _):
