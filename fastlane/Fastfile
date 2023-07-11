@@ -8,11 +8,12 @@ end
 
 lane :bump_version do |options|
   fastlane_require 'fastlane-ext'
+  raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
 
-  UI.message "Going to bump project version"
+  UI.message "Syncing git tags"
   sync_git_tags
 
-  raise "Invalid part, correct one is [patch|minor|major]" unless options[:part]
+  UI.message "Bumping project version"
   cmd = "bundle exec git-version-bump " + options[:part]
   raise "Failed to patch version! cmd: '#{cmd}'" unless system(cmd)
 end
