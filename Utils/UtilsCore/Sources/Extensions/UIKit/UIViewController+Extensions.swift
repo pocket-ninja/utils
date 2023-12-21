@@ -29,6 +29,15 @@ public extension UIViewController {
         } ?? self
     }
     
+    func presentInApplication(animated: Bool, then completion: (() -> Void)? = nil) {
+        guard let controller = UIApplication.shared.topViewController else {
+            assertionWrapperFailure("no application root view controller to push from")
+            return
+        }
+        
+        controller.present(self, animated: animated, completion: completion)
+    }
+    
     func add(child: UIViewController, withLayout layout: LayoutCallback = { _, _ in }) {
         add(child: child, in: view, withLayout: layout)
     }

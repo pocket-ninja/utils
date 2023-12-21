@@ -125,4 +125,10 @@ class MatrixTests: XCTestCase {
         XCTAssertNil(m[safeColumn: 4])
         XCTAssertNil(m[safeColumn: -1])
     }
+    
+    func testGridArray() throws {
+        let array = [[1, 2, 3], [4, 5, 6]]
+        let m = try Matrix<Int>(array: array).get()
+        XCTAssertEqual(m.array(), array)
+    }
 }

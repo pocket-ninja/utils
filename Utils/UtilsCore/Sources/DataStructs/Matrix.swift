@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import Algorithms
 
 public struct Matrix<T> {
     public let rows: Int
@@ -106,7 +107,7 @@ public extension Matrix {
     }
 
     func array() -> [[T]] {
-        return grid.chunks(columns)
+        return grid.chunks(ofCount: columns).map { Array($0) }
     }
 
     func isValid(row: Int, column: Int) -> Bool {

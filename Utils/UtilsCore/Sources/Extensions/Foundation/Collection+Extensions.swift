@@ -1,19 +1,47 @@
 //
-//  Copyright © 2020 sroik. All rights reserved.
+//  Copyright © 2023 sroik. All rights reserved.
 //
 
 import Foundation
 
-public extension Collection {
-    subscript(safe index: Index) -> Iterator.Element? {
-        return indices.contains(index) ? self[index] : nil
+public extension Sequence {
+    func sorted<T: Comparable>(by keyPath: KeyPath<Element, T>) -> [Element] {
+        ascending(by: keyPath)
+    }
+
+    func sorted<Value>(
+        by keyPath: KeyPath<Element, Value>,
+        using comparator: (Value, Value) throws -> Bool
+    ) rethrows -> [Element] {
+        try sorted {
+            try comparator($0[keyPath: keyPath], $1[keyPath: keyPath])
+        }
+    }
+
+    func descending<Value: Comparable>(by keyPath: KeyPath<Element, Value>) -> [Element] {
+        sorted(by: keyPath, using: >)
+    }
+
+    func ascending<Value: Comparable>(by keyPath: KeyPath<Element, Value>) -> [Element] {
+        sorted(by: keyPath, using: <)
+    }
+
+    func max<T: Comparable>(by keyPath: KeyPath<Element, T>) -> Element? {
+        self.max { a, b in
+            a[keyPath: keyPath] < b[keyPath: keyPath]
+        }
+    }
+    
+    func min<T: Comparable>(by keyPath: KeyPath<Element, T>) -> Element? {
+        self.min { a, b in
+            a[keyPath: keyPath] < b[keyPath: keyPath]
+        }
     }
 }
 
-extension Array where Element: Hashable {
-    public func unique() -> [Element] {
-        var seen: [Element: Bool] = [:]
-        return filter { seen.updateValue(true, forKey: $0) == nil }
+public extension Collection {
+    subscript(safe index: Index) -> Iterator.Element? {
+        return indices.contains(index) ? self[index] : nil
     }
 }
 
@@ -23,23 +51,15 @@ public extension Array {
             block(&self[idx])
         }
     }
+}
 
-    func chunks(_ chunkSize: Int) -> [[Element]] {
-        return chunks(chunkSize) { $0 }
-    }
-
-    func chunks<T>(
-        _ chunkSize: Int,
-        transform: ([Element]) throws -> T
-    ) rethrows -> [T] {
-        guard count % chunkSize == 0 else {
-            assertionWrapperFailure("mod should be zero")
-            return []
-        }
-
-        return try stride(from: 0, to: count, by: chunkSize).map {
-            let subArray = Array(self[$0 ..< $0 + chunkSize])
-            return try transform(subArray)
+extension Array where Element: Identifiable {
+    mutating func updateOrAppend(_ item: Element) {
+        let existingIndex = firstIndex { $0.id == item.id }
+        if let index = existingIndex {
+            self[index] = item
+        } else {
+            append(item)
         }
     }
 }

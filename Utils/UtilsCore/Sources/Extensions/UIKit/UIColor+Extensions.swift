@@ -4,6 +4,7 @@
 
 #if os(iOS) || os(watchOS)
 import UIKit
+import SwiftUI
 
 public extension UIColor {
     typealias RGBATuple = (r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat)
@@ -83,6 +84,10 @@ public extension UIColor {
         )
     }
     
+    var swiftUI: Color {
+        Color(self)
+    }
+    
     convenience init(pixel: BitmapPixel) {
         self.init(
             red: CGFloat(pixel.r) / 255,
@@ -140,6 +145,10 @@ public extension UIColor {
             assertionWrapperFailure("incorrect hex format")
             return nil
         }
+    }
+    
+    func swiftUI(alpha: CGFloat) -> Color {
+        swiftUI.opacity(alpha)
     }
 
     func image(size: CGSize, cornerRadius: CGFloat = 0) -> UIImage {

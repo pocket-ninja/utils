@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -28,11 +28,14 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/pointfreeco/swift-snapshot-testing.git", from: "1.10.0"),
+        .package(url: "https://github.com/apple/swift-algorithms.git", from: "1.2.0"),
     ],
     targets: [
         .target(
             name: "UtilsCore",
-            dependencies: [],
+            dependencies: [
+                .product(name: "Algorithms", package: "swift-algorithms"),
+            ],
             path: "Utils/UtilsCore/Sources"
         ),
         .target(

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -75,6 +75,18 @@
 		AC0673FD280722F200D9337A /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB19C241429A10039FA85 /* FileManager+Extensions.swift */; };
 		AC0673FE280722F200D9337A /* Synchronize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4822412CB5700F034EE /* Synchronize.swift */; };
 		AC0673FF280722F200D9337A /* Trace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DA4862412CB5700F034EE /* Trace.swift */; };
+		AC0969512B347DF000B2ABF6 /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969502B347DF000B2ABF6 /* Locale+Extensions.swift */; };
+		AC0969562B34810700B2ABF6 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969552B34810700B2ABF6 /* UIScreen+Extensions.swift */; };
+		AC0969592B34833F00B2ABF6 /* EdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969582B34833F00B2ABF6 /* EdgeInsets+Extensions.swift */; };
+		AC09695F2B34866F00B2ABF6 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AC09695E2B34866F00B2ABF6 /* Algorithms */; };
+		AC0969622B348BE800B2ABF6 /* BaseHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969612B348BE800B2ABF6 /* BaseHostingController.swift */; };
+		AC0969652B348CBD00B2ABF6 /* UIBackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969642B348CBD00B2ABF6 /* UIBackdropView.swift */; };
+		AC0969692B348ECB00B2ABF6 /* OnFirstAppearViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969672B348ECB00B2ABF6 /* OnFirstAppearViewModifier.swift */; };
+		AC09696A2B348ECB00B2ABF6 /* ShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969682B348ECB00B2ABF6 /* ShakeViewModifier.swift */; };
+		AC09696E2B348F7C00B2ABF6 /* BackdropBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09696D2B348F7C00B2ABF6 /* BackdropBlurView.swift */; };
+		AC0969722B34900900B2ABF6 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09696F2B34900900B2ABF6 /* View+Extensions.swift */; };
+		AC0969732B34900900B2ABF6 /* UIViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969702B34900900B2ABF6 /* UIViewController+SwiftUI.swift */; };
+		AC0969742B34900900B2ABF6 /* UIView+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0969712B34900900B2ABF6 /* UIView+SwiftUI.swift */; };
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
 		AC1136152A5D86B0003319A2 /* ShareActivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */; };
 		AC1136182A5D8926003319A2 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC1136162A5D8919003319A2 /* image.jpg */; };
@@ -238,6 +250,17 @@
 /* Begin PBXFileReference section */
 		AC06736528071D8200D9337A /* DemoCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoCLI; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC06736728071D8300D9337A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AC0969502B347DF000B2ABF6 /* Locale+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		AC0969552B34810700B2ABF6 /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		AC0969582B34833F00B2ABF6 /* EdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		AC0969612B348BE800B2ABF6 /* BaseHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHostingController.swift; sourceTree = "<group>"; };
+		AC0969642B348CBD00B2ABF6 /* UIBackdropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBackdropView.swift; sourceTree = "<group>"; };
+		AC0969672B348ECB00B2ABF6 /* OnFirstAppearViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnFirstAppearViewModifier.swift; sourceTree = "<group>"; };
+		AC0969682B348ECB00B2ABF6 /* ShakeViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeViewModifier.swift; sourceTree = "<group>"; };
+		AC09696D2B348F7C00B2ABF6 /* BackdropBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackdropBlurView.swift; sourceTree = "<group>"; };
+		AC09696F2B34900900B2ABF6 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		AC0969702B34900900B2ABF6 /* UIViewController+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwiftUI.swift"; sourceTree = "<group>"; };
+		AC0969712B34900900B2ABF6 /* UIView+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SwiftUI.swift"; sourceTree = "<group>"; };
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
 		AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityProvider.swift; sourceTree = "<group>"; };
 		AC1136162A5D8919003319A2 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
@@ -423,6 +446,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC09695F2B34866F00B2ABF6 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +468,57 @@
 				AC06736728071D8300D9337A /* main.swift */,
 			);
 			path = DemoCLI;
+			sourceTree = "<group>";
+		};
+		AC0969542B347EC300B2ABF6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AC7552B02507A9C600619D75 /* TabBar */,
+				ACAF21572452FADE00C33CC2 /* NavigationBar */,
+				AC2EB12D24141BC30039FA85 /* Reusable.swift */,
+				AC0969612B348BE800B2ABF6 /* BaseHostingController.swift */,
+				AC0969642B348CBD00B2ABF6 /* UIBackdropView.swift */,
+				ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */,
+				ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AC0969572B34832C00B2ABF6 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AC0969582B34833F00B2ABF6 /* EdgeInsets+Extensions.swift */,
+				AC0969712B34900900B2ABF6 /* UIView+SwiftUI.swift */,
+				AC0969702B34900900B2ABF6 /* UIViewController+SwiftUI.swift */,
+				AC09696F2B34900900B2ABF6 /* View+Extensions.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		AC0969662B348ECB00B2ABF6 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				AC0969672B348ECB00B2ABF6 /* OnFirstAppearViewModifier.swift */,
+				AC0969682B348ECB00B2ABF6 /* ShakeViewModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		AC09696B2B348ECD00B2ABF6 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AC09696C2B348F7200B2ABF6 /* View */,
+				AC0969662B348ECB00B2ABF6 /* Modifier */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		AC09696C2B348F7200B2ABF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC09696D2B348F7C00B2ABF6 /* BackdropBlurView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AC27E4A7244E02EF00CFD763 /* Sharing */ = {
@@ -552,11 +627,8 @@
 		AC2EB13124141D010039FA85 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				AC7552B02507A9C600619D75 /* TabBar */,
-				ACAF21572452FADE00C33CC2 /* NavigationBar */,
-				AC2EB12D24141BC30039FA85 /* Reusable.swift */,
-				ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */,
-				ACAF21622452FB2F00C33CC2 /* ExtendedButton.swift */,
+				AC09696B2B348ECD00B2ABF6 /* SwiftUI */,
+				AC0969542B347EC300B2ABF6 /* UIKit */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -572,6 +644,7 @@
 		AC2EB18C241429A10039FA85 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC0969572B34832C00B2ABF6 /* SwiftUI */,
 				AC595FA826BD289300698959 /* Combine */,
 				AC2EB18D241429A10039FA85 /* CoreGraphics */,
 				AC2EB190241429A10039FA85 /* UIKit */,
@@ -603,6 +676,7 @@
 				AC2EB194241429A10039FA85 /* UICollectionViewFlowLayout+Extensions.swift */,
 				AC2EB195241429A10039FA85 /* UICollectionView+Extensions.swift */,
 				ACA00B4924D2A69D003983F8 /* UIEdgeInsets+Extensions.swift */,
+				AC0969552B34810700B2ABF6 /* UIScreen+Extensions.swift */,
 				AC5CAA7B2A5D696E002DFE5F /* UIAlertController+Extensions.swift */,
 			);
 			path = UIKit;
@@ -612,6 +686,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB8C889294C9C16004ED86B /* AnyObject+Cancellables.swift */,
+				AC0969502B347DF000B2ABF6 /* Locale+Extensions.swift */,
 				AC2EB197241429A10039FA85 /* Numeric+Extensions.swift */,
 				AC2EB198241429A10039FA85 /* String+Extensions.swift */,
 				AC2EB199241429A10039FA85 /* Bool+Extensions.swift */,
@@ -1084,6 +1159,9 @@
 			dependencies = (
 			);
 			name = UtilsCore;
+			packageProductDependencies = (
+				AC09695E2B34866F00B2ABF6 /* Algorithms */,
+			);
 			productName = UtilsCore;
 			productReference = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1154,6 +1232,7 @@
 			packageReferences = (
 				AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */,
+				AC09695D2B34866F00B2ABF6 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = AC9DA4612412CACC00F034EE /* Products */;
 			projectDirPath = "";
@@ -1271,6 +1350,7 @@
 			files = (
 				AC0673E7280722F200D9337A /* Line.swift in Sources */,
 				AC0673C5280722F200D9337A /* UICollectionView+Extensions.swift in Sources */,
+				AC0969512B347DF000B2ABF6 /* Locale+Extensions.swift in Sources */,
 				ACB8C88A294C9C17004ED86B /* AnyObject+Cancellables.swift in Sources */,
 				AC0673DE280722F200D9337A /* Environment.swift in Sources */,
 				AC0673D0280722F200D9337A /* CGGeometry+Extensions.swift in Sources */,
@@ -1282,7 +1362,9 @@
 				AC0673FE280722F200D9337A /* Synchronize.swift in Sources */,
 				AC0673FD280722F200D9337A /* FileManager+Extensions.swift in Sources */,
 				AC0673D8280722F200D9337A /* NavigationBarButtonItem.swift in Sources */,
+				AC0969562B34810700B2ABF6 /* UIScreen+Extensions.swift in Sources */,
 				AC0673D7280722F200D9337A /* Reusable.swift in Sources */,
+				AC0969732B34900900B2ABF6 /* UIViewController+SwiftUI.swift in Sources */,
 				AC0673F6280722F200D9337A /* DispatchQueue+Extensions.swift in Sources */,
 				AC0673F3280722F200D9337A /* Matrix.swift in Sources */,
 				AC0673CD280722F200D9337A /* Assertions.swift in Sources */,
@@ -1291,9 +1373,12 @@
 				AC0673E4280722F200D9337A /* Collection+Extensions.swift in Sources */,
 				AC0673E2280722F200D9337A /* PathPolygonizer.swift in Sources */,
 				AC0673F8280722F200D9337A /* Time.swift in Sources */,
+				AC0969722B34900900B2ABF6 /* View+Extensions.swift in Sources */,
 				AC0673C4280722F200D9337A /* TimeInterval+Extensions.swift in Sources */,
 				AC0673CE280722F200D9337A /* TabBarItem.swift in Sources */,
 				AC0673ED280722F200D9337A /* ExtendedButton.swift in Sources */,
+				AC0969742B34900900B2ABF6 /* UIView+SwiftUI.swift in Sources */,
+				AC09696E2B348F7C00B2ABF6 /* BackdropBlurView.swift in Sources */,
 				AC0673DA280722F200D9337A /* CodableColorWrapper.swift in Sources */,
 				AC0673F2280722F200D9337A /* LayerWrapperView.swift in Sources */,
 				AC0673CF280722F200D9337A /* Builder.swift in Sources */,
@@ -1309,6 +1394,7 @@
 				AC0673F4280722F200D9337A /* UIColor+Extensions.swift in Sources */,
 				AC0673C6280722F200D9337A /* CGAffineTransform+Extensions.swift in Sources */,
 				AC0673CA280722F200D9337A /* UIImageView+Extensions.swift in Sources */,
+				AC09696A2B348ECB00B2ABF6 /* ShakeViewModifier.swift in Sources */,
 				AC0673C1280722F200D9337A /* URL+Extensions.swift in Sources */,
 				AC0673D2280722F200D9337A /* IconTabBarItemView.swift in Sources */,
 				AC0673F1280722F200D9337A /* ClampingWrapper.swift in Sources */,
@@ -1325,14 +1411,18 @@
 				AC0673F0280722F200D9337A /* UICollectionViewFlowLayout+Extensions.swift in Sources */,
 				AC0673C9280722F200D9337A /* ValueWrapper.swift in Sources */,
 				AC0673E1280722F200D9337A /* Storage.swift in Sources */,
+				AC0969692B348ECB00B2ABF6 /* OnFirstAppearViewModifier.swift in Sources */,
 				AC0673E6280722F200D9337A /* Published+Storage.swift in Sources */,
+				AC0969592B34833F00B2ABF6 /* EdgeInsets+Extensions.swift in Sources */,
 				AC0673EF280722F200D9337A /* NavigationBar.swift in Sources */,
 				AC0673D4280722F200D9337A /* CGContext+Extensions.swift in Sources */,
 				AC0673C2280722F200D9337A /* ErrorTracker.swift in Sources */,
 				AC0673E9280722F200D9337A /* UIApplication+Extensions.swift in Sources */,
 				AC0673E0280722F200D9337A /* Queue.swift in Sources */,
+				AC0969622B348BE800B2ABF6 /* BaseHostingController.swift in Sources */,
 				AC0673FB280722F200D9337A /* Cacher.swift in Sources */,
 				AC0673D3280722F200D9337A /* Numeric+Extensions.swift in Sources */,
+				AC0969652B348CBD00B2ABF6 /* UIBackdropView.swift in Sources */,
 				AC0673EA280722F200D9337A /* Data+Extensions.swift in Sources */,
 				AC0673E8280722F200D9337A /* CGPath+Extensions.swift in Sources */,
 				AC0673D6280722F200D9337A /* Bool+Extensions.swift in Sources */,
@@ -1617,7 +1707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1671,7 +1761,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1754,6 +1844,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1787,6 +1878,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -1903,6 +1995,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC09695D2B34866F00B2ABF6 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		AC2EB22024142DE60039FA85 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
@@ -1922,6 +2022,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC09695E2B34866F00B2ABF6 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC09695D2B34866F00B2ABF6 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
 		AC4F79F9246DB07E00F92968 /* Macaw */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC4F79C7246D932000F92968 /* XCRemoteSwiftPackageReference "Macaw" */;

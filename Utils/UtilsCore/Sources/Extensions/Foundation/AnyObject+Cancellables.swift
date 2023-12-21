@@ -9,7 +9,7 @@ public protocol HasCancellables: AnyObject {
     var cancellables: Set<AnyCancellable> { get set }
 }
 
-private var cancellablesKey: String = "object_cancellables"
+private var cancellablesKey: UInt8 = 0
 
 private final class CancellablesContainer: NSObject {
     var cancellables: Set<AnyCancellable> = []
