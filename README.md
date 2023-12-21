@@ -1,4 +1,4 @@
-# Utils: &nbsp; [![Tests Status](https://github.com/pocket-ninja/utils/workflows/pull-request/badge.svg)](https://github.com/pocket-ninja/utils/actions?query=workflow:pull-request)
+# Utils: &nbsp; [![Tests Status](https://github.com/pocket-ninja/utils/workflows/test/badge.svg)](https://github.com/pocket-ninja/utils/actions?query=workflow:test)
 
 Internal iOS utilities
 
