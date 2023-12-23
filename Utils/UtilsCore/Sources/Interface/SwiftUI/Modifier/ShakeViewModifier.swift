@@ -23,6 +23,10 @@ extension UIWindow {
 public struct ShakeViewModifier: ViewModifier {
     let action: () -> Void
     
+    public init(action: @escaping () -> Void) {
+        self.action = action
+    }
+    
     public func body(content: Content) -> some View {
         content
             .onAppear() // this has to be here because of a SwiftUI bug

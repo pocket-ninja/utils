@@ -7,7 +7,11 @@ import SwiftUI
 public struct OnFirstAppearViewModifier: ViewModifier {
     @State private var isFirstAppear = false
     
-    public var action: () -> Void
+    let action: () -> Void
+    
+    public init(action: @escaping () -> Void) {
+        self.action = action
+    }
     
     public func body(content: Content) -> some View {
         content

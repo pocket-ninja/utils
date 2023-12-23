@@ -9,6 +9,11 @@ public struct BackdropBlurView: View {
     public var radius: CGFloat
     public var opaque: Bool = true
     
+    public init(radius: CGFloat = 20, opaque: Bool = true) {
+        self.radius = radius
+        self.opaque = opaque
+    }
+    
     public var body: some View {
         UIBackdropView()
             .swiftUI()
