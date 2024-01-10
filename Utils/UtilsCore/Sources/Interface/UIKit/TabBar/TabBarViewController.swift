@@ -5,10 +5,17 @@
 #if os(iOS)
 import UIKit
 
-public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewController {
-    public typealias ItemView = TabBarView.ItemView
-    public typealias SelectHandler = (_ item: TabBarItem<ItemView>, _ consecutive: Bool) -> Void
-    
+public protocol TabBarViewControllerDelegate: AnyObject {
+    func tabBar(_ controller: TabBarViewController, didSelect tab: TabBarItem)
+    func tabBar(_ controller: TabBarViewController, didConsecutivelySelect tab: TabBarItem)
+}
+
+public extension TabBarViewControllerDelegate {
+    func tabBar(_ controller: TabBarViewController, didSelect tab: TabBarItem) {}
+    func tabBar(_ controller: TabBarViewController, didConsecutivelySelect tab: TabBarItem) {}
+}
+
+public final class TabBarViewController: UIViewController {
     public enum ChildLayout: Equatable {
         case barPinned(contentOffset: CGFloat)
         case fullHeight
@@ -21,13 +28,13 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         case bottomSafeArea
     }
 
-    public var tabs: [TabBarItem<ItemView>] {
+    public var tabs: [TabBarItem] {
         didSet {
             renderTabs()
         }
     }
 
-    public var selectedTab: TabBarItem<ItemView>? {
+    public var selectedTab: TabBarItem? {
         tabs[safe: selectedIndex]
     }
 
@@ -55,15 +62,15 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         showedController?.prefersStatusBarHidden ?? true
     }
 
-    public var onTabSelect: SelectHandler?
+    public weak var delegate: TabBarViewControllerDelegate?
     public var inreasesSafeArea: Bool
 
     public init(
         layout: ChildLayout = .barPinned(contentOffset: 0),
         inreasesSafeArea: Bool = true,
         tabPivot: TabPivot = .bottomSafeArea,
-        tabBarView: TabBarView,
-        tabs: [TabBarItem<ItemView>] = []
+        tabBarView: TabBarViewable,
+        tabs: [TabBarItem] = []
     ) {
         self.tabs = tabs
         self.inreasesSafeArea = inreasesSafeArea
@@ -109,10 +116,7 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         }
         
         tabBarView.translatesAutoresizingMaskIntoConstraints = false
-        tabBarView.onSelect = { [weak self] item, index in
-            self?.handleTabSelected(item: item, at: index)
-        }
-        
+        tabBarView.delegate = self
         NSLayoutConstraint.activate([
             tabBarView.widthAnchor.constraint(equalTo: view.widthAnchor),
             tabBarView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -145,11 +149,11 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         renderTabs()
     }
 
-    public func tab(with id: TabBarItem<ItemView>.ID) -> TabBarItem<ItemView>? {
+    public func tab(with id: TabBarItem.ID) -> TabBarItem? {
         tabs.first { $0.id == id }
     }
 
-    public func tabIndex(with id: TabBarItem<ItemView>.ID) -> Int? {
+    public func tabIndex(with id: TabBarItem.ID) -> Int? {
         tabs.firstIndex { $0.id == id }
     }
 
@@ -184,7 +188,6 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
     }
 
-    
     private func updateShowedControllerSafeAreaInsets() {
         if layout == .fullHeight, inreasesSafeArea {
             showedController?.additionalSafeAreaInsets.bottom = tabBarView.height
@@ -196,27 +199,29 @@ public final class TabBarViewController<TabBarView: TabBarViewable>: UIViewContr
         selectTab(at: selectedIndex, animated: false)
     }
 
-    private func handleTabSelected(item: ItemView, at index: Int) {
-        guard let tab = tabs[safe: index] else {
-            return
-        }
-    
-        guard selectedIndex != index else {
-            onTabSelect?(tab, true)
-            return
-        }
-    
-        onTabSelect?(tab, false)
-        selectedIndex = index
-        selectTab(at: index, animated: true)
-    }
-
     private var selectedIndex: Int = 0
     private let containerView = UIView()
-    private let tabBarView: TabBarView
+    private let tabBarView: TabBarViewable
     private let layout: ChildLayout
     private let tabPivot: TabPivot
     private var showedController: UIViewController?
+}
+
+extension TabBarViewController: TabBarViewDelegate {
+    public func tabBarView(_ view: TabBarViewable, tappedOn: TabBarItemViewable, at index: Int) {
+        guard let tab = tabs[safe: index] else {
+            return
+        }
+
+        guard selectedIndex != index else {
+            delegate?.tabBar(self, didConsecutivelySelect: tab)
+            return
+        }
+
+        delegate?.tabBar(self, didSelect: tab)
+        selectedIndex = index
+        selectTab(at: index, animated: true)
+    }
 }
 
 private extension NSLayoutConstraint {

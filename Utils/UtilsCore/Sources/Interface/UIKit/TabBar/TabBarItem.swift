@@ -5,12 +5,12 @@
 #if os(iOS)
 import UIKit
 
-public struct TabBarItem<ItemView: TabBarItemViewable>: Identifiable {
+public struct TabBarItem: Identifiable {
     public let id: String
     public var viewController: UIViewController
-    public var itemView: ItemView
+    public var itemView: TabBarItemViewable
 
-    public init(id: ID, viewController: UIViewController, itemView: ItemView) {
+    public init(id: ID, viewController: UIViewController, itemView: TabBarItemViewable) {
         self.id = id
         self.viewController = viewController
         self.itemView = itemView
