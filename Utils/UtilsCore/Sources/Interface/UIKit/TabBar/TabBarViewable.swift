@@ -7,11 +7,10 @@ import UIKit
 
 public protocol TabBarViewable: UIView {
     associatedtype ItemView: TabBarItemViewable
-    typealias SelectHandler = (ItemView, Int) -> Void
     
     var items: [ItemView] { get set }
     var height: CGFloat { get }
-    var onSelect: SelectHandler? { get set }
+    var onSelect: (ItemView, Int) -> Void { get set }
     func selectItem(at index: Int, animated: Bool)
 }
 #endif

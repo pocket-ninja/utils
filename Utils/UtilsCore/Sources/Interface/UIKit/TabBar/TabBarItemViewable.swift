@@ -11,7 +11,7 @@ public enum TabBarItemState {
 }
 
 public protocol TabBarItemViewable: UIView {
-    typealias TapHandler = (Self) -> Void
+    typealias TapHandler = (TabBarItemViewable) -> Void
     
     var state: TabBarItemState { get set }
     var tapHandler: TapHandler? { get set }
