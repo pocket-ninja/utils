@@ -17,6 +17,10 @@ public extension Comparable {
         assertWrapper(from <= to, "invalid clamp range", "`to` should be greater than `from`")
         return min(max(self, from), to)
     }
+    
+    func clamped(in range: ClosedRange<Self>) -> Self {
+        min(max(range.lowerBound, self), range.upperBound)
+    }
 
     func between(_ c1: Self, _ c2: Self) -> Bool {
         return self >= min(c1, c2) && self <= max(c1, c2)

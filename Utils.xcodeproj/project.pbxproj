@@ -60,7 +60,7 @@
 		AC0673EE280722F200D9337A /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4B0E8244DA898009D0CB3 /* Directory.swift */; };
 		AC0673EF280722F200D9337A /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF21582452FADE00C33CC2 /* NavigationBar.swift */; };
 		AC0673F0280722F200D9337A /* UICollectionViewFlowLayout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB194241429A10039FA85 /* UICollectionViewFlowLayout+Extensions.swift */; };
-		AC0673F1280722F200D9337A /* ClampingWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCB249D01700084C408 /* ClampingWrapper.swift */; };
+		AC0673F1280722F200D9337A /* ClampedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCB249D01700084C408 /* ClampedWrapper.swift */; };
 		AC0673F2280722F200D9337A /* LayerWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC409102451AFBD006D8E6A /* LayerWrapperView.swift */; };
 		AC0673F3280722F200D9337A /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8CD9244B0EE10000CD24 /* Matrix.swift */; };
 		AC0673F4280722F200D9337A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB193241429A10039FA85 /* UIColor+Extensions.swift */; };
@@ -160,7 +160,7 @@
 		ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63656246AC1280042483E /* CGPathPolygonizationTests.swift */; };
 		ACD6365A246AC21E0042483E /* ShapeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD63659246AC21E0042483E /* ShapeContainer.swift */; };
 		ACD6365C246AC2A50042483E /* CGPath+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD6365B246AC2A50042483E /* CGPath+Stub.swift */; };
-		F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */; };
+		F6354BCE249D022F0084C408 /* ClampedWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6354BCD249D022F0084C408 /* ClampedWrapperTests.swift */; };
 		F680893D24741EBC005A13DA /* UtilsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9DA4882412CB5700F034EE /* UtilsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F680894024742056005A13DA /* UtilsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9DA4BB2412CC1E00F034EE /* UtilsCore.framework */; };
 		F6826C4024863FF2001A327E /* CodableColorWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */; };
@@ -401,8 +401,8 @@
 		ACD63659246AC21E0042483E /* ShapeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeContainer.swift; sourceTree = "<group>"; };
 		ACD6365B246AC2A50042483E /* CGPath+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPath+Stub.swift"; sourceTree = "<group>"; };
 		ACF4B0E8244DA898009D0CB3 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../Files/Directory.swift; sourceTree = "<group>"; };
-		F6354BCB249D01700084C408 /* ClampingWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampingWrapper.swift; sourceTree = "<group>"; };
-		F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampingWrapperTests.swift; sourceTree = "<group>"; };
+		F6354BCB249D01700084C408 /* ClampedWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampedWrapper.swift; sourceTree = "<group>"; };
+		F6354BCD249D022F0084C408 /* ClampedWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampedWrapperTests.swift; sourceTree = "<group>"; };
 		F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapper.swift; sourceTree = "<group>"; };
 		F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColorWrapperTests.swift; sourceTree = "<group>"; };
 		F6826C4124864184001A327E /* DebugOverridableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverridableWrapper.swift; sourceTree = "<group>"; };
@@ -1019,7 +1019,7 @@
 			isa = PBXGroup;
 			children = (
 				F6826C3F24863FF2001A327E /* CodableColorWrapperTests.swift */,
-				F6354BCD249D022F0084C408 /* ClampingWrapperTests.swift */,
+				F6354BCD249D022F0084C408 /* ClampedWrapperTests.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -1029,7 +1029,7 @@
 			children = (
 				F6826C3D24863F7C001A327E /* CodableColorWrapper.swift */,
 				F6826C4124864184001A327E /* DebugOverridableWrapper.swift */,
-				F6354BCB249D01700084C408 /* ClampingWrapper.swift */,
+				F6354BCB249D01700084C408 /* ClampedWrapper.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -1397,7 +1397,7 @@
 				AC09696A2B348ECB00B2ABF6 /* ShakeViewModifier.swift in Sources */,
 				AC0673C1280722F200D9337A /* URL+Extensions.swift in Sources */,
 				AC0673D2280722F200D9337A /* IconTabBarItemView.swift in Sources */,
-				AC0673F1280722F200D9337A /* ClampingWrapper.swift in Sources */,
+				AC0673F1280722F200D9337A /* ClampedWrapper.swift in Sources */,
 				AC0673FF280722F200D9337A /* Trace.swift in Sources */,
 				AC0673EB280722F200D9337A /* Operators.swift in Sources */,
 				AC0673E5280722F200D9337A /* Size.swift in Sources */,
@@ -1440,7 +1440,7 @@
 				AC2EB150241423B20039FA85 /* ReusableTests.swift in Sources */,
 				AC9DA53A2412CF0300F034EE /* EnvironmentTests.swift in Sources */,
 				AC2EB151241423B20039FA85 /* CacherTests.swift in Sources */,
-				F6354BCE249D022F0084C408 /* ClampingWrapperTests.swift in Sources */,
+				F6354BCE249D022F0084C408 /* ClampedWrapperTests.swift in Sources */,
 				AC6C8CDC244B10280000CD24 /* MatrixTests.swift in Sources */,
 				AC2EB21924142D700039FA85 /* OptionalExtensionsTests.swift in Sources */,
 				ACD63658246AC1280042483E /* CGPathPolygonizationTests.swift in Sources */,

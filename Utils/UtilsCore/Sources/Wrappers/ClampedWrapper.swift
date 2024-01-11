@@ -1,33 +1,35 @@
 //
-//  Copyright © 2020 pocket-ninja. All rights reserved.
+//  Copyright © 2024 sroik. All rights reserved.
 //
 
 import Foundation
 
+@available(*, deprecated, renamed: "Clamped")
+public typealias Clamping = Clamped
+
 @propertyWrapper
-public struct Clamping<Value: Comparable> {
+public struct Clamped<Value: Comparable> {
     public var value: Value
     let range: ClosedRange<Value>
 
     public init(wrappedValue value: Value, _ range: ClosedRange<Value>) {
-        precondition(range.contains(value))
-        self.value = value
         self.range = range
+        self.value = value.clamped(in: range)
     }
 
     public var wrappedValue: Value {
         get { value }
-        set { value = min(max(range.lowerBound, newValue), range.upperBound) }
+        set { value = newValue.clamped(in: range) }
     }
 }
 
-extension Clamping: Equatable {
+extension Clamped: Equatable {
     public static func == (lhs: Self, rhs: Self) -> Bool {
         lhs.value == rhs.value
     }
 }
 
-extension Clamping: Hashable where Value: Hashable {
+extension Clamped: Hashable where Value: Hashable {
     public func hash(into hasher: inout Hasher) {
         value.hash(into: &hasher)
     }
