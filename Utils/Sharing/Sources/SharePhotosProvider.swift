@@ -92,7 +92,7 @@ private extension ShareContent {
             requests = files.map { file in
                 if file.type.conforms(to: .image) {
                     return PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: file.url)
-                } else if file.type.conforms(to: .video) {
+                } else if file.type.conforms(to: .movie) {
                     return PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: file.url)
                 } else {
                     return nil
