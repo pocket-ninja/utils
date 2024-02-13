@@ -26,3 +26,23 @@ public extension Comparable {
         return self >= min(c1, c2) && self <= max(c1, c2)
     }
 }
+
+@inlinable
+public func lerp<T: FloatingPoint>(_ from: T, _ to: T, _ time: T) -> T {
+    from + time * (to - from)
+}
+
+@inlinable
+public func lerp<T: FloatingPoint>(from: T, to: T, time: T) -> T {
+    lerp(from, to, time)
+}
+
+@inlinable
+public func inverseLerp<T: FloatingPoint>(_ from: T, _ to: T, _ value: T) -> T {
+    (value - from) / (to - from)
+}
+
+@inlinable
+public func inverseLerp<T: FloatingPoint>(from: T, to: T, value: T) -> T {
+    inverseLerp(from, to, value)
+}
