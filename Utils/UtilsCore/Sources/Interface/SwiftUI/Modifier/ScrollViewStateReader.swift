@@ -5,9 +5,9 @@
 import SwiftUI
 
 public struct ScrollViewState: Equatable {
-    var size: CGSize = .zero
-    var contentSize: CGSize = .zero
-    var contentOffset: CGPoint = .zero
+    public var size: CGSize = .zero
+    public var contentSize: CGSize = .zero
+    public var contentOffset: CGPoint = .zero
 }
 
 public struct ScrollFramePreferenceKey: PreferenceKey {
