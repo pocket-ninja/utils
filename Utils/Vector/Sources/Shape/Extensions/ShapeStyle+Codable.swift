@@ -62,5 +62,5 @@ extension ShapeStroke: Codable {
     }
 }
 
-extension CGLineJoin: Codable {}
-extension CGLineCap: Codable {}
+extension CGLineJoin: @retroactive Codable {}
+extension CGLineCap: @retroactive Codable {}

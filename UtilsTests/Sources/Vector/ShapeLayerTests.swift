@@ -1,80 +1,74 @@
 //
-//  Copyright © 2020 sroik. All rights reserved.
+//  Copyright © 2025 sroik. All rights reserved.
 //
 
-import XCTest
+import Testing
 import UIKit
 import SnapshotTesting
 import Vector
 
-class ShapeLayerTests: XCTestCase {
+@MainActor
+@Suite(.snapshots(record: .missing, diffTool: .ksdiff))
+struct ShapeLayerTests {
 
-    var container: UIView!
-
-    override func setUp() {
-        super.setUp()
-        isRecording = false
-        container = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    let container = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+    
+    init() {
         container.backgroundColor = .white
     }
-
-    override func tearDown() {
-        container = nil
-        super.tearDown()
-    }
-
-    func testColorFill() {
+    
+    @Test func testColorFill() {
         let layer = ShapeLayer(shape: .stub())
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 
-    func testLinearGradientFill() {
+    @Test func testLinearGradientFill() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .linearGradientStub))
         let layer = ShapeLayer(shape: shape)
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 
-    func testRadialGradientFill() {
+    @Test func testRadialGradientFill() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .radialGradientStub))
         let layer = ShapeLayer(shape: shape)
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 
-    func testTranslatedLinearGradientFill() {
+    @Test func testTranslatedLinearGradientFill() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .linearGradientStub))
         let layer = ShapeLayer(shape: shape.translated(by: CGPoint(x: 50, y: 50)))
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
     
-    func testTranslatedRadialGradient() {
+    @Test func testTranslatedRadialGradient() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .radialGradientStub))
         let layer = ShapeLayer(shape: shape.translated(by: CGPoint(x: 50, y: 50)))
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
     
-    func testScaledLinearGradient() {
+    @Test func testScaledLinearGradient() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .linearGradientStub))
         let layer = ShapeLayer(shape: shape.scaled(by: 2.0))
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 
-    func testScaledRadialGradient() {
+    @Test func testScaledRadialGradient() {
         let shape = Shape.stub(path: .arrowStub, style: .stub(fill: .radialGradientStub))
         let layer = ShapeLayer(shape: shape.scaled(by: 2.0))
         container.layer.addSublayer(layer)
         layer.frame = container.bounds
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 }

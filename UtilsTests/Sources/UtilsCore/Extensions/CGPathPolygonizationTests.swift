@@ -2,43 +2,34 @@
 //  Copyright © 2020 sroik. All rights reserved.
 //
 
-import XCTest
+import Testing
+import UIKit
 import SnapshotTesting
 @testable import UtilsCore
 
-class CGPathPolygonizationTests: XCTestCase {
-
-    var container: ShapeContainer!
-
-    override func setUp() {
-        super.setUp()
-        isRecording = false
-        container = ShapeContainer()
-    }
-
-    override func tearDown() {
-        container = nil
-        super.tearDown()
-    }
-
-    func testTriangle() {
+@MainActor
+@Suite(.snapshots(record: .missing, diffTool: .ksdiff))
+struct CGPathPolygonizationTests {
+    let container = ShapeContainer()
+    
+    @Test func testTriangle() {
         container.shapePath = CGPath.triangleStub.polygonized()
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
-
-    func testEllipseLowAccuracy() {
+    
+    @Test func testEllipseLowAccuracy() {
         let path = CGPath(ellipseIn: CGRect(x: 0, y: 0, width: 100, height: 75), transform: nil)
         container.shapePath = path.polygonized(accuracy: .low)
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
-
-    func testEllipseHighAccuracy() {
+    
+    @Test func testEllipseHighAccuracy() {
         let path = CGPath(ellipseIn: CGRect(x: 0, y: 0, width: 100, height: 75), transform: nil)
         container.shapePath = path.polygonized(accuracy: .high)
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
-
-    func testCubicShapeMediumAccuracy() {
+    
+    @Test func testCubicShapeMediumAccuracy() {
         let path = CGMutablePath()
         path.move(to: .zero)
         path.addCurve(
@@ -47,26 +38,26 @@ class CGPathPolygonizationTests: XCTestCase {
             control2: CGPoint(x: 150, y: 300)
         )
         path.closeSubpath()
-
+        
         container.shapePath = path.polygonized(accuracy: .medium)
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
-
-    func testQuadShapeLowAccuracy() {
+    
+    @Test func testQuadShapeLowAccuracy() {
         let path = CGMutablePath()
         path.move(to: .zero)
         path.addQuadCurve(to: CGPoint(x: 200, y: 0), control: CGPoint(x: 100, y: 200))
         path.closeSubpath()
         container.shapePath = path.polygonized(accuracy: .low)
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
-
-    func testQuadShapeHighAccuracy() {
+    
+    @Test func testQuadShapeHighAccuracy() {
         let path = CGMutablePath()
         path.move(to: .zero)
         path.addQuadCurve(to: CGPoint(x: 200, y: 0), control: CGPoint(x: 100, y: 200))
         path.closeSubpath()
         container.shapePath = path.polygonized(accuracy: .high)
-        assertSnapshot(matching: container, as: .image)
+        assertSnapshot(of: container, as: .image)
     }
 }

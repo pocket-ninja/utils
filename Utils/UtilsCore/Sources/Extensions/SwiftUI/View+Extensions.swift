@@ -5,6 +5,24 @@
 import SwiftUI
 
 public extension View {
+    func infinityMaxSize(alignment: Alignment = .center)  -> some View {
+        frame(maxWidth: .infinity, maxHeight: .infinity, alignment: alignment)
+    }
+    
+    func frame(size: CGSize, alignment: Alignment = .center) -> some View {
+        frame(width: size.width, height: size.height, alignment: alignment)
+    }
+        
+    func frame(size: CGSize, center: CGPoint) -> some View {
+        frame(size: size).position(center)
+    }
+    
+    func uiView(backgroundColor: UIColor = .clear) -> UIView {
+        let hosting = UIHostingController(rootView: self)
+        hosting.view.backgroundColor = backgroundColor
+        return hosting.view
+    }
+    
     @ViewBuilder
     func hidden(_ condition: Bool) -> some View {
         if condition {
