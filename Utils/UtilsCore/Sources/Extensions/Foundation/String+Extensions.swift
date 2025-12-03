@@ -3,6 +3,7 @@
 //
 
 import Foundation
+import UniformTypeIdentifiers
 
 public extension String {
     static var empty: String {
@@ -18,6 +19,22 @@ public extension String {
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(startIndex, offsetBy: range.upperBound)
         return String(self[start ..< end])
+    }
+    
+    func appending(pathComponent: String) -> String {
+        NSString(string: self).appendingPathComponent(pathComponent)
+    }
+    
+    func replacingPathExtension(to type: UTType) -> String {
+        NSString(string: self).deletingPathExtension.appending(pathExtensionFor: type)
+    }
+    
+    func appending(pathExtensionFor type: UTType) -> String {
+        NSString(string: self).appendingPathExtension(for: type)
+    }
+    
+    func appending(pathExtension: String) -> String {
+        appending(".\(pathExtension)")
     }
 }
 

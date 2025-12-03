@@ -31,6 +31,10 @@ public extension Sequence {
             a[keyPath: keyPath] < b[keyPath: keyPath]
         }
     }
+    
+    func list() -> [Element] {
+        Array(self)
+    }
 }
 
 public extension Collection {

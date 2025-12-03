@@ -274,25 +274,3 @@ public extension CGRect {
     }
 }
 
-extension CGPoint: Hashable {
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(x)
-        hasher.combine(y)
-        hasher.combine(105_943)
-    }
-}
-
-extension CGSize: Hashable {
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(width)
-        hasher.combine(height)
-        hasher.combine(105_943)
-    }
-}
-
-extension CGRect: Hashable {
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(origin)
-        hasher.combine(size)
-    }
-}
