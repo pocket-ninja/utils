@@ -13,11 +13,17 @@ public extension UIAlertController {
         title: String? = nil,
         message: String? = nil,
         action: String,
+        preferred: Bool = false,
         callback: Callback? = nil
     ) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: action, style: .default) { _ in callback?() }
         controller.addAction(okAction)
+        
+        if preferred {
+            controller.preferredAction = okAction
+        }
+        
         return controller
     }
 

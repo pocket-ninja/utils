@@ -113,6 +113,8 @@
 		AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */; };
 		AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21624142D700039FA85 /* CGAffineTransformExtensionsTests.swift */; };
 		AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF872449E98A002BAD27 /* TimeTests.swift */; };
+		AC4ABB872EE0DDD900C3C577 /* PressableViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ABB852EE0DDD900C3C577 /* PressableViewModifier.swift */; };
+		AC4ABB882EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4ABB862EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift */; };
 		AC4F7972246D5EDA00F92968 /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4F7970246D5EDA00F92968 /* Vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC4F7975246D5EDA00F92968 /* Vector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F796E246D5EDA00F92968 /* Vector.framework */; };
 		AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F796E246D5EDA00F92968 /* Vector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -324,6 +326,8 @@
 		AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
 		AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		AC38FF872449E98A002BAD27 /* TimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
+		AC4ABB852EE0DDD900C3C577 /* PressableViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableViewModifier.swift; sourceTree = "<group>"; };
+		AC4ABB862EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressGestureRecognizerRepresentable.swift; sourceTree = "<group>"; };
 		AC4F796E246D5EDA00F92968 /* Vector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4F7970246D5EDA00F92968 /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		AC4F7971246D5EDA00F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -524,6 +528,8 @@
 		AC09696C2B348F7200B2ABF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC4ABB852EE0DDD900C3C577 /* PressableViewModifier.swift */,
+				AC4ABB862EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift */,
 				AC09696D2B348F7C00B2ABF6 /* BackdropBlurView.swift */,
 			);
 			path = View;
@@ -1396,6 +1402,8 @@
 				AC0673C4280722F200D9337A /* TimeInterval+Extensions.swift in Sources */,
 				AC0673CE280722F200D9337A /* TabBarItem.swift in Sources */,
 				AC0673ED280722F200D9337A /* ExtendedButton.swift in Sources */,
+				AC4ABB872EE0DDD900C3C577 /* PressableViewModifier.swift in Sources */,
+				AC4ABB882EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift in Sources */,
 				AC0969742B34900900B2ABF6 /* UIView+SwiftUI.swift in Sources */,
 				AC09696E2B348F7C00B2ABF6 /* BackdropBlurView.swift in Sources */,
 				AC0673DA280722F200D9337A /* CodableColorWrapper.swift in Sources */,
