@@ -113,8 +113,6 @@
 		AC2EB21E24142D700039FA85 /* CollectionExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21524142D700039FA85 /* CollectionExtensionsTests.swift */; };
 		AC2EB21F24142D700039FA85 /* CGAffineTransformExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EB21624142D700039FA85 /* CGAffineTransformExtensionsTests.swift */; };
 		AC38FF882449E98A002BAD27 /* TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38FF872449E98A002BAD27 /* TimeTests.swift */; };
-		AC4BDF4D2EE07F1800487D0F /* PressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BDF4C2EE07F1800487D0F /* PressGesture.swift */; };
-		AC4BDF4E2EE07F1800487D0F /* PressableViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BDF4B2EE07F1800487D0F /* PressableViewModifier.swift */; };
 		AC4F7972246D5EDA00F92968 /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4F7970246D5EDA00F92968 /* Vector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC4F7975246D5EDA00F92968 /* Vector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F796E246D5EDA00F92968 /* Vector.framework */; };
 		AC4F7976246D5EDA00F92968 /* Vector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC4F796E246D5EDA00F92968 /* Vector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -326,8 +324,6 @@
 		AC38FF812449E71C002BAD27 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
 		AC38FF832449E838002BAD27 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		AC38FF872449E98A002BAD27 /* TimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTests.swift; sourceTree = "<group>"; };
-		AC4BDF4B2EE07F1800487D0F /* PressableViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableViewModifier.swift; sourceTree = "<group>"; };
-		AC4BDF4C2EE07F1800487D0F /* PressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressGesture.swift; sourceTree = "<group>"; };
 		AC4F796E246D5EDA00F92968 /* Vector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4F7970246D5EDA00F92968 /* Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
 		AC4F7971246D5EDA00F92968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -512,8 +508,6 @@
 				AC0969682B348ECB00B2ABF6 /* ShakeViewModifier.swift */,
 				ACE1ED192B7B821700CE7E4F /* ScrollViewStateReader.swift */,
 				ACE1ED182B7B821700CE7E4F /* FrameReader.swift */,
-				AC4BDF4B2EE07F1800487D0F /* PressableViewModifier.swift */,
-				AC4BDF4C2EE07F1800487D0F /* PressGesture.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -1374,8 +1368,6 @@
 			files = (
 				AC0673E7280722F200D9337A /* Line.swift in Sources */,
 				AC0673C5280722F200D9337A /* UICollectionView+Extensions.swift in Sources */,
-				AC4BDF4D2EE07F1800487D0F /* PressGesture.swift in Sources */,
-				AC4BDF4E2EE07F1800487D0F /* PressableViewModifier.swift in Sources */,
 				AC0969512B347DF000B2ABF6 /* Locale+Extensions.swift in Sources */,
 				ACB8C88A294C9C17004ED86B /* AnyObject+Cancellables.swift in Sources */,
 				AC0673DE280722F200D9337A /* Environment.swift in Sources */,
