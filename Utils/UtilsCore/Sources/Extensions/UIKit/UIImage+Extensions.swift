@@ -2,6 +2,8 @@
 //  Copyright © 2025 sroik. All rights reserved.
 //
 
+#if os(iOS)
+
 import UIKit
 
 extension UIImage {
@@ -89,3 +91,5 @@ extension UIImage {
         return cropped(to: cropRect)
     }
 }
+
+#endif

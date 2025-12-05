@@ -17,11 +17,6 @@ public extension View {
         frame(size: size).position(center)
     }
     
-    func uiView(backgroundColor: UIColor = .clear) -> UIView {
-        let hosting = UIHostingController(rootView: self)
-        hosting.view.backgroundColor = backgroundColor
-        return hosting.view
-    }
     
     @ViewBuilder
     func hidden(_ condition: Bool) -> some View {
@@ -42,6 +37,12 @@ public extension View {
     }
     
 #if os(iOS)
+    func uiView(backgroundColor: UIColor = .clear) -> UIView {
+        let hosting = UIHostingController(rootView: self)
+        hosting.view.backgroundColor = backgroundColor
+        return hosting.view
+    }
+
     @available(iOS 15.0, *)
     @discardableResult
     func present(

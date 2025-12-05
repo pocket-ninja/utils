@@ -34,9 +34,9 @@ public struct ScrollViewStateReader: ViewModifier {
     
     public func body(content: Content) -> some View {
         content
-            .readSize { size in
+            .readFrame { frame in
                 let oldState = state
-                state.size = size
+                state.size = frame.size
                 reader(oldState, state)
             }
             .readScrollFrame { frame in
@@ -76,4 +76,32 @@ public extension ScrollViewState {
             y: contentSize.height - size.height + contentOffset.y
         )
     }
+}
+
+private struct ScrollFrameReaderPreviewView: View {
+    @State var state = ScrollViewState()
+    
+    var body: some View {
+        VStack {
+            ScrollView(.vertical) {
+                Color.gray.frame(height: 1000)
+                    .observeScrollFrame()
+            }
+            .readScrollState { _, newState in
+                state = newState
+            }
+            .frame(height: 600)
+            .border(.red)
+
+            Text("content x: \(state.contentOffset.x), y: \(state.contentOffset.y)")
+            
+            Text("scroll w: \(state.size.width), h: \(state.size.height)")
+            
+            Spacer()
+        }
+    }
+}
+
+#Preview {
+   ScrollFrameReaderPreviewView()
 }
