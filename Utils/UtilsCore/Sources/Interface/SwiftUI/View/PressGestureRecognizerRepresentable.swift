@@ -11,8 +11,6 @@ public struct PressGestureRecognizerRepresentable: UIGestureRecognizerRepresenta
     public var allowedMovement: CGFloat
     public var onTap: () -> Void
     
-    @State private var startLocation: CGPoint = .zero
-    
     public func makeUIGestureRecognizer(context: Context) -> UILongPressGestureRecognizer {
         let recognizer = UILongPressGestureRecognizer()
         recognizer.delegate = context.coordinator
