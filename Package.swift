@@ -12,17 +12,22 @@ let package = Package(
     products: [
         .library(
             name: "UtilsCore",
+            type: .static,
+            targets: ["UtilsCore"]
+        ),
+        .library(
+            name: "UtilsCoreDynamic",
             type: .dynamic,
             targets: ["UtilsCore"]
         ),
         .library(
             name: "PocketSharing",
-            type: .dynamic,
+            type: .static,
             targets: ["PocketSharing"]
         ),
         .library(
             name: "Vector",
-            type: .dynamic,
+            type: .static,
             targets: ["Vector"]
         )
     ],
