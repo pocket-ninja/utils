@@ -87,5 +87,16 @@ public extension UIView {
             insets: insets
         )
     }
+    
+    func fill(in view: UIView, layoutGuide: UILayoutGuide, insets: UIEdgeInsets = .zero) {
+        anchor(
+            in: view,
+            top: layoutGuide.topAnchor,
+            bottom: layoutGuide.bottomAnchor,
+            left: layoutGuide.leftAnchor,
+            right: layoutGuide.rightAnchor,
+            insets: insets
+        )
+    }
 }
 #endif
