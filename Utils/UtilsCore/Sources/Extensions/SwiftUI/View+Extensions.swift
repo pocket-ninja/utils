@@ -37,6 +37,7 @@ public extension View {
     }
     
 #if os(iOS)
+    @available(*, deprecated, message: "use UIHostingConfiguration.makeView instead")
     func uiView(backgroundColor: UIColor = .clear) -> UIView {
         let hosting = UIHostingController(rootView: self)
         hosting.view.backgroundColor = backgroundColor

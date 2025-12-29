@@ -5,10 +5,10 @@
 #if os(iOS)
 import UIKit
 
-final class UIBackdropView: UIVisualEffectView {
+public final class UIBackdropView: UIVisualEffectView {
     private let animator = UIViewPropertyAnimator()
     
-    init() {
+    public init() {
         super.init(effect: nil)
         animator.addAnimations { [weak self] in self?.effect = UIBlurEffect() }
         animator.fractionComplete = 0
