@@ -16,32 +16,10 @@ public struct PressableViewModifier: ViewModifier {
     public var onTap: () -> Void
     
     @State private var pressed: Bool = false
-    @State private var dragging: Bool = false
     
     public func body(content: Content) -> some View {
-        if #available(iOS 18.0, *) {
-            animated(content: content)
-                .gesture(
-                    PressGestureRecognizerRepresentable(
-                        pressed: $pressed,
-                        allowedMovement: allowedMovement,
-                        onTap: onTap
-                    )
-                )
-        } else {
-            animated(content: content)
-                .onTapGesture {
-                    onTap()
-                }
-                .onLongPressGesture(
-                    minimumDuration: 1,
-                    maximumDistance: allowedMovement,
-                    perform: {},
-                    onPressingChanged: {
-                        pressed = $0
-                    }
-                )
-        }
+        animated(content: content)
+            .pressGesture(pressed: $pressed, onTap: onTap)
     }
     
     private func animated(content: Content) -> some View {

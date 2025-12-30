@@ -87,6 +87,7 @@
 		AC0BEC2724A5EC8F00866650 /* SharePhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */; };
 		AC1136152A5D86B0003319A2 /* ShareActivityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */; };
 		AC1136182A5D8926003319A2 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC1136162A5D8919003319A2 /* image.jpg */; };
+		AC15EFF42F041BBE00FFCA67 /* PressGestureViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15EFF32F041BBE00FFCA67 /* PressGestureViewModifier.swift */; };
 		AC27E4AA244E02EF00CFD763 /* Sharing.h in Headers */ = {isa = PBXBuildFile; fileRef = AC27E4A8244E02EF00CFD763 /* Sharing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC27E4AD244E02EF00CFD763 /* PocketSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; };
 		AC27E4AE244E02EF00CFD763 /* PocketSharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -269,6 +270,7 @@
 		AC0BEC2524A5EC3800866650 /* SharePhotosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePhotosProvider.swift; sourceTree = "<group>"; };
 		AC1136142A5D86B0003319A2 /* ShareActivityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityProvider.swift; sourceTree = "<group>"; };
 		AC1136162A5D8919003319A2 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		AC15EFF32F041BBE00FFCA67 /* PressGestureViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressGestureViewModifier.swift; sourceTree = "<group>"; };
 		AC21159024162B1A00FCA866 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AC27E4A6244E02EF00CFD763 /* PocketSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PocketSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27E4A8244E02EF00CFD763 /* Sharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sharing.h; sourceTree = "<group>"; };
@@ -528,6 +530,7 @@
 		AC09696C2B348F7200B2ABF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC15EFF32F041BBE00FFCA67 /* PressGestureViewModifier.swift */,
 				AC4ABB852EE0DDD900C3C577 /* PressableViewModifier.swift */,
 				AC4ABB862EE0DDD900C3C577 /* PressGestureRecognizerRepresentable.swift */,
 				AC09696D2B348F7C00B2ABF6 /* BackdropBlurView.swift */,
@@ -1453,6 +1456,7 @@
 				AC0673FB280722F200D9337A /* Cacher.swift in Sources */,
 				AC0673D3280722F200D9337A /* Numeric+Extensions.swift in Sources */,
 				AC0969652B348CBD00B2ABF6 /* UIBackdropView.swift in Sources */,
+				AC15EFF42F041BBE00FFCA67 /* PressGestureViewModifier.swift in Sources */,
 				AC0673EA280722F200D9337A /* Data+Extensions.swift in Sources */,
 				AC0673E8280722F200D9337A /* CGPath+Extensions.swift in Sources */,
 				AC0673D6280722F200D9337A /* Bool+Extensions.swift in Sources */,
