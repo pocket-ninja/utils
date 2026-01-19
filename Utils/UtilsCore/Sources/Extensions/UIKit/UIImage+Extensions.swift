@@ -6,7 +6,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     func decompressed() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         defer { UIGraphicsEndImageContext() }
