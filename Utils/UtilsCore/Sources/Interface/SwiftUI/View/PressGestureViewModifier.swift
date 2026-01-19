@@ -2,6 +2,8 @@
 //  Copyright © 2025 sroik. All rights reserved.
 //
 
+#if os(iOS)
+
 import SwiftUI
 
 // Modifier to instantly recognize a press inside a scroll view
@@ -66,3 +68,5 @@ public extension View {
     }
     .border(.gray)
 }
+
+#endif
