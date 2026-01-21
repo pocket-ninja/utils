@@ -44,19 +44,16 @@ public extension View {
         return hosting.view
     }
 
-    @available(iOS 15.0, *)
     @discardableResult
     func present(
         in parent: UIViewController? = UIApplication.shared.topViewController,
         animated: Bool = true,
         style: UIModalPresentationStyle = .formSheet,
         transitioningDelegate: UIViewControllerTransitioningDelegate? = nil,
-        background: UIColor = UIColor.systemBackground,
-        hasSheetGrabber: Bool = false,
-        preferredCornerRadius: CGFloat? = nil,
-        detents: [UISheetPresentationController.Detent] = [.large()],
+        background: UIColor = UIColor.clear,
         isModal: Bool = false,
         safeAreaRegions: SafeAreaRegions = .all,
+        sheetConfigurator: (UISheetPresentationController) -> Void = { _ in },
         then completion: @escaping () -> Void = {}
     ) -> UIHostingController<Self> {
         
@@ -72,10 +69,10 @@ public extension View {
         }
         
         if let sheet = controller.sheetPresentationController {
-            sheet.prefersGrabberVisible = hasSheetGrabber
-            sheet.preferredCornerRadius = preferredCornerRadius
+            sheet.prefersGrabberVisible = false
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
-            sheet.detents = detents
+            sheet.detents = [.large()]
+            sheetConfigurator(sheet)
         }
         
         guard let parentController = parent else {
