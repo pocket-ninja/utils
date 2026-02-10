@@ -11,7 +11,7 @@ import SwiftUI
 public struct PressGestureViewModifier: ViewModifier {
     @Binding public var pressed: Bool
     public var allowedMovement: CGFloat = 10
-    public var onTap: () -> Void
+    public var onTap: () -> Void = {}
     
     public func body(content: Content) -> some View {
         if #available(iOS 18.0, *) {
@@ -44,7 +44,7 @@ public extension View {
     func pressGesture(
         pressed: Binding<Bool>,
         allowedMovement: CGFloat = 10,
-        onTap: @escaping () -> Void
+        onTap: @escaping () -> Void = {}
     ) -> some View {
         modifier(PressGestureViewModifier(
             pressed: pressed,
@@ -63,7 +63,7 @@ public extension View {
             .frame(width: 200, height: 200)
             .opacity(pressed ? 0.5 : 1)
             .animation(.default, value: pressed)
-            .pressGesture(pressed: $pressed, onTap: {})
+            .pressGesture(pressed: $pressed)
             .padding(20)
     }
     .border(.gray)

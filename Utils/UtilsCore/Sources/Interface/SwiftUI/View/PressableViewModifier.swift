@@ -13,13 +13,17 @@ public struct PressableViewModifier: ViewModifier {
     public var pressedOpacity: CGFloat
     public var pressAnimation: Animation?
     public var allowedMovement: CGFloat = 10
-    public var onTap: () -> Void
+    public var onTap: () -> Void = {}
     
     @State private var pressed: Bool = false
     
     public func body(content: Content) -> some View {
         animated(content: content)
-            .pressGesture(pressed: $pressed, onTap: onTap)
+            .pressGesture(
+                pressed: $pressed,
+                allowedMovement: allowedMovement,
+                onTap: onTap
+            )
     }
     
     private func animated(content: Content) -> some View {
@@ -36,7 +40,7 @@ public extension View {
         pressedOpacity: CGFloat = 1.0,
         pressAnimation: Animation? = .easeInOut(duration: 0.25),
         allowedMovement: CGFloat = 10,
-        onTap: @escaping () -> Void
+        onTap: @escaping () -> Void = {}
     ) -> some View {
         modifier(PressableViewModifier(
             pressedScale: pressedScale,

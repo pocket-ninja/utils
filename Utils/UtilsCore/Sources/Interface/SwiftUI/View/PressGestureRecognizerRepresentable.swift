@@ -7,9 +7,9 @@
 import SwiftUI
 
 public struct PressGestureRecognizerRepresentable: UIGestureRecognizerRepresentable {
-    @Binding public  var pressed: Bool
-    public var allowedMovement: CGFloat
-    public var onTap: () -> Void
+    @Binding public var pressed: Bool
+    public var allowedMovement: CGFloat = 10
+    public var onTap: () -> Void = {}
     
     public func makeUIGestureRecognizer(context: Context) -> UILongPressGestureRecognizer {
         let recognizer = UILongPressGestureRecognizer()
