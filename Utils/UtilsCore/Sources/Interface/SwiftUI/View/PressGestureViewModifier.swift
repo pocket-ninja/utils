@@ -10,8 +10,8 @@ import SwiftUI
 // Native buttons are pressed with a delay
 public struct PressGestureViewModifier: ViewModifier {
     @Binding public var pressed: Bool
-    public var allowedMovement: CGFloat = 10
-    public var onTap: () -> Void = {}
+    public var allowedMovement: CGFloat
+    public var onTap: () -> Void
     
     public func body(content: Content) -> some View {
         if #available(iOS 18.0, *) {

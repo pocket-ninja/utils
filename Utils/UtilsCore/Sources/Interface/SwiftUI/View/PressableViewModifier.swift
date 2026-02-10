@@ -12,8 +12,8 @@ public struct PressableViewModifier: ViewModifier {
     public var pressedScale: CGFloat
     public var pressedOpacity: CGFloat
     public var pressAnimation: Animation?
-    public var allowedMovement: CGFloat = 10
-    public var onTap: () -> Void = {}
+    public var allowedMovement: CGFloat
+    public var onTap: () -> Void
     
     @State private var pressed: Bool = false
     
