@@ -9,16 +9,19 @@ import SwiftUI
 public struct PressGestureRecognizerRepresentable: UIGestureRecognizerRepresentable {
     @Binding public var pressed: Bool
     public var allowedMovement: CGFloat
+    public var onPress: () -> Void
     public var onTap: () -> Void
     
     // re-declare it as public for external use
     public init(
         pressed: Binding<Bool>,
         allowedMovement: CGFloat = 10,
+        onPress: @escaping () -> Void = {},
         onTap: @escaping () -> Void = {}
     ) {
         self._pressed = pressed
         self.allowedMovement = allowedMovement
+        self.onPress = onPress
         self.onTap = onTap
     }
     
@@ -41,6 +44,7 @@ public struct PressGestureRecognizerRepresentable: UIGestureRecognizerRepresenta
         case .began:
             context.coordinator.startLocation = location
             pressed = true
+            onPress()
         case .changed:
             let translation = location - context.coordinator.startLocation
             if abs(translation.x) > allowedMovement || abs(translation.y) > allowedMovement {
