@@ -25,15 +25,28 @@ public extension TimeInterval {
         Int(truncatingRemainder(dividingBy: 1) * 1000)
     }
 
-    func hms(style: DateComponentsFormatter.UnitsStyle = .full) -> String {
-        formattedString(units: [.hour, .minute, .second], style: style)
+    func hms(
+        style: DateComponentsFormatter.UnitsStyle = .full,
+        units: NSCalendar.Unit = [.hour, .minute, .second],
+        zeroBehavior: DateComponentsFormatter.ZeroFormattingBehavior = .default
+    ) -> String {
+        formattedString(
+            units: units,
+            style: style,
+            zeroBehavior: zeroBehavior
+        )
     }
     
-    func formattedString(units: NSCalendar.Unit, style: DateComponentsFormatter.UnitsStyle = .full) -> String {
+    func formattedString(
+        units: NSCalendar.Unit,
+        style: DateComponentsFormatter.UnitsStyle = .full,
+        zeroBehavior: DateComponentsFormatter.ZeroFormattingBehavior = .default
+    ) -> String {
         let formatter = DateComponentsFormatter()
         formatter.calendar = .current
         formatter.allowedUnits = units
         formatter.unitsStyle = style
+        formatter.zeroFormattingBehavior = zeroBehavior
         return formatter.string(from: self) ?? ""
     }
 }
