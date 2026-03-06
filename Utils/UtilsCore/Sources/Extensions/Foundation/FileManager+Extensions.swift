@@ -5,6 +5,18 @@
 import Foundation
 
 public extension FileManager {
+    func safeMoveItem(at source: URL, to destination: URL) throws {
+        try removeIfExists(at: destination)
+        try mkdirp(at: destination.deletingLastPathComponent())
+        try moveItem(at: source, to: destination)
+    }
+
+    func safeCopyItem(at source: URL, to destination: URL) throws {
+        try removeIfExists(at: destination)
+        try mkdirp(at: destination.deletingLastPathComponent())
+        try copyItem(at: source, to: destination)
+    }
+    
     func removeIfExists(at url: URL) throws {
         if fileExists(atPath: url.path) {
             try removeItem(at: url)
