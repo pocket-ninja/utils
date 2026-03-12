@@ -28,12 +28,12 @@ public extension Comparable {
 }
 
 @inlinable
-public func lerp<T: FloatingPoint>(_ from: T, _ to: T, _ time: T) -> T {
-    from + time * (to - from)
+public func lerp<V: BinaryFloatingPoint, T: BinaryFloatingPoint>(_ from: V, _ to: V, _ time: T) -> V {
+    from + V(time) * (to - from)
 }
 
 @inlinable
-public func lerp<T: FloatingPoint>(from: T, to: T, time: T) -> T {
+public func lerp<V: BinaryFloatingPoint, T: BinaryFloatingPoint>(from: V, to: V, time: T) -> V {
     lerp(from, to, time)
 }
 
@@ -46,3 +46,20 @@ public func inverseLerp<T: FloatingPoint>(_ from: T, _ to: T, _ value: T) -> T {
 public func inverseLerp<T: FloatingPoint>(from: T, to: T, value: T) -> T {
     inverseLerp(from, to, value)
 }
+
+@inlinable
+public func lerp<T: BinaryFloatingPoint>(_ from: CGPoint, _ to: CGPoint, _ time: T) -> CGPoint {
+    CGPoint(
+        x: lerp(from.x, to.x, time),
+        y: lerp(from.y, to.y, time)
+    )
+}
+
+@inlinable
+public func lerp<T: BinaryFloatingPoint>(_ from: CGSize, _ to: CGSize, _ time: T) -> CGSize {
+    CGSize(
+        width: lerp(from.width, to.width, time),
+        height: lerp(from.height, to.height, time)
+    )
+}
+
